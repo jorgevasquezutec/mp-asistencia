@@ -7,7 +7,7 @@
 
 ![Propuesta](https://img.shields.io/badge/Propuesta-C-25D366?style=for-the-badge)
 ![Inversión](https://img.shields.io/badge/Inversi%C3%B3n_Inicial-S/_2%2C500-00C851?style=for-the-badge)
-![Mensual](https://img.shields.io/badge/Costo_Mensual-S/_125-FFB800?style=for-the-badge)
+![Mensual](https://img.shields.io/badge/Costo_Mensual-S/_162-FFB800?style=for-the-badge)
 ![Implementación](https://img.shields.io/badge/Implementaci%C3%B3n-3--4_semanas-9B59B6?style=for-the-badge)
 ![Recomendada](https://img.shields.io/badge/⭐-RECOMENDADA-FFD700?style=for-the-badge)
 
@@ -440,9 +440,9 @@ El sistema también monitorea patrones:
 </tr>
 
 <tr>
-<td>👤 AWS Rekognition (Liveness)<br/><sub>~880 validaciones/mes</sub></td>
+<td>👤 AWS Rekognition (Liveness)<br/><sub>~1,000 validaciones/mes para empleados remotos</sub></td>
 <td align="center">-</td>
-<td align="right"><strong>S/ 38</strong></td>
+<td align="right"><strong>S/ 75</strong></td>
 </tr>
 
 <tr>
@@ -453,12 +453,12 @@ El sistema también monitorea patrones:
 
 <tr style="background-color: #f9f9f9; font-weight: bold;">
 <td colspan="2"><strong>TOTAL MENSUAL (sin recordatorios)</strong></td>
-<td align="right"><strong>S/ 125.50/mes</strong></td>
+<td align="right"><strong>S/ 162.50/mes</strong></td>
 </tr>
 
 <tr style="background-color: #f9f9f9; font-weight: bold;">
 <td colspan="2"><strong>TOTAL ANUAL</strong></td>
-<td align="right"><strong>S/ 1,506/año</strong></td>
+<td align="right"><strong>S/ 1,950/año</strong></td>
 </tr>
 
 <tr><td colspan="3">&nbsp;</td></tr>
@@ -490,11 +490,11 @@ El sistema también monitorea patrones:
 | Año | Inversión | Operativo | Acumulado |
 |:---:|----------:|----------:|----------:|
 | **0** | S/ 2,500 | - | S/ 2,500 |
-| **1** | - | S/ 1,506 | S/ 4,006 |
-| **2** | - | S/ 1,506 | S/ 5,512 |
-| **3** | - | S/ 1,506 | **S/ 7,018** |
+| **1** | - | S/ 1,950 | S/ 4,450 |
+| **2** | - | S/ 1,950 | S/ 6,400 |
+| **3** | - | S/ 1,950 | **S/ 8,350** |
 
-**Costo mensual promedio: S/ 125.50/mes**
+**Costo mensual promedio: S/ 232/mes**
 
 ---
 
@@ -507,7 +507,7 @@ El sistema también monitorea patrones:
 | **2** | - | S/ 2,562 | S/ 7,624 |
 | **3** | - | S/ 2,562 | **S/ 10,186** |
 
-**Costo mensual promedio: S/ 213.50/mes**
+**Costo mensual promedio: S/ 362/mes (con recordatorios)**
 
 </div>
 
@@ -532,7 +532,7 @@ El sistema también monitorea patrones:
 | Empleados | Conversaciones/mes | WhatsApp | AWS | Servidor | Total Mensual |
 |:---------:|:------------------:|:--------:|:---:|:--------:|:-------------:|
 | **10** | 440 | **S/ 0** | S/ 19 | S/ 50 | **S/ 106.50** |
-| **20** | 880 | **S/ 0** | S/ 38 | S/ 50 | **S/ 125.50** |
+| **20** | 880 | **S/ 0** | S/ 75 | S/ 50 | **S/ 162.50** |
 | **50** | 2,200 | **S/ 0** | S/ 95 | S/ 50 | **S/ 182.50** |
 | **100** | 4,400 | **S/ 0** | S/ 190 | S/ 50 | **S/ 277.50** |
 
@@ -949,18 +949,18 @@ flowchart LR
 
 ```
 Inversión Año 1 (sin recordatorios):
-  Inicial: S/ 2,500
-  Operativo: S/ 1,506
-  Total: S/ 4,006
+    Inicial: S/ 2,500
+    Operativo: S/ 1,950
+    Total: S/ 4,450
 
 Ahorro Año 1: S/ 23,850
 
-ROI = (23,850 - 4,006) / 4,006
-ROI = 495%
+ROI = (23,850 - 4,450) / 4,450
+ROI = 436%
 
-Payback: 2.0 meses
+Payback: 3.4 meses
 
-🏆🏆🏆 MUCHO MEJOR ROI de las 3 propuestas
+🏆🏆🏆 ROI superior vs alternativas
 ```
 
 </td>

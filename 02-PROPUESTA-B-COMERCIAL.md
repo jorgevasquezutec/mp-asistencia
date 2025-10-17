@@ -7,7 +7,7 @@
 
 ![Propuesta](https://img.shields.io/badge/Propuesta-B-FF8800?style=for-the-badge)
 ![Inversión](https://img.shields.io/badge/Inversi%C3%B3n_Inicial-S/_5%2C338-00C851?style=for-the-badge)
-![Mensual](https://img.shields.io/badge/Costo_Mensual-S/_256-FFB800?style=for-the-badge)
+![Mensual](https://img.shields.io/badge/Costo_Mensual-S/_162-FFB800?style=for-the-badge)
 ![Implementación](https://img.shields.io/badge/Implementaci%C3%B3n-4--6_semanas-9B59B6?style=for-the-badge)
 
 </div>
@@ -321,8 +321,8 @@ Idéntico a Propuesta A (ver documento 01-PROPUESTA-A-HIBRIDA.md)
 <tr>
 <td>⚡ Electricidad servidor local</td>
 <td align="center">1</td>
-<td align="right">S/ 75/mes</td>
-<td align="right"><strong>S/ 75</strong></td>
+<td align="right">S/ 50/mes</td>
+<td align="right"><strong>S/ 50</strong></td>
 </tr>
 
 <tr>
@@ -333,27 +333,27 @@ Idéntico a Propuesta A (ver documento 01-PROPUESTA-A-HIBRIDA.md)
 </tr>
 
 <tr>
-<td>🔍 Liveness detection (AWS Rekognition)</td>
+<td>🔍 Liveness detection (AWS Rekognition)<br/><sub>~1,000 validaciones/mes para empleados remotos</sub></td>
 <td align="center">-</td>
-<td align="right">S/ 0.004/validación</td>
-<td align="right"><strong>S/ 131.25</strong></td>
+<td align="right">S/ 0.075/validación</td>
+<td align="right"><strong>S/ 75</strong></td>
 </tr>
 
 <tr>
 <td>💾 Backups y almacenamiento</td>
 <td align="center">1</td>
-<td align="right">S/ 50/mes</td>
-<td align="right"><strong>S/ 50</strong></td>
+<td align="right">S/ 37.50/mes</td>
+<td align="right"><strong>S/ 37.50</strong></td>
 </tr>
 
 <tr style="background-color: #f9f9f9; font-weight: bold;">
 <td colspan="3"><strong>TOTAL MENSUAL (sin recordatorios)</strong></td>
-<td align="right"><strong>S/ 256.25/mes</strong></td>
+<td align="right"><strong>S/ 162.50/mes</strong></td>
 </tr>
 
 <tr style="background-color: #f9f9f9; font-weight: bold;">
 <td colspan="3"><strong>TOTAL ANUAL</strong></td>
-<td align="right"><strong>S/ 3,075/año</strong></td>
+<td align="right"><strong>S/ 1,950/año</strong></td>
 </tr>
 
 <tr><td colspan="4">&nbsp;</td></tr>
@@ -399,13 +399,13 @@ Idéntico a Propuesta A (ver documento 01-PROPUESTA-A-HIBRIDA.md)
 | Año | Inversión | Operativo | Soporte (opc.) | Acumulado |
 |:---:|----------:|----------:|---------------:|----------:|
 | **0** | S/ 5,338 | - | - | S/ 5,338 |
-| **1** | - | S/ 3,075 | S/ 750 | S/ 9,163 |
-| **2** | - | S/ 3,075 | S/ 750 | S/ 12,988 |
-| **3** | - | S/ 3,075 | S/ 750 | **S/ 16,813** |
+| **1** | - | S/ 1,950 | - | S/ 7,288 |
+| **2** | - | S/ 1,950 | - | S/ 9,238 |
+| **3** | - | S/ 1,950 | - | **S/ 11,188** |
 
-**Sin soporte opcional: S/ 14,563**
+**Sin soporte opcional: S/ 11,188**
 
-**Costo mensual promedio: S/ 468/mes (con soporte) | S/ 405/mes (sin soporte)**
+**Costo mensual promedio: S/ 311/mes (sin soporte)**
 
 ---
 
@@ -414,11 +414,11 @@ Idéntico a Propuesta A (ver documento 01-PROPUESTA-A-HIBRIDA.md)
 | Año | Inversión | Operativo | Soporte (opc.) | Acumulado |
 |:---:|----------:|----------:|---------------:|----------:|
 | **0** | S/ 5,338 | - | - | S/ 5,338 |
-| **1** | - | S/ 3,603 | S/ 750 | S/ 9,691 |
-| **2** | - | S/ 3,603 | S/ 750 | S/ 14,044 |
-| **3** | - | S/ 3,603 | S/ 750 | **S/ 18,397** |
+| **1** | - | S/ 2,562 | - | S/ 7,900 |
+| **2** | - | S/ 2,562 | - | S/ 10,462 |
+| **3** | - | S/ 2,562 | - | **S/ 13,024** |
 
-**Costo mensual promedio: S/ 513/mes (con soporte)**
+**Costo mensual promedio: S/ 362/mes (con recordatorios)**
 
 </div>
 
@@ -717,9 +717,7 @@ flowchart TB
 | Reducción tiempo reportes | S/ 12,600 |
 | Evitar multas SUNAFIL (riesgo) | S/ 1,875 |
 | Reducción errores administrativos | S/ 3,750 |
-| Optimización tiempos de marcación | S/ 3,000 |
-| Reducción fraude laboral | S/ 4,500 |
-| **TOTAL ANUAL** | **S/ 25,725** |
+| **TOTAL ANUAL** | **S/ 18,225** |
 
 </td>
 <td width="50%" valign="top">
@@ -728,17 +726,16 @@ flowchart TB
 
 ```
 Inversión Año 1 (sin recordatorios):
-  Inicial: S/ 5,338
-  Operativo: S/ 3,075
-  Soporte: S/ 750
-  Total: S/ 9,163
+    Inicial: S/ 5,338
+    Operativo: S/ 1,950
+    Total: S/ 7,288
 
-Ahorro Año 1: S/ 25,725
+Ahorro Año 1 (estimado): S/ 18,225
 
-ROI = (25,725 - 9,163) / 9,163
-ROI = 181%
+ROI = (18,225 - 7,288) / 7,288
+ROI = 150%
 
-Payback: 4.3 meses
+Payback: 4.8 meses
 ```
 
 </td>

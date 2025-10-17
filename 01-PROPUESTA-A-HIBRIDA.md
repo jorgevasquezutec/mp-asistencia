@@ -1536,8 +1536,7 @@ Antes de comprar, verificar:
 | Reducción tiempo reportes | S/ 12,600 |
 | Evitar multas SUNAFIL (riesgo) | S/ 1,875 |
 | Reducción errores administrativos | S/ 3,750 |
-| Optimización tiempos de marcación | S/ 3,000 |
-| **TOTAL ANUAL** | **S/ 21,225** |
+| **TOTAL ANUAL** | **S/ 18,225** |
 
 </td>
 <td width="50%" valign="top">
@@ -1550,12 +1549,17 @@ Inversión Año 1 (sin recordatorios):
   Operativo: S/ 1,950
   Total: S/ 5,930
 
-Ahorro Año 1: S/ 21,225
+Inversión Año 1:
+    Inicial: S/ 3,980
+    Operativo: S/ 1,950
+    Total: S/ 5,930
 
-ROI = (21,225 - 5,930) / 5,930
-ROI = 258%
+Ahorro Año 1 (estimado): S/ 18,225
 
-Payback: 3.4 meses
+ROI = (18,225 - 5,930) / 5,930
+ROI = 207%
+
+Payback: 3.9 meses
 ```
 
 </td>

@@ -21,13 +21,13 @@
 flowchart TB
     Decision{🤔 ¿Cuál elegir?}
 
-    Decision -->|Presupuesto S/ 0| PropC[🟢 PROPUESTA C<br/>100% WhatsApp<br/>S/ 0 inicial]
-    Decision -->|Balance costo-seguridad| PropA[🔵 PROPUESTA A<br/>Híbrida<br/>S/ 5,875 inicial]
-    Decision -->|Máxima seguridad| PropB[🟠 PROPUESTA B<br/>Comercial<br/>S/ 7,800 inicial]
+    Decision -->|Presupuesto acotado| PropC[🟢 PROPUESTA C<br/>100% WhatsApp<br/>S/ 2,500 inicial]
+    Decision -->|Balance costo-seguridad| PropA[🔵 PROPUESTA A<br/>Híbrida<br/>S/ 3,980 inicial]
+    Decision -->|Máxima seguridad| PropB[🟠 PROPUESTA B<br/>Comercial<br/>S/ 5,338 inicial]
 
-    PropC --> ResultC[✅ ROI 313%<br/>⚡ 3-4 semanas<br/>📈 Escalabilidad infinita]
-    PropA --> ResultA[✅ ROI 195%<br/>⚡ 6-8 semanas<br/>🔒 Biometría física]
-    PropB --> ResultB[✅ ROI 85%<br/>⚡ 4-6 semanas<br/>🏆 Certificación ISO]
+    PropC --> ResultC[✅ ROI ~310%<br/>⚡ 3-4 semanas<br/>📈 Escalabilidad]
+    PropA --> ResultA[✅ ROI ~207%<br/>⚡ 6-8 semanas<br/>🔒 Biometría física]
+    PropB --> ResultB[✅ ROI ~150%<br/>⚡ 4-6 semanas<br/>🏆 Certificación ISO]
 
     style Decision fill:#FFB800
     style PropC fill:#25D366
@@ -60,7 +60,7 @@ flowchart TB
 <tr style="background-color: #f0f8ff;">
 <td><strong>💰 INVERSIÓN INICIAL</strong></td>
 <td align="right"><strong>S/ 3,980</strong></td>
-<td align="right"><strong>S/ 7,800</strong></td>
+<td align="right"><strong>S/ 5,338</strong></td>
 <td align="right"><strong>S/ 2,500</strong> 🏆</td>
 </tr>
 
@@ -74,7 +74,7 @@ flowchart TB
 <tr>
 <td>Servidor local</td>
 <td align="right">S/ 2,500</td>
-<td align="right">S/ 2,500</td>
+<td align="right">S/ 1,000</td>
 <td align="right">S/ 2,500</td>
 </tr>
 
@@ -88,7 +88,7 @@ flowchart TB
 <tr>
 <td>Instalación</td>
 <td align="right">S/ 300</td>
-<td align="right">S/ 1,125</td>
+<td align="right">S/ 163</td>
 <td align="right">-</td>
 </tr>
 
@@ -96,15 +96,15 @@ flowchart TB
 
 <tr style="background-color: #fff8f0;">
 <td><strong>📅 COSTO MENSUAL</strong></td>
-<td align="right"><strong>S/ 162.50</strong> 🏆</td>
-<td align="right"><strong>S/ 444</strong></td>
-<td align="right"><strong>S/ 125.50</strong> 🏆</td>
+<td align="right"><strong>S/ 162.50</strong></td>
+<td align="right"><strong>S/ 162.50</strong></td>
+<td align="right"><strong>S/ 162.50</strong></td>
 </tr>
 
 <tr>
 <td>Electricidad servidor local</td>
 <td align="right">S/ 50</td>
-<td align="right">S/ 75</td>
+<td align="right">S/ 50</td>
 <td align="right">S/ 50</td>
 </tr>
 
@@ -118,28 +118,28 @@ flowchart TB
 <tr>
 <td>WhatsApp Business API</td>
 <td align="right">S/ 0</td>
-<td align="right">S/ 187</td>
+<td align="right">S/ 0</td>
 <td align="right">S/ 0</td>
 </tr>
 
 <tr>
 <td>Liveness detection (AWS)</td>
 <td align="right">S/ 75</td>
-<td align="right">S/ 131</td>
-<td align="right">S/ 38</td>
+<td align="right">S/ 75</td>
+<td align="right">S/ 75</td>
 </tr>
 
 <tr>
 <td>Backups + SSL</td>
 <td align="right">S/ 37.50</td>
-<td align="right">S/ 50</td>
+<td align="right">S/ 37.50</td>
 <td align="right">S/ 37.50</td>
 </tr>
 
 <tr>
 <td>Soporte fabricante (opc.)</td>
 <td align="right">-</td>
-<td align="right">S/ 63 (anual/12)</td>
+<td align="right">-</td>
 <td align="right">-</td>
 </tr>
 
@@ -147,9 +147,9 @@ flowchart TB
 
 <tr style="background-color: #f0fff0;">
 <td><strong>📊 COSTO ANUAL</strong></td>
-<td align="right"><strong>S/ 1,950</strong> 🏆</td>
-<td align="right"><strong>S/ 5,325</strong></td>
-<td align="right"><strong>S/ 1,506</strong> 🏆</td>
+<td align="right"><strong>S/ 1,950</strong></td>
+<td align="right"><strong>S/ 1,950</strong></td>
+<td align="right"><strong>S/ 1,950</strong></td>
 </tr>
 
 <tr><td colspan="4">&nbsp;</td></tr>
@@ -157,22 +157,22 @@ flowchart TB
 <tr style="background-color: #fffacd; font-weight: bold; font-size: 1.1em;">
 <td><strong>💎 TOTAL 3 AÑOS</strong></td>
 <td align="right"><strong>S/ 9,830</strong></td>
-<td align="right"><strong>S/ 23,775</strong></td>
-<td align="right"><strong>S/ 7,018</strong> 🏆</td>
+<td align="right"><strong>S/ 11,188</strong></td>
+<td align="right"><strong>S/ 8,350</strong> 🏆</td>
 </tr>
 
 <tr style="background-color: #e6f7ff; font-weight: bold;">
 <td><strong>📈 ROI AÑO 1</strong></td>
 <td align="right"><strong>207%</strong></td>
-<td align="right"><strong>85%</strong></td>
-<td align="right"><strong>355%</strong> 🏆</td>
+<td align="right"><strong>150%</strong></td>
+<td align="right"><strong>310%</strong> 🏆</td>
 </tr>
 
 <tr style="background-color: #e6f7ff; font-weight: bold;">
 <td><strong>⏰ PAYBACK</strong></td>
 <td align="right"><strong>3.9 meses</strong></td>
-<td align="right"><strong>6.5 meses</strong></td>
-<td align="right"><strong>2.6 meses</strong> 🏆</td>
+<td align="right"><strong>4.8 meses</strong></td>
+<td align="right"><strong>2.9 meses</strong> 🏆</td>
 </tr>
 
 </tbody>
@@ -184,10 +184,10 @@ flowchart TB
 
 | Año | 🔵 Propuesta A | 🟠 Propuesta B | 🟢 Propuesta C |
 |:---:|---------------:|---------------:|---------------:|
-| **0** | S/ 3,980 | S/ 7,800 | S/ 2,500 🏆 |
-| **1** | S/ 5,930 | S/ 13,125 | S/ 4,006 🏆 |
-| **2** | S/ 7,880 | S/ 18,450 | S/ 5,512 🏆 |
-| **3** | S/ 9,830 | S/ 23,775 | S/ 7,018 🏆 |
+| **0** | S/ 3,980 | S/ 5,338 | S/ 2,500 🏆 |
+| **1** | S/ 5,930 | S/ 7,288 | S/ 4,450 🏆 |
+| **2** | S/ 7,880 | S/ 9,238 | S/ 6,400 🏆 |
+| **3** | S/ 9,830 | S/ 11,188 | S/ 8,350 🏆 |
 
 </div>
 
@@ -410,6 +410,7 @@ flowchart TB
 <td align="center">7/10</td>
 <td align="center"><strong>10/10</strong></td>
 <td>C es más económico mensualmente (S/ 125)</td>
+<td>Todos tienen el mismo costo mensual (S/ 162.50)</td>
 </tr>
 
 <tr>
@@ -584,10 +585,10 @@ flowchart TB
 <td><strong>🚀 Startup</strong><br/>(< 20 empleados)</td>
 <td align="center">🟢 <strong>C</strong> 🏆</td>
 <td>
-✅ Inversión S/ 0<br/>
+✅ Inversión inicial baja (S/ 2,500)<br/>
 ✅ Validación rápida<br/>
 ✅ Escala con crecimiento<br/>
-✅ ROI 313%
+✅ ROI ~310%
 </td>
 </tr>
 
@@ -768,7 +769,7 @@ flowchart TB
 
     Eval -->|⚠️ Requiere<br/>más seguridad<br/>Fraude 1-5%| Upgrade1[🔵 UPGRADE a A<br/>+ S/ 5,875 hardware<br/>Mantener WhatsApp remoto]
 
-    Eval -->|❌ Problemas<br/>graves<br/>Fraude > 5%| Pivot[🟠 PIVOT a B<br/>+ S/ 7,800 equipos<br/>Máxima seguridad]
+    Eval -->|❌ Problemas<br/>graves<br/>Fraude > 5%| Pivot[🟠 PIVOT a B<br/>+ S/ 5,338 equipos<br/>Máxima seguridad]
 
     Prod1 --> Monitor[📈 Monitoreo Continuo<br/>KPIs mensuales]
     Upgrade1 --> Monitor
@@ -831,10 +832,10 @@ flowchart TB
 
 | Métrica | 🔵 A | 🟠 B | 🟢 C |
 |---------|-----:|-----:|-----:|
-| **Inversión total 3 años** | S/ 18,475 | S/ 23,775 | S/ 17,325 |
-| **Ahorros 3 años** | S/ 63,675 | S/ 77,175 | S/ 71,550 |
-| **Beneficio neto** | **S/ 45,200** | **S/ 53,400** | **S/ 54,225** |
-| **ROI 3 años** | **245%** | **225%** | **313%** 🏆 |
+| **Inversión total 3 años** | S/ 9,830 | S/ 11,188 | S/ 8,350 🏆 |
+| **Ahorros 3 años** | S/ 54,675 | S/ 54,675 | S/ 54,675 |
+| **Beneficio neto** | **S/ 44,845** | **S/ 43,487** | **S/ 46,325** 🏆 |
+| **ROI 3 años** | **456%** | **388%** | **555%** 🏆 |
 
 </div>
 
@@ -843,11 +844,11 @@ flowchart TB
 ```
 Año 3: Beneficio Neto Acumulado
 
-🟢 Propuesta C: ████████████████████████████ S/ 54,225 🏆
-🟠 Propuesta B: ██████████████████████████ S/ 53,400
-🔵 Propuesta A: ████████████████████████ S/ 45,200
+🟢 Propuesta C: ████████████████████████████ S/ 47,657 🏆
+� Propuesta A: ██████████████████████████ S/ 44,845
+� Propuesta B: ████████████████████████ S/ 40,112
 
-Nota: C tiene mayor beneficio neto en el largo plazo por su nula
+Nota: C tiene mayor beneficio neto en el largo plazo por sus costos bajos
 inversión inicial y ROI superior.
 ```
 
@@ -881,10 +882,10 @@ inversión inicial y ROI superior.
 
 #### ✅ Por qué Propuesta C es la mejor opción inicial
 
-1. **Inversión cero**: Sin riesgo financiero
-2. **Validación rápida**: Resultados en 4 semanas
-3. **Mayor ROI Año 1**: 313% vs 195% (A) y 85% (B)
-4. **Payback más rápido**: 2.9 meses
+1. **Inversión inicial baja**
+2. **Validación rápida**: Resultados en 3-4 semanas
+3. **Mayor ROI Año 1**: ~310% vs 207% (A) y 150% (B)
+4. **Payback más rápido**: ~2.9 meses
 5. **Escalabilidad infinita**: Crece sin fricción
 6. **Menor mantenimiento**: Solo software
 7. **Implementación rápida**: 3-4 semanas vs 6-8 (A)
@@ -927,7 +928,7 @@ inversión inicial y ROI superior.
 |---------------------|-------------|
 | ✅ Fraude < 1% + NPS > 40 | **Continuar con C en producción** |
 | ⚠️ Fraude 1-5% + quejas moderadas | **Upgrade a A** (+ S/ 5,875) |
-| ❌ Fraude > 5% + problemas graves | **Pivot a B** (+ S/ 7,800) |
+| ❌ Fraude > 5% + problemas graves | **Pivot a B** (+ S/ 5,338) |
 
 </div>
 

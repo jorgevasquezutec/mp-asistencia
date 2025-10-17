@@ -132,8 +132,8 @@ Hemos desarrollado **3 alternativas** que cumplen con SUNAFIL, con diferentes ba
 ⭐⭐⭐
 </td>
 <td align="center">
-<strong>S/ 7,800</strong><br/>
-⭐⭐
+<strong>S/ 5,338</strong><br/>
+⭐⭐⭐
 </td>
 <td align="center">
 <strong>S/ 2,500</strong><br/>
@@ -148,12 +148,12 @@ Hemos desarrollado **3 alternativas** que cumplen con SUNAFIL, con diferentes ba
 ~S/ 162/mes
 </td>
 <td align="center">
-<strong>S/ 5,325</strong><br/>
-~S/ 444/mes
+<strong>S/ 1,950</strong><br/>
+~S/ 162/mes
 </td>
 <td align="center">
-<strong>S/ 1,506</strong><br/>
-~S/ 125/mes
+<strong>S/ 1,950</strong><br/>
+~S/ 162/mes
 </td>
 </tr>
 
@@ -244,7 +244,7 @@ Sin hardware
 
 ```mermaid
 flowchart TB
-    Start([🚀 INICIO]) --> Phase1[📱 FASE 1: PoC con Propuesta C<br/>3-4 semanas | S/ 0 inversión]
+    Start([🚀 INICIO]) --> Phase1[📱 FASE 1: PoC con Propuesta C<br/>3-4 semanas - S/ 0 inversión]
 
     Phase1 --> Decision{📊 Evaluación<br/>de Resultados}
 
@@ -252,7 +252,7 @@ flowchart TB
 
     Decision -->|⚠️ Requiere<br/>más seguridad| Upgrade1[🔵 UPGRADE a Propuesta A<br/>+ S/ 5,875 inversión]
 
-    Decision -->|❌ Problemas<br/>graves| Upgrade2[🟠 PIVOT a Propuesta B<br/>+ S/ 7,800 inversión]
+    Decision -->|❌ Problemas<br/>graves| Upgrade2[🟠 PIVOT a Propuesta B<br/>+ S/ 5,338 inversión]
 
     Prod1 --> Review[📅 Revisión trimestral]
     Upgrade1 --> Review
@@ -316,38 +316,38 @@ flowchart TB
 <tr>
 <td><strong>Año 0 (Inversión inicial)</strong></td>
 <td align="right">S/ 3,980</td>
-<td align="right">S/ 7,800</td>
+<td align="right">S/ 5,338</td>
 <td align="right">S/ 2,500</td>
 </tr>
 <tr>
 <td><strong>Año 1 (Operativo)</strong></td>
 <td align="right">S/ 1,950</td>
-<td align="right">S/ 5,325</td>
-<td align="right">S/ 1,506</td>
+<td align="right">S/ 1,950</td>
+<td align="right">S/ 1,950</td>
 </tr>
 <tr>
 <td><strong>Año 2 (Operativo)</strong></td>
 <td align="right">S/ 1,950</td>
-<td align="right">S/ 5,325</td>
-<td align="right">S/ 1,506</td>
+<td align="right">S/ 1,950</td>
+<td align="right">S/ 1,950</td>
 </tr>
 <tr>
 <td><strong>Año 3 (Operativo)</strong></td>
 <td align="right">S/ 1,950</td>
-<td align="right">S/ 5,325</td>
-<td align="right">S/ 1,506</td>
+<td align="right">S/ 1,950</td>
+<td align="right">S/ 1,950</td>
 </tr>
 <tr style="background-color: #f0f0f0; font-weight: bold;">
 <td><strong>💰 TOTAL 3 AÑOS</strong></td>
 <td align="right"><strong>S/ 9,830</strong></td>
-<td align="right"><strong>S/ 23,775</strong></td>
-<td align="right"><strong>S/ 7,018</strong></td>
+<td align="right"><strong>S/ 11,188</strong></td>
+<td align="right"><strong>S/ 8,350</strong> 🏆</td>
 </tr>
 <tr>
 <td><strong>Costo mensual promedio</strong></td>
 <td align="right">S/ 273/mes</td>
-<td align="right">S/ 660/mes</td>
-<td align="right">S/ 195/mes</td>
+<td align="right">S/ 311/mes</td>
+<td align="right">S/ 232/mes 🏆</td>
 </tr>
 </tbody>
 </table>
@@ -384,16 +384,16 @@ ROI Año 1: 207%
 Payback: 3.9 meses
 
 Propuesta B:
-Inversión Año 1: S/ 13,125
+Inversión Año 1: S/ 7,288
 Ahorro Año 1: S/ 18,225
-ROI Año 1: 39%
-Payback: 8.6 meses
+ROI Año 1: 150%
+Payback: 4.8 meses
 
 Propuesta C:
-Inversión Año 1: S/ 4,006
+Inversión Año 1: S/ 4,450
 Ahorro Año 1: S/ 18,225
-ROI Año 1: 355%
-Payback: 2.6 meses
+ROI Año 1: 310%
+Payback: 2.9 meses
 ```
 
 </td>
@@ -536,24 +536,13 @@ flowchart LR
 <div align="center">
 
 ```mermaid
-gantt
-    title Roadmap de Implementación
-    dateFormat YYYY-MM-DD
-    section Fase 1: PoC
-    Propuesta C (WhatsApp)           :poc, 2025-11-01, 4w
-    Testing con usuarios piloto      :test, after poc, 1w
-
-    section Fase 2: Evaluación
-    Análisis de resultados           :crit, eval, after test, 1w
-    Decisión: Continuar o Pivotar    :milestone, decision, after eval, 1d
-
-    section Fase 3: Producción
-    Implementación final             :prod, after decision, 4w
-    Capacitación masiva              :train, after decision, 2w
-    Go Live                          :milestone, golive, after prod, 1d
-
-    section Fase 4: Optimización
-    Monitoreo y ajustes              :monitor, after golive, 2w
+flowchart LR
+  A[Fase 1 - PoC - 4 semanas] --> B[Fase 2 - Evaluacion - 1 semana] --> D{Decision}
+  D -->|Continuar| E[Implementacion - 4 semanas]
+  E --> F[Capacitacion - 2 semanas]
+  F --> G[Go Live - Semana 13]
+  G --> H[Optimizacion - 2 semanas]
+  D -->|Pivotar a A o B| E
 ```
 
 </div>
