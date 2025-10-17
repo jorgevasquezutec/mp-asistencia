@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Propuesta B: Equipo Comercial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <style>
+    body { background: #fff; margin: 0; padding: 0; }
+    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: auto; padding: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f6f8fa; font-weight: bold; }
+    .mermaid { background: #f9f9f9; margin: 2em 0; padding: 1em; border-radius: 8px; }
+    img[alt] { max-width: 100%; height: auto; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+    
+    /* Botón volver al inicio */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #FF8800;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background: #cc6d00;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    
+    /* Botón volver al índice */
+    .back-to-index {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #667eea;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-index:hover {
+      background: #5568d3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+  <script>
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+  </script>
+</head>
+<body>
+  <article class="markdown-body">
+<h1 id="propuesta-b-equipo-comercial">🟠 PROPUESTA B: EQUIPO COMERCIAL</h1>
+
+<h2 id="biometrico-certificado-whatsapp-remoto">Biométrico Certificado + WhatsApp Remoto</h2>
+
+<hr />
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Propuesta-B-FF8800?style=for-the-badge" alt="Propuesta" title="Propuesta">
+<img src="https://img.shields.io/badge/Inversi%C3%B3n_Inicial-S/_5%2C338-00C851?style=for-the-badge" alt="Inversión" title="Inversión">
+<img src="https://img.shields.io/badge/Costo_Mensual-S/_162-FFB800?style=for-the-badge" alt="Mensual" title="Mensual">
+<img src="https://img.shields.io/badge/Implementaci%C3%B3n-4--6_semanas-9B59B6?style=for-the-badge" alt="Implementación" title="Implementación">
+
+</div>
+
+<hr />
+
+<h2 id="concepto-de-la-solucion">🎯 CONCEPTO DE LA SOLUCIÓN</h2>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>💼 Para Empleados On-site</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado llega] --> B[🏢 Terminal Biométrica<br/>ZKTeco/Anviz/Hikvision]
+    B --> C[👆 Huella dactilar<br/>Verificación biométrica]
+    C --> D[✅ Confirmación<br/>en pantalla táctil]
+    D --> E[📊 Sincronización<br/>automática cada 5 min]
+
+    style A fill:#4A90E2
+    style B fill:#FF8800
+    style C fill:#FFB800
+    style D fill:#00C851
+    style E fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: < 2 segundos</strong>
+
+✅ Equipo certificado ISO
+✅ Verificación biométrica por huella dactilar
+✅ Funciona offline con sincronización
+
+</td>
+<td width="50%" valign="top">
+<h3>🌎 Para Empleados Remotos</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado remoto] --> B[💬 Abre WhatsApp]
+    B --> C[🔑 Ingresa token]
+    C --> D[📸 Toma selfie]
+    D --> E[📍 Comparte ubicación]
+    E --> F[✅ Registro confirmado]
+
+    style A fill:#4A90E2
+    style B fill:#25D366
+    style C fill:#FFB800
+    style D fill:#E94B3C
+    style E fill:#00C851
+    style F fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: ~20 segundos</strong>
+
+✅ Mismo proceso que Propuesta A
+✅ Validación facial + ubicación
+✅ Sin apps adicionales
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="propuesta-de-valor">💡 PROPUESTA DE VALOR</h2>
+
+<div align="center">
+<h3>¿Por qué elegir equipos comerciales certificados?</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<h3>🏆</h3>
+<strong>MÁXIMA SEGURIDAD</strong>
+
+Equipos con certificación:
+<ul>
+  <li>ISO 9001</li>
+  <li>CE (Conformité Européenne)</li>
+  <li>FCC (Federal Communications)</li>
+  <li>Homologados internacionalmente</li>
+</ul>
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>🛡️</h3>
+<strong>RESPALDO CORPORATIVO</strong>
+
+Ventajas de fabricantes líderes:
+<ul>
+  <li>Soporte técnico 24/7</li>
+  <li>Garantía de 2-3 años</li>
+  <li>Actualizaciones de firmware</li>
+  <li>Red de service partners</li>
+</ul>
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>🔧</h3>
+<strong>MENOR RIESGO</strong>
+
+Tecnología probada en:
+<ul>
+  <li>1000s de empresas globalmente</li>
+  <li>Aeropuertos y bancos</li>
+  <li>Entornos de alta seguridad</li>
+  <li>Cumplimiento normativo</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="arquitectura-de-la-solucion">🏗️ ARQUITECTURA DE LA SOLUCIÓN</h2>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    subgraph Oficina["🏢 OFICINA FÍSICA"]
+        T1[🖥️ Terminal Biométrica<br/>ZKTeco iClock 360<br/>Huella + RFID<br/>Entrada Principal]
+        DB1[(💾 Base Local<br/>Buffer SQLite)]
+        SRV[🖥️ Servidor Local<br/>Intel i5, 16GB RAM]
+    end
+
+    subgraph Remotos["🌎 EMPLEADOS REMOTOS"]
+        W1[📱 WhatsApp<br/>Empleado 1]
+        W2[📱 WhatsApp<br/>Empleado 2]
+        W3[📱 WhatsApp<br/>Empleado N]
+    end
+
+    subgraph SDK["🔌 INTEGRACIÓN"]
+        SDK1[📦 SDK Connector<br/>Node.js]
+        SYNC[🔄 Sincronización<br/>Cada 5 minutos]
+    end
+
+    subgraph Servicios["☁️ SERVICIOS EXTERNOS"]
+        WA[💬 WhatsApp<br/>Business API]
+        AWS[🔍 AWS Rekognition<br/>Liveness Detection]
+    end
+
+    subgraph Panel["💼 ADMINISTRACIÓN"]
+        BO[📊 Back Office<br/>Dashboard Angular]
+    end
+
+    T1 -->|Registro local| DB1
+    DB1 -->|TCP/IP| SDK1
+
+    SDK1 --> SYNC
+    SYNC -->|Lote de eventos| SRV
+
+    W1 -->|Internet| WA
+    W2 -->|Internet| WA
+    W3 -->|Internet| WA
+
+    WA --> SRV
+    SRV --> BO
+    SRV -.->|Liveness Check| AWS
+
+    style Oficina fill:#FFE5CC
+    style Remotos fill:#E8F5E9
+    style SDK fill:#E3F2FD
+    style Servicios fill:#FFF3E0
+    style Panel fill:#F3E5F5
+
+</div>
+<p>
+
+</div>
+
+<h3 id="componentes-del-sistema">📦 Componentes del Sistema</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Componente</th>
+<th width="50%">Descripción</th>
+<th width="20%">Beneficio Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🖥️ <strong>Terminal Biométrica</strong></td>
+<td>Equipo comercial con pantalla táctil, sensor de huella dactilar + RFID, memoria interna 30,000 registros</td>
+<td><strong>Certificación</strong> internacional, garantía fabricante</td>
+</tr>
+<tr>
+<td>📦 <strong>SDK Oficial</strong></td>
+<td>Kit de desarrollo del fabricante para integración con sistemas propios</td>
+<td>Soporte técnico y <strong>actualizaciones</strong> garantizadas</td>
+</tr>
+<tr>
+<td>🔄 <strong>Sincronización</strong></td>
+<td>Servicio que transfiere registros del equipo al servidor central cada 5 minutos</td>
+<td>Funciona <strong>offline</strong>, sin pérdida de datos</td>
+</tr>
+<tr>
+<td>💬 <strong>WhatsApp Business</strong></td>
+<td>Canal para empleados remotos (idéntico a Propuesta A)</td>
+<td><strong>Familiar</strong> y accesible para todos</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Servidor Central</strong></td>
+<td>Aplicación web que centraliza registros de equipos y WhatsApp</td>
+<td>Visibilidad <strong>unificada</strong></td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office</strong></td>
+<td>Panel web para administradores</td>
+<td>Control en <strong>tiempo real</strong></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="validaciones-de-seguridad">🔐 VALIDACIONES DE SEGURIDAD</h2>
+
+<h3 id="para-empleados-on-site-terminal-comercial">Para Empleados On-site (Terminal Comercial)</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">#</th>
+      <th>Validación</th>
+      <th>Objetivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;">1️⃣</td>
+      <td><strong>Huella dactilar</strong></td>
+      <td>Identificación biométrica única</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">2️⃣</td>
+      <td><strong>Usuario registrado</strong></td>
+      <td>Validar que esté en base del equipo</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">3️⃣</td>
+      <td><strong>Almacenamiento local</strong></td>
+      <td>Registro en memoria interna del equipo</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">4️⃣</td>
+      <td><strong>Sincronización segura</strong></td>
+      <td>Transferencia cifrada al servidor central</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">5️⃣</td>
+      <td><strong>Validación de duplicados</strong></td>
+      <td>El servidor verifica no-duplicación</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">6️⃣</td>
+      <td><strong>Firma digital</strong></td>
+      <td>Hash SHA-256 en servidor central</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<p><strong>Ventaja única:</strong> Funciona 100% offline. Si se cae internet, el equipo sigue registrando y sincroniza cuando se restaura la conexión.</p>
+
+<h3 id="para-empleados-remotos-whatsapp">Para Empleados Remotos (WhatsApp)</h3>
+
+<p>Idéntico a Propuesta A (ver documento 01-PROPUESTA-A-HIBRIDA.md)</p>
+
+<hr />
+
+<h2 id="inversion-y-costos">💰 INVERSIÓN Y COSTOS</h2>
+
+<h3 id="desglose-financiero">Desglose Financiero</h3>
+
+<table>
+<thead>
+<tr>
+<th width="40%">Concepto</th>
+<th width="15%" align="center">Cantidad</th>
+<th width="20%" align="right">Precio Unit.</th>
+<th width="25%" align="right">Subtotal</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #FFE5CC;">
+<td colspan="4"><strong>💰 INVERSIÓN INICIAL (Una sola vez)</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ <strong>Terminal ZKTeco iClock 360</strong><br/><sub>Huella + RFID, TCP/IP, 30,000 usuarios</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 1,938</td>
+<td align="right"><strong>S/ 1,938</strong></td>
+</tr>
+
+<tr>
+<td>🔌 Switch de red (PoE, 8 puertos)</td>
+<td align="center">1</td>
+<td align="right">S/ 300</td>
+<td align="right"><strong>S/ 300</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ Servidor Local Físico<br/><sub>Intel i5, 16GB RAM, 512GB SSD</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 2,500</td>
+<td align="right"><strong>S/ 2,500</strong></td>
+</tr>
+
+<tr>
+<td>🔧 Instalación profesional<br/><sub>Por técnico certificado ZKTeco - 1 terminal</sub></td>
+<td align="center">-</td>
+<td align="right">-</td>
+<td align="right"><strong>S/ 600</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL INVERSIÓN INICIAL</strong></td>
+<td align="right"><strong>S/ 5,338</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #FFF3E0;">
+<td colspan="4"><strong>📅 COSTOS OPERATIVOS MENSUALES</strong></td>
+</tr>
+
+<tr>
+<td>⚡ Electricidad servidor local</td>
+<td align="center">1</td>
+<td align="right">S/ 50/mes</td>
+<td align="right"><strong>S/ 50</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp Business API<br/><sub>Conversaciones iniciadas por usuario = GRATIS<br/>Solo se cobra si envías recordatorios automáticos</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 0/mes</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr>
+<td>🔍 Liveness detection (AWS Rekognition)<br/><sub>~1,000 validaciones/mes para empleados remotos</sub></td>
+<td align="center">-</td>
+<td align="right">S/ 0.075/validación</td>
+<td align="right"><strong>S/ 75</strong></td>
+</tr>
+
+<tr>
+<td>💾 Backups y almacenamiento</td>
+<td align="center">1</td>
+<td align="right">S/ 37.50/mes</td>
+<td align="right"><strong>S/ 37.50</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL MENSUAL (sin recordatorios)</strong></td>
+<td align="right"><strong>S/ 162.50/mes</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL ANUAL</strong></td>
+<td align="right"><strong>S/ 1,950/año</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #E8F5E9;">
+<td colspan="4"><strong>💡 OPCIÓN CON RECORDATORIOS AUTOMÁTICOS (Opcional)</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp - Recordatorios proactivos<br/><sub>Solo empleados remotos, ~220 mensajes/mes</sub></td>
+<td align="center">Opcional</td>
+<td align="right">S/ 44/mes</td>
+<td align="right"><strong>+ S/ 44</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL MENSUAL (con recordatorios)</strong></td>
+<td align="right"><strong>S/ 300.25/mes</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #E8F5E9;">
+<td colspan="4"><strong>🛡️ SOPORTE TÉCNICO (OPCIONAL)</strong></td>
+</tr>
+
+<tr>
+<td>📞 Soporte ZKTeco Annual</td>
+<td align="center">1</td>
+<td align="right">S/ 750/año</td>
+<td align="right"><strong>S/ 750</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="proyeccion-a-3-anos">📊 Proyección a 3 Años</h3>
+
+<div align="center">
+
+<strong>Escenario Base (Sin recordatorios automáticos):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Soporte (opc.)</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 5,338</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 5,338</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 7,288</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 9,238</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;"><strong>S/ 11,188</strong></td>
+    </tr>
+  </tbody>
+</table>
+<strong>Sin soporte opcional: S/ 11,188</strong>
+
+<strong>Costo mensual promedio: S/ 311/mes (sin soporte)</strong>
+
+---
+
+<strong>Escenario con Recordatorios (Opcional):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Soporte (opc.)</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 5,338</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 5,338</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 7,900</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 10,462</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;"><strong>S/ 13,024</strong></td>
+    </tr>
+  </tbody>
+</table>
+<strong>Costo mensual promedio: S/ 362/mes (con recordatorios)</strong>
+
+</div>
+
+<hr />
+
+<h2 id="ventajas-competitivas">✅ VENTAJAS COMPETITIVAS</h2>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>✨ Fortalezas</h3>
+
+<ol>
+  <li><strong>🏆 Certificación internacional</strong> (ISO, CE, FCC)</li>
+  <li><strong>🔒 Seguridad biométrica certificada</strong> (huella dactilar)</li>
+  <li><strong>🛡️ Garantía de fabricante</strong> (2-3 años)</li>
+  <li><strong>📞 Soporte técnico oficial</strong> 24/7</li>
+  <li><strong>⚡ Implementación rápida</strong> (4-6 semanas)</li>
+  <li><strong>💾 Funciona offline</strong> (buffer local automático)</li>
+  <li><strong>🔄 Actualizaciones de firmware</strong> incluidas</li>
+  <li><strong>🌍 Tecnología probada</strong> globalmente</li>
+  <li><strong>📈 Escalable</strong> a múltiples sedes</li>
+  <li><strong>✅ Cumplimiento SUNAFIL</strong> garantizado</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h3>⚠️ Consideraciones</h3>
+
+<ol>
+  <li><strong>💰 Mayor inversión inicial</strong> (S/ 5,338)</li>
+  <li><strong>🔗 Dependencia del fabricante</strong> para repuestos</li>
+  <li><strong>🔧 Requiere instalación profesional</strong></li>
+  <li><strong>📝 Licencias SDK</strong> (generalmente incluidas, pero verificar)</li>
+  <li><strong>⏳ Lead time de equipos</strong> (2-3 semanas si no hay stock local)</li>
+  <li><strong>🔌 Consumo eléctrico</strong> moderado (considerar UPS)</li>
+</ol>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="casos-de-uso">🎬 CASOS DE USO</h2>
+
+<h3 id="escenario-1-empresa-con-alto-riesgo-de-fraude">Escenario 1: Empresa con Alto Riesgo de Fraude</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>Industria con historial de fraude biométrico</li>
+  <li>Auditorías frecuentes y estrictas</li>
+  <li>Necesidad de certificaciones internacionales</li>
+  <li>Presupuesto disponible para inversión inicial</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>Equipos ZKTeco con biometría de huella dactilar certificada</li>
+  <li>Certificados ISO para mostrar en auditorías</li>
+  <li>Soporte técnico del fabricante como respaldo</li>
+  <li>Reportes con sello de validación del equipo</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>🔒 Cero fraudes exitosos</li>
+<li>✅ Aprobación en auditorías externas</li>
+<li>🏆 Certificación que genera confianza en clientes/socios</li>
+<li>📊 Reportes con trazabilidad certificada</li>
+</ul>
+
+<hr />
+
+<h3 id="escenario-2-empresa-con-multiples-sedes">Escenario 2: Empresa con Múltiples Sedes</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>5 oficinas en diferentes ciudades</li>
+  <li>150 empleados totales</li>
+  <li>Necesidad de visibilidad centralizada</li>
+  <li>Infraestructura de red existente</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>1-2 terminales por sede (10 terminales totales)</li>
+  <li>Servidor central en nube</li>
+  <li>Sincronización automática cada 5 minutos</li>
+  <li>Dashboard unificado para gerencia</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>🌍 Control unificado de todas las sedes</li>
+<li>⚡ Visibilidad en tiempo real de asistencia nacional</li>
+<li>📊 Reportes consolidados para gerencia general</li>
+<li>🔧 Soporte técnico local del fabricante en cada ciudad</li>
+</ul>
+
+<hr />
+
+<h2 id="plan-de-implementacion-poc">📊 PLAN DE IMPLEMENTACIÓN (PoC)</h2>
+
+<h3 id="fase-1-preparacion-semanas-1-2">Fase 1: Preparación (Semanas 1-2)</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+gantt
+    title PoC Propuesta B - Cronograma
+    dateFormat YYYY-MM-DD
+    section Preparación
+    Cotización y compra de equipos   :prep1, 2025-11-01, 5d
+    Llegada de equipos (2 semanas)   :prep2, after prep1, 10d
+    Configuración inicial            :prep3, after prep2, 2d
+
+    section Desarrollo
+    Backend (NestJS + PostgreSQL)    :dev1, 2025-11-08, 10d
+    Integración SDK ZKTeco           :dev2, 2025-11-18, 7d
+    Frontend (Angular Back Office)   :dev3, 2025-11-08, 10d
+
+    section Integración
+    Instalación en oficina           :int1, 2025-11-25, 2d
+    Configuración WhatsApp Business  :int2, 2025-11-27, 5d
+    Pruebas de integración           :int3, after int2, 5d
+
+    section Testing
+    Pruebas con usuarios piloto      :test1, 2025-12-07, 7d
+    Ajustes y correcciones           :test2, after test1, 5d
+
+    section Cierre
+    Documentación y presentación     :close, 2025-12-19, 5d
+
+</div>
+<p>
+
+</div>
+
+<h3 id="entregables-del-poc">Entregables del PoC</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Entregable</th>
+<th width="50%">Descripción</th>
+<th width="20%">Semana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🖥️ <strong>Equipo Instalado</strong></td>
+<td>1 terminal ZKTeco configurada y operativa</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>🔌 <strong>SDK Integrado</strong></td>
+<td>Conector funcional entre equipos y backend</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Backend Funcional</strong></td>
+<td>API REST con sincronización automática</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office</strong></td>
+<td>Panel web con gestión completa</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>💬 <strong>WhatsApp Integrado</strong></td>
+<td>Flujos de marcación remota</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>👥 <strong>Testing con Usuarios</strong></td>
+<td>10 usuarios reales probando sistema completo</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>📈 <strong>Reporte de Resultados</strong></td>
+<td>Métricas, KPIs y recomendaciones</td>
+<td align="center">7</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="criterios-de-exito-del-poc">Criterios de Éxito del PoC</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>KPI</th>
+      <th>Objetivo</th>
+      <th>Medición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⏱️ <strong>Tiempo de marcación on-site</strong></td>
+      <td>&lt; 2 seg</td>
+      <td>Promedio de 100 registros</td>
+    </tr>
+    <tr>
+      <td>🎯 <strong>Tasa de éxito biométrico</strong></td>
+      <td>&gt; 99.5%</td>
+      <td>Lecturas exitosas / intentos</td>
+    </tr>
+    <tr>
+      <td>🔄 <strong>Sincronización exitosa</strong></td>
+      <td>&gt; 99.9%</td>
+      <td>Registros sincronizados / totales</td>
+    </tr>
+    <tr>
+      <td>💾 <strong>Funcionalidad offline</strong></td>
+      <td>100%</td>
+      <td>Pruebas con desconexión simulada</td>
+    </tr>
+    <tr>
+      <td>🔒 <strong>Intentos de fraude detectados</strong></td>
+      <td>100%</td>
+      <td>Intentos simulados bloqueados</td>
+    </tr>
+    <tr>
+      <td>👥 <strong>Satisfacción de usuarios</strong></td>
+      <td>&gt; 4.5/5 ⭐</td>
+      <td>Encuesta post-PoC</td>
+    </tr>
+    <tr>
+      <td>✅ <strong>Disponibilidad del sistema</strong></td>
+      <td>&gt; 99.9%</td>
+      <td>Uptime durante PoC</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2 id="roadmap-post-poc">🚀 ROADMAP POST-POC</h2>
+
+<h3 id="escalamiento-a-multiples-sedes">Escalamiento a Múltiples Sedes</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    A[✅ PoC Exitoso<br/>Sede Principal] --> B[📋 Fase 1<br/>Sede 2 y 3<br/>4 semanas]
+    B --> C[📋 Fase 2<br/>Sedes 4 y 5<br/>4 semanas]
+    C --> D[📋 Fase 3<br/>Optimización<br/>Continuo]
+
+    style A fill:#00C851
+    style B fill:#4A90E2
+    style C fill:#FFB800
+    style D fill:#9B59B6
+
+</div>
+<p>
+
+</div>
+
+<h4 id="estrategia-de-expansion">Estrategia de Expansión</h4>
+
+<ol>
+<li><strong>Validación en sede principal</strong> (PoC)</li>
+<li><strong>Despliegue gradual</strong> a sedes secundarias (1-2 por mes)</li>
+<li><strong>Capacitación local</strong> en cada sede</li>
+<li><strong>Soporte técnico</strong> del fabricante en cada región</li>
+<li><strong>Consolidación</strong> de reportes en dashboard central</li>
+</ol>
+
+<hr />
+
+<h2 id="soporte-y-mantenimiento">📞 SOPORTE Y MANTENIMIENTO</h2>
+
+<h3 id="modelo-de-soporte-combinado">Modelo de Soporte Combinado</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>🏭 Soporte del Fabricante (ZKTeco)</h4>
+
+✅ Garantía de equipos (2 años)
+✅ Reemplazo de hardware defectuoso
+✅ Actualizaciones de firmware
+✅ Soporte técnico telefónico
+✅ Red de service partners
+
+<strong>Costo:</strong> S/ 750/año (opcional)
+
+</td>
+<td width="50%" valign="top">
+<h4>💻 Soporte del Sistema (Desarrollo Propio)</h4>
+
+✅ Mantenimiento del backend/frontend
+✅ Actualizaciones de software
+✅ Ajustes y mejoras
+✅ Capacitaciones adicionales
+✅ Soporte por email/chat
+
+<strong>Costo:</strong> Incluido (desarrollo interno)
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="caso-de-negocio">💼 CASO DE NEGOCIO</h2>
+
+<h3 id="roi-estimado">ROI Estimado</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>💰 Ahorros Anuales</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concepto</th>
+      <th style="text-align:right;">Ahorro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reducción tiempo reportes</td>
+      <td style="text-align:right;">S/ 12,600</td>
+    </tr>
+    <tr>
+      <td>Evitar multas SUNAFIL (riesgo)</td>
+      <td style="text-align:right;">S/ 1,875</td>
+    </tr>
+    <tr>
+      <td>Reducción errores administrativos</td>
+      <td style="text-align:right;">S/ 3,750</td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL ANUAL</strong></td>
+      <td style="text-align:right;"><strong>S/ 18,225</strong></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td width="50%" valign="top">
+<h4>📊 Retorno de Inversión</h4>
+<pre><code>Inversión Año 1 (sin recordatorios):
+    Inicial: S/ 5,338
+    Operativo: S/ 1,950
+    Total: S/ 7,288
+
+Ahorro Año 1 (estimado): S/ 18,225
+
+ROI = (18,225 - 7,288) / 7,288
+ROI = 150%
+
+Payback: 4.8 meses
+</code></pre>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="ideal-para">🎯 IDEAL PARA</h2>
+
+<div align="center">
+<h3>✅ Esta propuesta es perfecta si tu organización:</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<ul>
+<li>✅ Requiere <strong>seguridad biométrica certificada</strong></li>
+<li>✅ Necesita <strong>certificaciones internacionales</strong> (ISO, CE)</li>
+<li>✅ Tiene múltiples <strong>sedes</strong> o planea expandirse</li>
+<li>✅ Valora el <strong>soporte técnico oficial</strong> del fabricante</li>
+<li>✅ Puede invertir <strong>S/ 5,338 iniciales</strong></li>
+<li>✅ Busca equipos <strong>probados globalmente</strong></li>
+<li>✅ Industria <strong>regulada</strong> o con auditorías estrictas</li>
+<li>✅ Necesita <strong>funcionalidad offline</strong> garantizada</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h3>❌ NO es ideal si:</h3>
+
+<ul>
+<li>❌ Presupuesto inicial muy limitado (< S/ 3,750)</li>
+<li>❌ Solo tienes empleados 100% remotos</li>
+<li>❌ Necesitas implementación <strong>urgente</strong> (< 3 semanas por lead time de equipos)</li>
+<li>❌ Startup en fase muy temprana (MVP)</li>
+<li>❌ No cuentas con infraestructura de red</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="terminales-comerciales-recomendadas">🏭 TERMINALES COMERCIALES RECOMENDADAS</h2>
+
+<h3 id="equipos-certificados-con-pantalla-tactil">Equipos Certificados con Pantalla Táctil</h3>
+
+<table>
+<thead>
+<tr>
+<th width="20%">Marca/Modelo</th>
+<th width="35%">Características</th>
+<th width="20%">Precio Referencial</th>
+<th width="25%">Dónde Comprar en Perú</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>🥇 ZKTeco iClock 360</strong><br/>(Recomendado)</td>
+<td>
+<ul>
+<li><strong>Pantalla táctil TFT 3.5"</strong> a color<br/></li>
+<li>Sensor de huella capacitivo<br/></li>
+<li>Lector RFID integrado<br/></li>
+<li>Capacidad: 30,000 usuarios<br/></li>
+<li>WiFi + TCP/IP + USB<br/></li>
+<li>Certificación ISO 9001<br/></li>
+<li>Batería backup 4 horas<br/></li>
+<li>Software ZKTime incluido</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 1,850 - S/ 2,100</strong></td>
+<td>
+<ul>
+<li><strong>ZKTeco Perú</strong> (distribuidor oficial)<br/></li>
+<li><strong>Sistemas de Seguridad SAC</strong><br/></li>
+<li><strong>Mercado Libre</strong> (vendedores certificados)<br/></li>
+<li>Importadores en Av. Wilson</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥈 ZKTeco K50</strong></td>
+<td>
+<ul>
+<li>Pantalla TFT 2.8" a color<br/></li>
+<li>Sensor de huella óptico<br/></li>
+<li>Capacidad: 3,000 usuarios<br/></li>
+<li>TCP/IP + WiFi<br/></li>
+<li>Certificado ISO<br/></li>
+<li>Software de gestión incluido</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 1,600 - S/ 1,850</strong></td>
+<td>
+<ul>
+<li><strong>Distribuidores ZKTeco</strong><br/></li>
+<li><strong>Linio Perú</strong><br/></li>
+<li>Tiendas de seguridad electrónica<br/></li>
+<li>Av. Wilson - Centro Lima</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥉 Anviz A300</strong></td>
+<td>
+<ul>
+<li>Pantalla TFT 3.0"<br/></li>
+<li>Sensor biométrico<br/></li>
+<li>Capacidad: 3,000 usuarios<br/></li>
+<li>TCP/IP + USB<br/></li>
+<li>Software CrossChex incluido</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 1,700 - S/ 1,950</strong></td>
+<td>
+<ul>
+<li><strong>Importadores Anviz</strong><br/></li>
+<li><strong>Ripley.com.pe</strong><br/></li>
+<li>Distribuidores San Isidro<br/></li>
+<li>Mercado Libre Perú</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>Hikvision DS-K1T802M</strong></td>
+<td>
+<ul>
+<li>Pantalla táctil 4.3"<br/></li>
+<li>Sensor de huella<br/></li>
+<li>Capacidad: 10,000 usuarios<br/></li>
+<li>TCP/IP + WiFi<br/></li>
+<li>Certificación CE/FCC</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 2,000 - S/ 2,300</strong></td>
+<td>
+<ul>
+<li><strong>Hikvision Perú</strong> (oficial)<br/></li>
+<li>Distribuidores corporativos<br/></li>
+<li>Tiendas especializadas<br/></li>
+<li>San Isidro - Lima</li>
+</ul>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="distribuidores-autorizados-en-lima">🏪 Distribuidores Autorizados en Lima</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Distribuidores Oficiales</h4>
+
+<strong>ZKTeco Perú SAC</strong>
+<ul>
+<li>📍 Av. Javier Prado Este 2875, San Borja</li>
+<li>📞 Contacto: (01) 717-9200</li>
+<li>✅ Instalación y soporte técnico</li>
+<li>✅ Capacitación incluida</li>
+<li>✅ Garantía de 2 años</li>
+</ul>
+
+<strong>Sistemas de Seguridad SAC</strong>
+<ul>
+<li>📍 Av. República de Panamá 3418, San Isidro</li>
+<li>📞 Ventas corporativas disponibles</li>
+<li>✅ Servicio post-venta</li>
+<li>✅ Mantenimiento preventivo</li>
+</ul>
+
+<strong>Hikvision Perú</strong>
+<ul>
+<li>📍 Oficinas en San Isidro</li>
+<li>✅ Red de instaladores certificados</li>
+<li>✅ Soporte técnico 24/7</li>
+<li>✅ Garantía extendida disponible</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>🌐 Compra Online en Perú</h4>
+
+<strong>Marketplaces Confiables:</strong>
+<ul>
+<li><strong>Mercado Libre Perú</strong></li>
+<li>Buscar: "ZKTeco iClock 360"</li>
+<li>Verificar vendedor certificado</li>
+<li>Garantía mínima 12 meses</li>
+
+<li><strong>Linio Perú</strong></li>
+<li>Envíos a todo el Perú</li>
+<li>Pago con tarjeta o efectivo</li>
+<li>Garantía corporativa</li>
+
+<li><strong>Ripley.com.pe</strong></li>
+<li>Equipos para empresas</li>
+<li>Crédito disponible</li>
+<li>Instalación opcional</li>
+</ul>
+
+<strong>Recomendación:</strong> Comprar con distribuidores oficiales para garantizar soporte técnico y repuestos.
+
+</td>
+</tr>
+</table>
+
+<h3 id="recomendacion-final-propuesta-b">💡 Recomendación Final - Propuesta B</h3>
+
+<p>Para la <strong>Propuesta B</strong>, recomendamos el <strong>ZKTeco iClock 360</strong> por:</p>
+
+<ul>
+<li>✅ <strong>Certificación ISO 9001</strong> para auditorías</li>
+<li>✅ <strong>Pantalla táctil grande</strong> (3.5") fácil de usar</li>
+<li>✅ <strong>30,000 usuarios</strong> - Escalable a largo plazo</li>
+<li>✅ <strong>Distribuidor oficial en Lima</strong> con soporte local</li>
+<li>✅ <strong>Repuestos disponibles</strong> en Perú</li>
+<li>✅ <strong>Software ZKTime incluido</strong> (gestión completa)</li>
+<li>✅ <strong>Batería backup 4 horas</strong> - Funciona sin electricidad</li>
+<li>✅ <strong>WiFi + TCP/IP</strong> - Máxima flexibilidad de instalación</li>
+</ul>
+
+<p><strong>Precio estimado completo (1 terminal instalada):</strong> S/ 2,500 - S/ 2,800</p>
+
+<p><strong>Incluye:</strong></p>
+
+<ul>
+<li>1 terminal ZKTeco iClock 360</li>
+<li>Software de gestión</li>
+<li>Instalación profesional</li>
+<li>Capacitación básica (2 horas)</li>
+<li>Garantía 24 meses</li>
+</ul>
+
+<p><strong>Nota:</strong> Si necesitas más terminales, cada una adicional cuesta aproximadamente S/ 2,200 - S/ 2,400 (equipo + instalación)</p>
+
+<hr />
+
+<h3 id="checklist-de-compra">📋 Checklist de Compra</h3>
+
+<p>Antes de comprar, verificar:</p>
+
+<ul>
+<li>☑️ Garantía mínima 24 meses</li>
+<li>☑️ Software en español incluido</li>
+<li>☑️ Soporte técnico en Perú</li>
+<li>☑️ Instalación profesional disponible</li>
+<li>☑️ Repuestos disponibles localmente</li>
+<li>☑️ Certificaciones ISO/CE vigentes</li>
+<li>☑️ Manual de usuario en español</li>
+</ul>
+
+<hr />
+
+<strong>Propuesta B: Equipo Comercial Certificado</strong> | Versión 1.0 | Octubre 2025
+
+</div>
+
+  </article>
+  
+  <!-- Botón volver al inicio -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver al inicio">
+    ↑
+  </button>
+  
+  <script>
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

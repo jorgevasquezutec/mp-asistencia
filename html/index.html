@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Control de Asistencia - Documentación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <style>
+    body { background: #f6f8fa; margin: 0; padding: 0; }
+    .container { max-width: 980px; margin: auto; padding: 2em; }
+    .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2em; border-radius: 8px; margin-bottom: 2em; text-align: center; }
+    .header h1 { margin: 0 0 0.5em 0; font-size: 2.5em; }
+    .header p { margin: 0; font-size: 1.2em; opacity: 0.9; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5em; margin-bottom: 2em; }
+    .card { background: white; border-radius: 8px; padding: 1.5em; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .card-icon { font-size: 3em; margin-bottom: 0.5em; }
+    .card-title { font-size: 1.3em; font-weight: bold; margin-bottom: 0.5em; color: #333; }
+    .card-desc { color: #666; margin-bottom: 1em; line-height: 1.5; }
+    .card-link { display: inline-block; padding: 0.5em 1.5em; background: #667eea; color: white; text-decoration: none; border-radius: 4px; transition: background 0.2s; }
+    .card-link:hover { background: #5568d3; }
+    .card-badge { display: inline-block; padding: 0.25em 0.75em; background: #00C851; color: white; border-radius: 12px; font-size: 0.85em; margin-top: 0.5em; }
+    .footer { text-align: center; color: #666; padding: 2em 0; border-top: 1px solid #ddd; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 Sistema de Control de Asistencia</h1>
+      <p>Documentación Completa de Propuestas y Comparativas</p>
+      <p style="font-size: 0.9em; margin-top: 1em;">Octubre 2025 • Versión 1.0</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Resumen Ejecutivo</div>
+        <div class="card-desc">
+          Vista general de las 3 propuestas, inversión, ROI y recomendación final. Documento ejecutivo para gerencia.
+        </div>
+        <a href="00-RESUMEN-EJECUTIVO.html" class="card-link">Ver Documento</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔵</div>
+        <div class="card-title">Propuesta A: Híbrida</div>
+        <div class="card-desc">
+          Biométrico físico on-site + WhatsApp remoto. Balance entre seguridad y flexibilidad. Inversión: S/ 3,980.
+        </div>
+        <a href="01-PROPUESTA-A-HIBRIDA.html" class="card-link">Ver Propuesta</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🟠</div>
+        <div class="card-title">Propuesta B: Comercial</div>
+        <div class="card-desc">
+          Terminales biométricas certificadas (ZKTeco) + WhatsApp. Máxima seguridad ISO. Inversión: S/ 5,338.
+        </div>
+        <a href="02-PROPUESTA-B-COMERCIAL.html" class="card-link">Ver Propuesta</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🟢</div>
+        <div class="card-title">Propuesta C: 100% WhatsApp</div>
+        <div class="card-desc">
+          Sin hardware biométrico. Todo digital por WhatsApp. Ideal para startups y equipos remotos. Inversión: S/ 2,500.
+        </div>
+        <a href="03-PROPUESTA-C-WHATSAPP.html" class="card-link">Ver Propuesta</a>
+        <div class="card-badge">⭐ RECOMENDADA</div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Comparativa Detallada</div>
+        <div class="card-desc">
+          Matriz de decisión ponderada, análisis financiero, técnico y de riesgos. Comparación lado a lado de las 3 propuestas.
+        </div>
+        <a href="04-COMPARATIVA.html" class="card-link">Ver Comparativa</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <div class="card-title">Recomendaciones</div>
+        <div class="card-desc">
+          Plan de implementación, próximos pasos, análisis de riesgos y estrategia de validación progresiva.
+        </div>
+        <a href="05-RECOMENDACIONES.html" class="card-link">Ver Recomendaciones</a>
+      </div>
+    </div>
+
+    <div style="background: #E3F2FD; padding: 1.5em; border-radius: 8px; margin-top: 2em;">
+      <h3 style="margin-top: 0;">💡 Guía de Navegación</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>¿Primera vez?</strong> Empieza por el <a href="00-RESUMEN-EJECUTIVO.html">Resumen Ejecutivo</a></li>
+        <li><strong>¿Quieres comparar?</strong> Ve directamente a la <a href="04-COMPARATIVA.html">Comparativa Detallada</a></li>
+        <li><strong>¿Ya decidiste?</strong> Revisa las <a href="05-RECOMENDACIONES.html">Recomendaciones y Plan de Acción</a></li>
+        <li><strong>¿Necesitas detalles técnicos?</strong> Consulta cada propuesta individual</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p><strong>Sistema de Control de Asistencia</strong></p>
+      <p>Documentación Confidencial • Octubre 2025</p>
+      <p style="font-size: 0.9em; margin-top: 1em;">
+        Todos los documentos incluyen diagramas interactivos Mermaid y tablas comparativas
+      </p>
+    </div>
+  </div>
+</body>
+</html>

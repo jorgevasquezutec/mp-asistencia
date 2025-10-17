@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparativa Detallada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <style>
+    body { background: #fff; margin: 0; padding: 0; }
+    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: auto; padding: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f6f8fa; font-weight: bold; }
+    .mermaid { background: #f9f9f9; margin: 2em 0; padding: 1em; border-radius: 8px; }
+    img[alt] { max-width: 100%; height: auto; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+    
+    /* Botón volver al inicio */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #9B59B6;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background: #7d3c98;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    
+    /* Botón volver al índice */
+    .back-to-index {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #667eea;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-index:hover {
+      background: #5568d3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+  <script>
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+  </script>
+</head>
+<body>
+  <article class="markdown-body">
+<h1 id="comparativa-detallada">📊 COMPARATIVA DETALLADA</h1>
+
+<h2 id="matriz-de-decision-de-las-3-propuestas">Matriz de Decisión de las 3 Propuestas</h2>
+
+<hr />
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Tipo-Comparativa-9B59B6?style=for-the-badge" alt="Comparativa" title="Comparativa">
+<img src="https://img.shields.io/badge/Objetivo-Toma_de_Decisi%C3%B3n-FFB800?style=for-the-badge" alt="Objetivo" title="Objetivo">
+<img src="https://img.shields.io/badge/Actualizado-Octubre_2025-00C851?style=for-the-badge" alt="Actualizado" title="Actualizado">
+
+</div>
+
+<hr />
+
+<h2 id="resumen-visual">🎯 RESUMEN VISUAL</h2>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    Decision{🤔 ¿Cuál elegir?}
+
+    Decision -->|Presupuesto acotado| PropC[🟢 PROPUESTA C<br/>100% WhatsApp<br/>S/ 2,500 inicial]
+    Decision -->|Balance costo-seguridad| PropA[🔵 PROPUESTA A<br/>Híbrida<br/>S/ 3,980 inicial]
+    Decision -->|Máxima seguridad| PropB[🟠 PROPUESTA B<br/>Comercial<br/>S/ 5,338 inicial]
+
+    PropC --> ResultC[✅ ROI ~310%<br/>⚡ 3-4 semanas<br/>📈 Escalabilidad]
+    PropA --> ResultA[✅ ROI ~207%<br/>⚡ 6-8 semanas<br/>🔒 Biometría física]
+    PropB --> ResultB[✅ ROI ~150%<br/>⚡ 4-6 semanas<br/>🏆 Certificación ISO]
+
+    style Decision fill:#FFB800
+    style PropC fill:#25D366
+    style PropA fill:#4A90E2
+    style PropB fill:#FF8800
+    style ResultC fill:#E8F5E9
+    style ResultA fill:#E3F2FD
+    style ResultB fill:#FFE5CC
+
+</div>
+<p>
+
+</div>
+
+<hr />
+
+<h2 id="comparacion-financiera">💰 COMPARACIÓN FINANCIERA</h2>
+
+<h3 id="tabla-de-inversion-y-costos">Tabla de Inversión y Costos</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Concepto</th>
+<th width="23%" align="right">🔵 Propuesta A<br/><sub>Híbrida</sub></th>
+<th width="23%" align="right">🟠 Propuesta B<br/><sub>Comercial</sub></th>
+<th width="24%" align="right">🟢 Propuesta C<br/><sub>WhatsApp</sub></th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #f0f8ff;">
+<td><strong>💰 INVERSIÓN INICIAL</strong></td>
+<td align="right"><strong>S/ 3,980</strong></td>
+<td align="right"><strong>S/ 5,338</strong></td>
+<td align="right"><strong>S/ 2,500</strong> 🏆</td>
+</tr>
+
+<tr>
+<td>Hardware biométrico</td>
+<td align="right">S/ 880</td>
+<td align="right">S/ 3,875</td>
+<td align="right">-</td>
+</tr>
+
+<tr>
+<td>Servidor local</td>
+<td align="right">S/ 2,500</td>
+<td align="right">S/ 1,000</td>
+<td align="right">S/ 2,500</td>
+</tr>
+
+<tr>
+<td>Switch de red</td>
+<td align="right">S/ 300</td>
+<td align="right">S/ 300</td>
+<td align="right">-</td>
+</tr>
+
+<tr>
+<td>Instalación</td>
+<td align="right">S/ 300</td>
+<td align="right">S/ 163</td>
+<td align="right">-</td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #fff8f0;">
+<td><strong>📅 COSTO MENSUAL</strong></td>
+<td align="right"><strong>S/ 162.50</strong></td>
+<td align="right"><strong>S/ 162.50</strong></td>
+<td align="right"><strong>S/ 162.50</strong></td>
+</tr>
+
+<tr>
+<td>Electricidad servidor local</td>
+<td align="right">S/ 50</td>
+<td align="right">S/ 50</td>
+<td align="right">S/ 50</td>
+</tr>
+
+<tr>
+<td>Servidor cloud (VPS)</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+
+<tr>
+<td>WhatsApp Business API</td>
+<td align="right">S/ 0</td>
+<td align="right">S/ 0</td>
+<td align="right">S/ 0</td>
+</tr>
+
+<tr>
+<td>Liveness detection (AWS)</td>
+<td align="right">S/ 75</td>
+<td align="right">S/ 75</td>
+<td align="right">S/ 75</td>
+</tr>
+
+<tr>
+<td>Backups + SSL</td>
+<td align="right">S/ 37.50</td>
+<td align="right">S/ 37.50</td>
+<td align="right">S/ 37.50</td>
+</tr>
+
+<tr>
+<td>Soporte fabricante (opc.)</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #f0fff0;">
+<td><strong>📊 COSTO ANUAL</strong></td>
+<td align="right"><strong>S/ 1,950</strong></td>
+<td align="right"><strong>S/ 1,950</strong></td>
+<td align="right"><strong>S/ 1,950</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #fffacd; font-weight: bold; font-size: 1.1em;">
+<td><strong>💎 TOTAL 3 AÑOS</strong></td>
+<td align="right"><strong>S/ 9,830</strong></td>
+<td align="right"><strong>S/ 11,188</strong></td>
+<td align="right"><strong>S/ 8,350</strong> 🏆</td>
+</tr>
+
+<tr style="background-color: #e6f7ff; font-weight: bold;">
+<td><strong>📈 ROI AÑO 1</strong></td>
+<td align="right"><strong>207%</strong></td>
+<td align="right"><strong>150%</strong></td>
+<td align="right"><strong>310%</strong> 🏆</td>
+</tr>
+
+<tr style="background-color: #e6f7ff; font-weight: bold;">
+<td><strong>⏰ PAYBACK</strong></td>
+<td align="right"><strong>3.9 meses</strong></td>
+<td align="right"><strong>4.8 meses</strong></td>
+<td align="right"><strong>2.9 meses</strong> 🏆</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="grafico-de-costos-acumulados-3-anos">Gráfico de Costos Acumulados (3 años)</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">🔵 Propuesta A</th>
+      <th style="text-align:right;">🟠 Propuesta B</th>
+      <th style="text-align:right;">🟢 Propuesta C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 3,980</td>
+      <td style="text-align:right;">S/ 5,338</td>
+      <td style="text-align:right;">S/ 2,500 🏆</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">S/ 5,930</td>
+      <td style="text-align:right;">S/ 7,288</td>
+      <td style="text-align:right;">S/ 4,450 🏆</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">S/ 7,880</td>
+      <td style="text-align:right;">S/ 9,238</td>
+      <td style="text-align:right;">S/ 6,400 🏆</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">S/ 9,830</td>
+      <td style="text-align:right;">S/ 11,188</td>
+      <td style="text-align:right;">S/ 8,350 🏆</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Análisis:</strong> Propuesta C es la más económica en todos los años, con el mejor ROI y payback más rápido.</p>
+
+<hr />
+
+<h2 id="comparacion-tecnica">⚙️ COMPARACIÓN TÉCNICA</h2>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Característica</th>
+<th width="25%">🔵 Propuesta A</th>
+<th width="25%">🟠 Propuesta B</th>
+<th width="25%">🟢 Propuesta C</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #f0f8ff;">
+<td colspan="4"><strong>🔐 SEGURIDAD</strong></td>
+</tr>
+
+<tr>
+<td><strong>Biometría física</strong></td>
+<td>✅ Huella (on-site)</td>
+<td>✅ Huella dactilar</td>
+<td>❌ No requiere</td>
+</tr>
+
+<tr>
+<td><strong>Validaciones remotas</strong></td>
+<td>5 validaciones</td>
+<td>5 validaciones</td>
+<td>8 validaciones 🏆</td>
+</tr>
+
+<tr>
+<td><strong>Liveness detection</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+
+<tr>
+<td><strong>Geolocalización</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+
+<tr>
+<td><strong>Device fingerprint</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+
+<tr>
+<td><strong>Certificación ISO</strong></td>
+<td>❌</td>
+<td>✅ 🏆</td>
+<td>❌</td>
+</tr>
+
+<tr>
+<td><strong>Inmutabilidad de registros</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+
+<tr>
+<td><strong>Funciona offline</strong></td>
+<td>✅ (buffer local)</td>
+<td>✅ (memoria equipo) 🏆</td>
+<td>❌ (requiere internet)</td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #fff8f0;">
+<td colspan="4"><strong>⚡ IMPLEMENTACIÓN</strong></td>
+</tr>
+
+<tr>
+<td><strong>Tiempo despliegue</strong></td>
+<td>6-8 semanas</td>
+<td>4-6 semanas</td>
+<td>3-4 semanas 🏆</td>
+</tr>
+
+<tr>
+<td><strong>Complejidad técnica</strong></td>
+<td>🟡 Media</td>
+<td>🟠 Media-Alta</td>
+<td>🟢 Baja 🏆</td>
+</tr>
+
+<tr>
+<td><strong>Requiere instalación</strong></td>
+<td>✅ Lectores físicos</td>
+<td>✅ Terminales</td>
+<td>❌ Solo software 🏆</td>
+</tr>
+
+<tr>
+<td><strong>Lead time de equipos</strong></td>
+<td>1-2 semanas</td>
+<td>2-3 semanas</td>
+<td>N/A 🏆</td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #f0fff0;">
+<td colspan="4"><strong>🔧 OPERACIÓN</strong></td>
+</tr>
+
+<tr>
+<td><strong>Mantenimiento</strong></td>
+<td>🟡 Medio</td>
+<td>🟢 Bajo</td>
+<td>🟢 Muy bajo 🏆</td>
+</tr>
+
+<tr>
+<td><strong>Escalabilidad</strong></td>
+<td>Alta<br/><sub>(limitado por lectores)</sub></td>
+<td>Alta<br/><sub>(agregar equipos)</sub></td>
+<td>Infinita 🏆<br/><sub>(sin hardware)</sub></td>
+</tr>
+
+<tr>
+<td><strong>Tiempo de marcación</strong></td>
+<td>< 3 seg (on-site) 🏆<br/>~20 seg (remoto)</td>
+<td>< 2 seg (on-site) 🏆<br/>~20 seg (remoto)</td>
+<td>~20 seg<br/>(ambos)</td>
+</tr>
+
+<tr>
+<td><strong>UX para usuario</strong></td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐ 🏆</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+
+<tr>
+<td><strong>Curva de aprendizaje</strong></td>
+<td>Baja</td>
+<td>Muy baja 🏆</td>
+<td>Baja</td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #fffacd;">
+<td colspan="4"><strong>✅ CUMPLIMIENTO</strong></td>
+</tr>
+
+<tr>
+<td><strong>Cumplimiento SUNAFIL</strong></td>
+<td>✅ Completo</td>
+<td>✅ Completo</td>
+<td>✅ Completo</td>
+</tr>
+
+<tr>
+<td><strong>Trazabilidad</strong></td>
+<td>✅ 100%</td>
+<td>✅ 100%</td>
+<td>✅ 100%</td>
+</tr>
+
+<tr>
+<td><strong>Reportes oficiales</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="matriz-de-decision-ponderada">🎯 MATRIZ DE DECISIÓN PONDERADA</h2>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Criterio</th>
+<th width="10%">Peso</th>
+<th width="10%">🔵 A</th>
+<th width="10%">🟠 B</th>
+<th width="10%">🟢 C</th>
+<th width="35%">Justificación</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #f0f8ff;">
+<td colspan="6"><strong>💰 COSTOS</strong></td>
+</tr>
+
+<tr>
+<td>Inversión inicial</td>
+<td align="center">20%</td>
+<td align="center">8/10</td>
+<td align="center">5/10</td>
+<td align="center"><strong>9/10</strong></td>
+<td>C tiene menor inversión (S/ 2,500)</td>
+</tr>
+
+<tr>
+<td>Costo operativo anual</td>
+<td align="center">15%</td>
+<td align="center">9/10</td>
+<td align="center">7/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td>C es más económico mensualmente (S/ 125)</td>
+<td>Todos tienen el mismo costo mensual (S/ 162.50)</td>
+</tr>
+
+<tr>
+<td><strong>Subtotal Costos</strong></td>
+<td align="center">35%</td>
+<td align="center">8.4</td>
+<td align="center">6.2</td>
+<td align="center">9.4 🏆</td>
+<td></td>
+</tr>
+
+<tr><td colspan="6">&nbsp;</td></tr>
+
+<tr style="background-color: #fff8f0;">
+<td colspan="6"><strong>🔐 SEGURIDAD</strong></td>
+</tr>
+
+<tr>
+<td>Biometría física</td>
+<td align="center">10%</td>
+<td align="center">8/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td align="center">4/10</td>
+<td>B tiene biometría certificada</td>
+</tr>
+
+<tr>
+<td>Validaciones remotas</td>
+<td align="center">10%</td>
+<td align="center">8/10</td>
+<td align="center">8/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td>C tiene 8 validaciones vs 5</td>
+</tr>
+
+<tr>
+<td>Inmutabilidad de datos</td>
+<td align="center">5%</td>
+<td align="center">10/10</td>
+<td align="center">10/10</td>
+<td align="center">10/10</td>
+<td>Las 3 propuestas cumplen 100%</td>
+</tr>
+
+<tr>
+<td><strong>Subtotal Seguridad</strong></td>
+<td align="center">25%</td>
+<td align="center">8.4</td>
+<td align="center">9.2 🏆</td>
+<td align="center">7.2</td>
+<td></td>
+</tr>
+
+<tr><td colspan="6">&nbsp;</td></tr>
+
+<tr style="background-color: #f0fff0;">
+<td colspan="6"><strong>⚡ IMPLEMENTACIÓN</strong></td>
+</tr>
+
+<tr>
+<td>Tiempo de despliegue</td>
+<td align="center">8%</td>
+<td align="center">7/10</td>
+<td align="center">8/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td>C es 2x más rápido</td>
+</tr>
+
+<tr>
+<td>Complejidad técnica</td>
+<td align="center">5%</td>
+<td align="center">7/10</td>
+<td align="center">6/10</td>
+<td align="center"><strong>9/10</strong></td>
+<td>C es solo software</td>
+</tr>
+
+<tr>
+<td><strong>Subtotal Implementación</strong></td>
+<td align="center">13%</td>
+<td align="center">7.0</td>
+<td align="center">7.2</td>
+<td align="center">9.6 🏆</td>
+<td></td>
+</tr>
+
+<tr><td colspan="6">&nbsp;</td></tr>
+
+<tr style="background-color: #fffacd;">
+<td colspan="6"><strong>🔧 OPERACIÓN</strong></td>
+</tr>
+
+<tr>
+<td>Escalabilidad</td>
+<td align="center">10%</td>
+<td align="center">8/10</td>
+<td align="center">8/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td>C escala infinitamente</td>
+</tr>
+
+<tr>
+<td>Mantenimiento</td>
+<td align="center">7%</td>
+<td align="center">7/10</td>
+<td align="center">8/10</td>
+<td align="center"><strong>10/10</strong></td>
+<td>C no tiene hardware que fallar</td>
+</tr>
+
+<tr>
+<td>Facilidad de uso</td>
+<td align="center">10%</td>
+<td align="center">8/10</td>
+<td align="center"><strong>9/10</strong></td>
+<td align="center">8/10</td>
+<td>B tiene mejor UX on-site</td>
+</tr>
+
+<tr>
+<td><strong>Subtotal Operación</strong></td>
+<td align="center">27%</td>
+<td align="center">7.8</td>
+<td align="center">8.4</td>
+<td align="center">9.3 🏆</td>
+<td></td>
+</tr>
+
+<tr><td colspan="6">&nbsp;</td></tr>
+
+<tr style="background-color: #e6ffe6; font-weight: bold; font-size: 1.1em;">
+<td><strong>🏆 PUNTAJE TOTAL</strong></td>
+<td align="center"><strong>100%</strong></td>
+<td align="center"><strong>8.15</strong></td>
+<td align="center"><strong>7.99</strong></td>
+<td align="center"><strong>8.88</strong> 🏆</td>
+<td><strong>Propuesta C lidera claramente</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="interpretacion-de-puntajes">Interpretación de Puntajes</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Propuesta</th>
+      <th style="text-align:center;">Puntaje</th>
+      <th>Interpretación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🟢 <strong>Propuesta C</strong></td>
+      <td style="text-align:center;"><strong>8.88/10</strong></td>
+      <td>⭐⭐⭐⭐⭐ <strong>Excelente</strong> - Mejor en costos y operación</td>
+    </tr>
+    <tr>
+      <td>� <strong>Propuesta A</strong></td>
+      <td style="text-align:center;"><strong>8.15/10</strong></td>
+      <td>⭐⭐⭐⭐ <strong>Muy Bueno</strong> - Balance equilibrado</td>
+    </tr>
+    <tr>
+      <td>� <strong>Propuesta B</strong></td>
+      <td style="text-align:center;"><strong>7.99/10</strong></td>
+      <td>⭐⭐⭐⭐ <strong>Muy Bueno</strong> - Máxima seguridad certificada</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Diferencia:</strong> La Propuesta C supera a las demás por <strong>9%</strong> principalmente por su nula inversión inicial, rápida implementación y escalabilidad infinita.</p>
+
+<hr />
+
+<h2 id="recomendacion-por-escenario">🎯 RECOMENDACIÓN POR ESCENARIO</h2>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Perfil de Organización</th>
+<th width="25%">Recomendación</th>
+<th width="50%">Justificación</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>🚀 Startup</strong><br/>(< 20 empleados)</td>
+<td align="center">🟢 <strong>C</strong> 🏆</td>
+<td>
+✅ Inversión inicial baja (S/ 2,500)<br/>
+✅ Validación rápida<br/>
+✅ Escala con crecimiento<br/>
+✅ ROI ~310%
+</td>
+</tr>
+
+<tr>
+<td><strong>🏢 PYME</strong><br/>(20-100 empleados)</td>
+<td align="center">🔵 <strong>A</strong> o 🟢 <strong>C</strong></td>
+<td>
+<strong>A</strong> si tienen oficina física y valoran biometría<br/>
+<strong>C</strong> si son mayormente remotos o híbridos
+</td>
+</tr>
+
+<tr>
+<td><strong>🏭 Empresa grande</strong><br/>(> 100 empleados)</td>
+<td align="center">🟠 <strong>B</strong> 🏆</td>
+<td>
+✅ Certificación ISO para auditorías<br/>
+✅ Soporte técnico oficial<br/>
+✅ Equipos probados globalmente<br/>
+✅ Escalable a múltiples sedes
+</td>
+</tr>
+
+<tr>
+<td><strong>🌎 100% Remoto</strong></td>
+<td align="center">🟢 <strong>C</strong> 🏆</td>
+<td>
+✅ No necesita hardware físico<br/>
+✅ Funciona desde cualquier lugar<br/>
+✅ Máxima flexibilidad
+</td>
+</tr>
+
+<tr>
+<td><strong>🔐 Alta Seguridad</strong><br/>(banca, salud)</td>
+<td align="center">🟠 <strong>B</strong> 🏆</td>
+<td>
+✅ Certificaciones internacionales<br/>
+✅ Biometría física certificada<br/>
+✅ Auditable por organismos externos
+</td>
+</tr>
+
+<tr>
+<td><strong>⚡ Necesidad Urgente</strong><br/>(< 4 semanas)</td>
+<td align="center">🟢 <strong>C</strong> 🏆</td>
+<td>
+✅ Implementación en 3-4 semanas<br/>
+✅ Sin dependencia de hardware<br/>
+✅ Sin instalación física
+</td>
+</tr>
+
+<tr>
+<td><strong>💰 Presupuesto Limitado</strong><br/>(< S/ 3,750)</td>
+<td align="center">🟢 <strong>C</strong> 🏆</td>
+<td>
+✅ S/ 0 inversión inicial<br/>
+✅ Solo costo operativo mensual<br/>
+✅ Menor riesgo financiero
+</td>
+</tr>
+
+<tr>
+<td><strong>🔄 Múltiples Sedes</strong></td>
+<td align="center">🟠 <strong>B</strong></td>
+<td>
+✅ Equipos estandarizados<br/>
+✅ Soporte técnico en cada región<br/>
+✅ Dashboard centralizado
+</td>
+</tr>
+
+<tr>
+<td><strong>🏗️ En crecimiento rápido</strong></td>
+<td align="center">🟢 <strong>C</strong> 🏆</td>
+<td>
+✅ Escalabilidad infinita sin hardware<br/>
+✅ Costos predecibles<br/>
+✅ Adaptación inmediata a nuevos empleados
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="analisis-de-riesgos">📊 ANÁLISIS DE RIESGOS</h2>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Riesgo</th>
+<th width="25%">🔵 A</th>
+<th width="25%">🟠 B</th>
+<th width="25%">🟢 C</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>🔴 Fraude biométrico</strong></td>
+<td>🟡 Bajo<br/>(huella física)</td>
+<td>🟢 Muy bajo<br/>(biometría certificada) 🏆</td>
+<td>🟡 Bajo<br/>(8 validaciones)</td>
+</tr>
+
+<tr>
+<td><strong>🔌 Fallo de hardware</strong></td>
+<td>🟡 Medio<br/>(lectores pueden fallar)</td>
+<td>🟢 Bajo<br/>(equipos certificados) 🏆</td>
+<td>🟢 N/A<br/>(sin hardware) 🏆</td>
+</tr>
+
+<tr>
+<td><strong>📡 Fallo de conectividad</strong></td>
+<td>🟢 Bajo<br/>(buffer local)</td>
+<td>🟢 Muy bajo<br/>(memoria interna) 🏆</td>
+<td>🟡 Medio<br/>(requiere internet)</td>
+</tr>
+
+<tr>
+<td><strong>💰 Sobrecostos</strong></td>
+<td>🟡 Medio<br/>(hardware adicional)</td>
+<td>🟠 Alto<br/>(equipos caros)</td>
+<td>🟢 Bajo<br/>(solo software) 🏆</td>
+</tr>
+
+<tr>
+<td><strong>👥 Rechazo de usuarios</strong></td>
+<td>🟢 Bajo<br/>(familiar)</td>
+<td>🟢 Muy bajo<br/>(fácil uso) 🏆</td>
+<td>🟡 Medio<br/>(requiere smartphone)</td>
+</tr>
+
+<tr>
+<td><strong>⚖️ Incumplimiento SUNAFIL</strong></td>
+<td>🟢 Muy bajo<br/>(cumple 100%)</td>
+<td>🟢 Muy bajo<br/>(cumple 100%)</td>
+<td>🟢 Muy bajo<br/>(cumple 100%)</td>
+</tr>
+
+<tr>
+<td><strong>🔧 Problemas de mantenimiento</strong></td>
+<td>🟡 Medio<br/>(hardware + software)</td>
+<td>🟢 Bajo<br/>(soporte fabricante) 🏆</td>
+<td>🟢 Bajo<br/>(solo software) 🏆</td>
+</tr>
+
+<tr>
+<td><strong>📈 Problemas de escalabilidad</strong></td>
+<td>🟡 Medio<br/>(agregar lectores)</td>
+<td>🟡 Medio<br/>(agregar equipos)</td>
+<td>🟢 Muy bajo<br/>(infinito) 🏆</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="estrategia-recomendada">🎯 ESTRATEGIA RECOMENDADA</h2>
+
+<div align="center">
+<h3>🚀 ENFOQUE DE 3 FASES</h3>
+
+</p>
+<div class="mermaid">
+flowchart TB
+    Start([📋 Decisión Gerencial]) --> Phase1{Fase 1: PoC}
+
+    Phase1 -->|4 semanas| PoCC[🟢 PoC con Propuesta C<br/>Inversión: S/ 0<br/>Riesgo: Mínimo]
+
+    PoCC --> Eval{📊 Evaluación}
+
+    Eval -->|✅ Éxito<br/>Fraude < 1%<br/>NPS > 40| Prod1[🚀 PRODUCCIÓN con C<br/>Mantener solución]
+
+    Eval -->|⚠️ Requiere<br/>más seguridad<br/>Fraude 1-5%| Upgrade1[🔵 UPGRADE a A<br/>+ S/ 5,875 hardware<br/>Mantener WhatsApp remoto]
+
+    Eval -->|❌ Problemas<br/>graves<br/>Fraude > 5%| Pivot[🟠 PIVOT a B<br/>+ S/ 5,338 equipos<br/>Máxima seguridad]
+
+    Prod1 --> Monitor[📈 Monitoreo Continuo<br/>KPIs mensuales]
+    Upgrade1 --> Monitor
+    Pivot --> Monitor
+
+    Monitor --> Review{Revisión<br/>Trimestral}
+    Review -->|Mantener| Monitor
+    Review -->|Ajustar| Eval
+
+    style Start fill:#4A90E2
+    style Phase1 fill:#FFB800
+    style PoCC fill:#25D366
+    style Eval fill:#FFB800
+    style Prod1 fill:#00C851
+    style Upgrade1 fill:#4A90E2
+    style Pivot fill:#FF8800
+    style Monitor fill:#9B59B6
+
+</div>
+<p>
+
+</div>
+
+<h3 id="ventajas-de-esta-estrategia">Ventajas de esta Estrategia</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>✅ Beneficios</h4>
+
+<ol>
+  <li><strong>Riesgo mínimo</strong>: S/ 0 inversión inicial</li>
+  <li><strong>Validación rápida</strong>: 4 semanas para comprobar</li>
+  <li><strong>Aprendizaje</strong>: Entender necesidades reales</li>
+  <li><strong>Flexibilidad</strong>: Fácil pivot si no funciona</li>
+  <li><strong>Iterativo</strong>: Mejora continua basada en datos</li>
+  <li><strong>ROI inmediato</strong>: Beneficios desde mes 1</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h4>📊 Métricas de Decisión</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métrica Post-PoC</th>
+      <th style="text-align:center;">Continuar C</th>
+      <th style="text-align:center;">Upgrade A</th>
+      <th style="text-align:center;">Pivot B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fraude detectado</td>
+      <td style="text-align:center;">&lt; 1%</td>
+      <td style="text-align:center;">1-5%</td>
+      <td style="text-align:center;">&gt; 5%</td>
+    </tr>
+    <tr>
+      <td>NPS Usuarios</td>
+      <td style="text-align:center;">&gt; 40</td>
+      <td style="text-align:center;">20-40</td>
+      <td style="text-align:center;">&lt; 20</td>
+    </tr>
+    <tr>
+      <td>Completación Flow</td>
+      <td style="text-align:center;">&gt; 95%</td>
+      <td style="text-align:center;">85-95%</td>
+      <td style="text-align:center;">&lt; 85%</td>
+    </tr>
+    <tr>
+      <td>Liveness exitoso</td>
+      <td style="text-align:center;">&gt; 90%</td>
+      <td style="text-align:center;">75-90%</td>
+      <td style="text-align:center;">&lt; 75%</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="caso-de-negocio-consolidado">💼 CASO DE NEGOCIO CONSOLIDADO</h2>
+
+<h3 id="roi-comparativo-a-3-anos">ROI Comparativo a 3 Años</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Métrica</th>
+      <th style="text-align:right;">🔵 A</th>
+      <th style="text-align:right;">🟠 B</th>
+      <th style="text-align:right;">🟢 C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Inversión total 3 años</strong></td>
+      <td style="text-align:right;">S/ 9,830</td>
+      <td style="text-align:right;">S/ 11,188</td>
+      <td style="text-align:right;">S/ 8,350 🏆</td>
+    </tr>
+    <tr>
+      <td><strong>Ahorros 3 años</strong></td>
+      <td style="text-align:right;">S/ 54,675</td>
+      <td style="text-align:right;">S/ 54,675</td>
+      <td style="text-align:right;">S/ 54,675</td>
+    </tr>
+    <tr>
+      <td><strong>Beneficio neto</strong></td>
+      <td style="text-align:right;"><strong>S/ 44,845</strong></td>
+      <td style="text-align:right;"><strong>S/ 43,487</strong></td>
+      <td style="text-align:right;"><strong>S/ 46,325</strong> 🏆</td>
+    </tr>
+    <tr>
+      <td><strong>ROI 3 años</strong></td>
+      <td style="text-align:right;"><strong>456%</strong></td>
+      <td style="text-align:right;"><strong>388%</strong></td>
+      <td style="text-align:right;"><strong>555%</strong> 🏆</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="grafico-de-beneficio-neto-acumulado">Gráfico de Beneficio Neto Acumulado</h3>
+
+<pre><code>Año 3: Beneficio Neto Acumulado
+
+🟢 Propuesta C: ████████████████████████████ S/ 47,657 🏆
+� Propuesta A: ██████████████████████████ S/ 44,845
+� Propuesta B: ████████████████████████ S/ 40,112
+
+Nota: C tiene mayor beneficio neto en el largo plazo por sus costos bajos
+inversión inicial y ROI superior.
+</code></pre>
+
+<hr />
+
+<h2 id="conclusiones-y-recomendacion-final">✅ CONCLUSIONES Y RECOMENDACIÓN FINAL</h2>
+
+<div align="center">
+<h3>🏆 RECOMENDACIÓN OFICIAL</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="100%" style="background-color: #E8F5E9; padding: 20px; text-align: center;">
+
+## 🟢 INICIAR CON PROPUESTA C (100% WHATSAPP)
+<h3>Implementar PoC de 4 semanas con inversión S/ 0</h3>
+
+</td>
+</tr>
+</table>
+
+<h3 id="fundamentos-de-la-recomendacion">Fundamentos de la Recomendación</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>✅ Por qué Propuesta C es la mejor opción inicial</h4>
+
+<ol>
+  <li><strong>Inversión inicial baja</strong></li>
+  <li><strong>Validación rápida</strong>: Resultados en 3-4 semanas</li>
+  <li><strong>Mayor ROI Año 1</strong>: ~310% vs 207% (A) y 150% (B)</li>
+  <li><strong>Payback más rápido</strong>: ~2.9 meses</li>
+  <li><strong>Escalabilidad infinita</strong>: Crece sin fricción</li>
+  <li><strong>Menor mantenimiento</strong>: Solo software</li>
+  <li><strong>Implementación rápida</strong>: 3-4 semanas vs 6-8 (A)</li>
+  <li><strong>Flexibilidad total</strong>: Funciona para on-site y remotos</li>
+  <li><strong>Path de upgrade claro</strong>: Puede migrar a A o B si es necesario</li>
+  <li><strong>Cumplimiento SUNAFIL</strong>: Garantizado desde día 1</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h4>🎯 Plan de Acción Inmediato</h4>
+
+<strong>Semana 1:</strong>
+<ul>
+<li>✅ Aprobar presupuesto operativo (S/ 481/mes)</li>
+<li>✅ Contratar servicios cloud (VPS, WhatsApp API, AWS)</li>
+<li>✅ Definir equipo del proyecto</li>
+</ul>
+
+<strong>Semanas 2-4:</strong>
+<ul>
+<li>✅ Desarrollo backend + frontend</li>
+<li>✅ Configuración WhatsApp Flows</li>
+<li>✅ Integración validaciones</li>
+</ul>
+
+<strong>Semana 5:</strong>
+<ul>
+<li>✅ Testing con 10 usuarios piloto</li>
+<li>✅ Recolección de feedback</li>
+</ul>
+
+<strong>Semana 6:</strong>
+<ul>
+<li>✅ Análisis de resultados</li>
+<li>✅ <strong>Decisión GO/NO-GO</strong></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<h3 id="criterios-de-exito-del-poc">Criterios de Éxito del PoC</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Si el PoC muestra...</th>
+      <th>Entonces...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>✅ Fraude &lt; 1% + NPS &gt; 40</td>
+      <td><strong>Continuar con C en producción</strong></td>
+    </tr>
+    <tr>
+      <td>⚠️ Fraude 1-5% + quejas moderadas</td>
+      <td><strong>Upgrade a A</strong> (+ S/ 5,875)</td>
+    </tr>
+    <tr>
+      <td>❌ Fraude &gt; 5% + problemas graves</td>
+      <td><strong>Pivot a B</strong> (+ S/ 5,338)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="proximos-pasos">Próximos Pasos</h3>
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<h3>1️⃣</h3>
+<strong>ESTA SEMANA</strong>
+
+📅 Reunión de aprobación
+💰 Presupuesto S/ 481/mes
+👥 Asignar equipo
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>2️⃣</h3>
+<strong>PRÓXIMA SEMANA</strong>
+
+🚀 Kick-off del PoC
+🔧 Setup infraestructura
+📱 Configurar WhatsApp API
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>3️⃣</h3>
+<strong>SEMANA 6</strong>
+
+📊 Presentación resultados
+🎯 Decisión final
+📈 Plan de producción
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<div align="center">
+
+<strong>Comparativa Detallada</strong> | Herramienta de Decisión Gerencial | Octubre 2025
+
+</div>
+
+  </article>
+  
+  <!-- Botón volver al índice -->
+  <a href="index.html" class="back-to-index" title="Volver al índice">
+    📋 Índice
+  </a>
+  
+  <!-- Botón volver al inicio -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver al inicio">
+    ↑
+  </button>
+  
+  <script>
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

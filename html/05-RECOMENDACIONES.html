@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomendaciones y Próximos Pasos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <style>
+    body { background: #fff; margin: 0; padding: 0; }
+    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: auto; padding: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f6f8fa; font-weight: bold; }
+    .mermaid { background: #f9f9f9; margin: 2em 0; padding: 1em; border-radius: 8px; }
+    img[alt] { max-width: 100%; height: auto; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+    
+    /* Botón volver al inicio */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00C851;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background: #00a041;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    
+    /* Botón volver al índice */
+    .back-to-index {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #667eea;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-index:hover {
+      background: #5568d3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+  <script>
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+  </script>
+</head>
+<body>
+  <article class="markdown-body">
+<h1 id="recomendaciones-y-proximos-pasos">✅ RECOMENDACIONES Y PRÓXIMOS PASOS</h1>
+
+<blockquote>
+  <p>Extracto del documento consolidado. Para contexto completo, revise <code>00-RESUMEN-EJECUTIVO.md</code> y <code>04-COMPARATIVA.md</code>.</p>
+</blockquote>
+
+<h2 id="recomendacion-final">🏆 RECOMENDACIÓN FINAL</h2>
+
+<h3 id="se-recomienda-propuesta-c-100-whatsapp">⭐ SE RECOMIENDA: PROPUESTA C (100% WhatsApp) ⭐</h3>
+
+<h4 id="razones-de-la-recomendacion">Razones de la Recomendación</h4>
+
+<ul>
+<li>💰 Menor inversión inicial: S/ 2,500 (36% menos que A, 68% menos que B)</li>
+<li>� Costo operativo igual que A y B: S/ 162/mes (estandarizado)</li>
+<li>📈 ROI Año 1 más alto: ~310% vs 207% (A) y 150% (B)</li>
+<li>⏱️ Payback más rápido: ~2.9 meses vs 3.9 (A) y 4.8 (B)</li>
+<li>🧮 Total 3 años más bajo: S/ 8,350 vs S/ 9,830 (A) y S/ 11,188 (B)</li>
+</ul>
+
+<h2 id="plan-de-implementacion-recomendado">📋 PLAN DE IMPLEMENTACIÓN RECOMENDADO</h2>
+
+<h3 id="fase-1-prueba-de-concepto-semanas-1-4">Fase 1: Prueba de Concepto (Semanas 1-4)</h3>
+
+<ul>
+<li>Configurar servidor y WhatsApp Business API</li>
+<li>Registrar 10 empleados piloto (5 on-site, 5 remotos)</li>
+<li>Capacitación y onboarding</li>
+<li>Monitoreo diario 3 semanas y feedback</li>
+</ul>
+
+<h3 id="fase-2-evaluacion-semana-5">Fase 2: Evaluación (Semana 5)</h3>
+
+<ul>
+<li>Métricas: fraude &lt; 1%, satisfacción &gt; 4/5, marcación &lt; 30s, éxito &gt; 95%</li>
+<li>Decisión: GO / Ajustar / Pivotar</li>
+</ul>
+
+<h3 id="fase-3-despliegue-masivo-semanas-6-9">Fase 3: Despliegue Masivo (Semanas 6-9)</h3>
+
+<ul>
+<li>Rollout 50% → 75% → 100% → Estabilización</li>
+</ul>
+
+<h2 id="proximos-pasos-inmediatos">🎯 PRÓXIMOS PASOS INMEDIATOS</h2>
+
+<ul>
+<li>Hoy: circular documento, stakeholders, agendar reunión</li>
+<li>Mañana: aprobar presupuesto, GO/NO-GO, asignar responsables</li>
+<li>Próxima semana: iniciar PoC, seleccionar pilotos, configuración</li>
+</ul>
+
+<h2 id="riesgos-y-mitigaciones">⚠️ RIESGOS Y MITIGACIONES</h2>
+
+<ul>
+<li>Fraude: validaciones múltiples (liveness, geolocalización, fingerprint)</li>
+<li>Rechazo usuarios: capacitación + UX WhatsApp</li>
+<li>Conectividad: política de contingencia con supervisor</li>
+<li>Pérdida de datos: backups y replicación</li>
+<li>SUNAFIL: validación legal + auditorías trimestrales</li>
+</ul>
+
+<hr />
+
+<p>Contacto: contacto@empresa.com | WhatsApp: +51 XXX XXX XXX</p>
+
+<p>Actualizado: Octubre 2025 | Confidencial</p>
+
+  </article>
+  
+  <!-- Botón volver al índice -->
+  <a href="index.html" class="back-to-index" title="Volver al índice">
+    📋 Índice
+  </a>
+  
+  <!-- Botón volver al inicio -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver al inicio">
+    ↑
+  </button>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

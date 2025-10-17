@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Propuesta C: 100% WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <style>
+    body { background: #fff; margin: 0; padding: 0; }
+    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: auto; padding: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f6f8fa; font-weight: bold; }
+    .mermaid { background: #f9f9f9; margin: 2em 0; padding: 1em; border-radius: 8px; }
+    img[alt] { max-width: 100%; height: auto; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+    
+    /* Botón volver al inicio */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background: #1da851;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    
+    /* Botón volver al índice */
+    .back-to-index {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #667eea;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-index:hover {
+      background: #5568d3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+  <script>
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+  </script>
+</head>
+<body>
+  <article class="markdown-body">
+<h1 id="propuesta-c-100-whatsapp">🟢 PROPUESTA C: 100% WHATSAPP</h1>
+
+<h2 id="solucion-digital-sin-hardware-on-site-remoto">Solución Digital Sin Hardware (On-site + Remoto)</h2>
+
+<hr />
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Propuesta-C-25D366?style=for-the-badge" alt="Propuesta" title="Propuesta">
+<img src="https://img.shields.io/badge/Inversi%C3%B3n_Inicial-S/_2%2C500-00C851?style=for-the-badge" alt="Inversión" title="Inversión">
+<img src="https://img.shields.io/badge/Costo_Mensual-S/_162-FFB800?style=for-the-badge" alt="Mensual" title="Mensual">
+<img src="https://img.shields.io/badge/Implementaci%C3%B3n-3--4_semanas-9B59B6?style=for-the-badge" alt="Implementación" title="Implementación">
+<img src="https://img.shields.io/badge/⭐-RECOMENDADA-FFD700?style=for-the-badge" alt="Recomendada" title="Recomendada">
+
+</div>
+
+<hr />
+
+<h2 id="concepto-de-la-solucion">🎯 CONCEPTO DE LA SOLUCIÓN</h2>
+
+<div align="center">
+<h3>Una única experiencia digital para todos los empleados</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>💼 Para Empleados On-site</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado llega<br/>a la oficina] --> B[📱 Abre WhatsApp]
+    B --> C[💬 Comando /marcar]
+    C --> D[🔑 Ingresa token]
+    D --> E[📸 Selfie con liveness]
+    E --> F[📍 Ubicación oficina]
+    F --> G[✅ Registro confirmado]
+
+    style A fill:#4A90E2
+    style B fill:#25D366
+    style C fill:#25D366
+    style D fill:#FFB800
+    style E fill:#E94B3C
+    style F fill:#00C851
+    style G fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: ~20 segundos</strong>
+
+✅ Mismo proceso para todos
+✅ Sin hardware físico
+✅ Validación geográfica automática
+
+</td>
+<td width="50%" valign="top">
+<h3>🌎 Para Empleados Remotos</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado en casa/<br/>cliente/campo] --> B[📱 Abre WhatsApp]
+    B --> C[💬 Comando /marcar]
+    C --> D[🔑 Ingresa token]
+    D --> E[📸 Selfie con liveness]
+    E --> F[📍 Ubicación válida]
+    F --> G[✅ Registro confirmado]
+
+    style A fill:#4A90E2
+    style B fill:#25D366
+    style C fill:#25D366
+    style D fill:#FFB800
+    style E fill:#E94B3C
+    style F fill:#00C851
+    style G fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: ~20 segundos</strong>
+
+✅ Idéntico proceso
+✅ Desde cualquier lugar
+✅ Máxima flexibilidad
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="propuesta-de-valor">💡 PROPUESTA DE VALOR</h2>
+
+<div align="center">
+<h3>¿Por qué es la solución recomendada?</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="25%" align="center" valign="top">
+<h3>💰</h3>
+<strong>INVERSIÓN MÍNIMA</strong>
+
+Sin hardware biométrico:
+<ul>
+  <li>S/ 2,500 inicial (solo servidor)</li>
+  <li>Muy bajo costo operativo mensual</li>
+  <li><strong>ROI 290%</strong></li>
+  <li>Sin riesgo de obsolescencia hardware</li>
+</ul>
+
+</td>
+<td width="25%" align="center" valign="top">
+<h3>⚡</h3>
+<strong>MÁXIMA VELOCIDAD</strong>
+
+Implementación rápida:
+<ul>
+  <li>3-4 semanas</li>
+  <li>Sin instalación física</li>
+  <li>Sin dependencias de hardware</li>
+  <li><strong>Validación rápida</strong> del concepto</li>
+</ul>
+
+</td>
+<td width="25%" align="center" valign="top">
+<h3>📈</h3>
+<strong>ESCALABILIDAD INFINITA</strong>
+
+Sin límites:
+<ul>
+  <li>De 5 a 5,000 empleados</li>
+  <li>Sin "terminales"</li>
+  <li>Sin restricciones geográficas</li>
+  <li><strong>Crece con la empresa</strong></li>
+</ul>
+
+</td>
+<td width="25%" align="center" valign="top">
+<h3>🔒</h3>
+<strong>ALTA SEGURIDAD</strong>
+
+8 validaciones por registro:
+<ul>
+  <li>Token personal</li>
+  <li>Liveness detection</li>
+  <li>Facial matching</li>
+  <li>Device fingerprint</li>
+  <li>Geolocalización</li>
+  <li><strong>Más que biometría física</strong></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="arquitectura-de-la-solucion">🏗️ ARQUITECTURA DE LA SOLUCIÓN</h2>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    subgraph Empleados["👥 TODOS LOS EMPLEADOS"]
+        E1[📱 Empleado 1<br/>On-site]
+        E2[📱 Empleado 2<br/>Remoto]
+        E3[📱 Empleado 3<br/>Cliente]
+        E4[📱 Empleado N<br/>Campo]
+    end
+
+    subgraph WhatsApp["💬 WHATSAPP BUSINESS"]
+        WA[☁️ WhatsApp Cloud API<br/>Meta]
+        FL[🔄 Flows Interactivos]
+    end
+
+    subgraph Validaciones["🔐 MOTOR DE VALIDACIONES"]
+        V1[🔑 Token Service]
+        V2[👤 Liveness Service<br/>AWS Rekognition]
+        V3[📱 Device Fingerprint]
+        V4[📍 Geo Service]
+    end
+
+    subgraph Backend["⚙️ SISTEMA CENTRAL"]
+        API[🖥️ Backend NestJS]
+        DB[(🗄️ PostgreSQL<br/>Registros Inmutables)]
+    end
+
+    subgraph Panel["💼 ADMINISTRACIÓN"]
+        BO[📊 Back Office Angular<br/>Dashboard + Reportes]
+    end
+
+    E1 -->|Marcación| WA
+    E2 -->|Marcación| WA
+    E3 -->|Marcación| WA
+    E4 -->|Marcación| WA
+
+    WA --> FL
+    FL -->|Webhook| API
+
+    API --> V1
+    API --> V2
+    API --> V3
+    API --> V4
+
+    V1 --> DB
+    V2 --> DB
+    V3 --> DB
+    V4 --> DB
+
+    API --> DB
+    BO --> API
+
+    style Empleados fill:#E8F5E9
+    style WhatsApp fill:#D1F2EB
+    style Validaciones fill:#FFF3E0
+    style Backend fill:#E3F2FD
+    style Panel fill:#F3E5F5
+
+</div>
+<p>
+
+</div>
+
+<h3 id="componentes-del-sistema">📦 Componentes del Sistema</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Componente</th>
+<th width="50%">Descripción</th>
+<th width="20%">Beneficio Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💬 <strong>WhatsApp Business API</strong></td>
+<td>Canal oficial de Meta para comunicación empresarial con flujos interactivos</td>
+<td><strong>Familiar</strong> para el 100% de usuarios</td>
+</tr>
+<tr>
+<td>🔄 <strong>Flows Interactivos</strong></td>
+<td>Formularios dentro de WhatsApp con validaciones paso a paso</td>
+<td><strong>UX optimizada</strong> nativa</td>
+</tr>
+<tr>
+<td>🔐 <strong>Motor de Validaciones</strong></td>
+<td>Sistema de 8 validaciones en paralelo para garantizar autenticidad</td>
+<td><strong>Seguridad multicapa</strong></td>
+</tr>
+<tr>
+<td>👤 <strong>Liveness Detection</strong></td>
+<td>IA que detecta si la selfie es de una persona viva (no foto estática)</td>
+<td>Evita <strong>fraude con fotos</strong></td>
+</tr>
+<tr>
+<td>📱 <strong>Device Fingerprint</strong></td>
+<td>Identificador único del smartphone del empleado</td>
+<td>Detecta <strong>cambios de dispositivo</strong> sospechosos</td>
+</tr>
+<tr>
+<td>📍 <strong>Geolocalización</strong></td>
+<td>Validación de ubicación dentro de zonas permitidas</td>
+<td>Verifica <strong>presencia física</strong></td>
+</tr>
+<tr>
+<td>⚙️ <strong>Backend NestJS</strong></td>
+<td>Aplicación web que procesa y almacena registros</td>
+<td><strong>Control total</strong> del sistema</td>
+</tr>
+<tr>
+<td>🗄️ <strong>PostgreSQL</strong></td>
+<td>Base de datos con registros inmutables y firma digital</td>
+<td><strong>Garantía legal</strong> SUNAFIL</td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office Angular</strong></td>
+<td>Panel web para administradores</td>
+<td>Visibilidad <strong>en tiempo real</strong></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="sistema-de-validaciones-8-capas">🔐 SISTEMA DE VALIDACIONES (8 Capas)</h2>
+
+<div align="center">
+<h3>Seguridad por Validación Múltiple</h3>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th width="10%">#</th>
+<th width="25%">Validación</th>
+<th width="40%">¿Qué verifica?</th>
+<th width="25%">Evita...</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td align="center">1️⃣</td>
+<td><strong>Token Personal</strong></td>
+<td>Código de 6 dígitos único por empleado, rotatorio cada 3 meses</td>
+<td>Marcación por terceros sin autorización</td>
+</tr>
+
+<tr>
+<td align="center">2️⃣</td>
+<td><strong>Liveness Detection</strong></td>
+<td>IA verifica que la selfie es de una persona viva (movimiento facial, profundidad 3D)</td>
+<td>Uso de fotos estáticas o pantallas</td>
+</tr>
+
+<tr>
+<td align="center">3️⃣</td>
+<td><strong>Facial Matching</strong></td>
+<td>Compara selfie con foto de perfil del empleado (>90% similitud)</td>
+<td>Suplantación de identidad</td>
+</tr>
+
+<tr>
+<td align="center">4️⃣</td>
+<td><strong>Device Fingerprint</strong></td>
+<td>Hash único del dispositivo (modelo, OS, apps instaladas)</td>
+<td>Cambios no autorizados de smartphone</td>
+</tr>
+
+<tr>
+<td align="center">5️⃣</td>
+<td><strong>Geolocalización</strong></td>
+<td>Coordenadas GPS dentro de radio permitido (500m configurable)</td>
+<td>Marcación desde ubicación incorrecta</td>
+</tr>
+
+<tr>
+<td align="center">6️⃣</td>
+<td><strong>Horario Permitido</strong></td>
+<td>Validar que el empleado esté dentro de su turno asignado</td>
+<td>Marcaciones fuera de horario laboral</td>
+</tr>
+
+<tr>
+<td align="center">7️⃣</td>
+<td><strong>No Duplicado</strong></td>
+<td>Verificar que no haya marcado en los últimos 15 minutos</td>
+<td>Doble marcación accidental o intencional</td>
+</tr>
+
+<tr>
+<td align="center">8️⃣</td>
+<td><strong>Firma Digital</strong></td>
+<td>Hash SHA-256 del registro completo (inmutable)</td>
+<td>Modificación posterior del registro</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="analisis-de-comportamiento-bonus">🛡️ Análisis de Comportamiento (Bonus)</h3>
+
+<p>El sistema también monitorea patrones:</p>
+
+<ul>
+<li><strong>Hora usual de marcación</strong>: Alerta si marca a hora inusual</li>
+<li><strong>Ubicación usual</strong>: Detecta cambios geográficos sospechosos</li>
+<li><strong>Frecuencia de intentos fallidos</strong>: Bloquea tras 3 fallos consecutivos</li>
+<li><strong>Velocidad de teletransportación</strong>: Detecta marcaciones desde ubicaciones imposiblemente lejanas en corto tiempo</li>
+</ul>
+
+<hr />
+
+<h2 id="inversion-y-costos">💰 INVERSIÓN Y COSTOS</h2>
+
+<h3 id="desglose-financiero">Desglose Financiero</h3>
+
+<table>
+<thead>
+<tr>
+<th width="50%">Concepto</th>
+<th width="25%" align="center">Cantidad</th>
+<th width="25%" align="right">Costo</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #E8F5E9;">
+<td colspan="3"><strong>💰 INVERSIÓN INICIAL</strong></td>
+</tr>
+
+<tr>
+<td>🔐 Hardware biométrico</td>
+<td align="center">-</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ Servidor Local Físico<br/><sub>Intel i5, 16GB RAM, 512GB SSD</sub></td>
+<td align="center">1</td>
+<td align="right"><strong>S/ 2,500</strong></td>
+</tr>
+
+<tr>
+<td>🔧 Instalación y configuración</td>
+<td align="center">-</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="2"><strong>TOTAL INVERSIÓN INICIAL</strong></td>
+<td align="right"><strong>S/ 2,500</strong></td>
+</tr>
+
+<tr><td colspan="3">&nbsp;</td></tr>
+
+<tr style="background-color: #FFF3E0;">
+<td colspan="3"><strong>📅 COSTOS OPERATIVOS MENSUALES</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ Servidor local físico<br/><sub>Intel i5, 16GB RAM, 512GB SSD - Ya incluido en inversión</sub></td>
+<td align="center">1</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr>
+<td>⚡ Electricidad servidor local<br/><sub>Consumo aprox. 100W 24/7</sub></td>
+<td align="center">1</td>
+<td align="right"><strong>S/ 50</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp Business API<br/><sub>Conversaciones iniciadas por usuario = GRATIS<br/>Solo se cobra si el sistema envía recordatorios automáticos</sub></td>
+<td align="center">1</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr>
+<td>👤 AWS Rekognition (Liveness)<br/><sub>~1,000 validaciones/mes para empleados remotos</sub></td>
+<td align="center">-</td>
+<td align="right"><strong>S/ 75</strong></td>
+</tr>
+
+<tr>
+<td>💾 Backups (disco duro externo)</td>
+<td align="center">1</td>
+<td align="right"><strong>S/ 37.50</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="2"><strong>TOTAL MENSUAL (sin recordatorios)</strong></td>
+<td align="right"><strong>S/ 162.50/mes</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="2"><strong>TOTAL ANUAL</strong></td>
+<td align="right"><strong>S/ 1,950/año</strong></td>
+</tr>
+
+<tr><td colspan="3">&nbsp;</td></tr>
+
+<tr style="background-color: #E8F5E9;">
+<td colspan="3"><strong>💡 OPCIÓN CON RECORDATORIOS AUTOMÁTICOS (Opcional)</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp - Recordatorios proactivos<br/><sub>~440 mensajes/mes si envías recordatorios diarios</sub></td>
+<td align="center">Opcional</td>
+<td align="right"><strong>+ S/ 88</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="2"><strong>TOTAL MENSUAL (con recordatorios)</strong></td>
+<td align="right"><strong>S/ 213.50/mes</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="proyeccion-a-3-anos">📊 Proyección a 3 Años</h3>
+
+<div align="center">
+
+<strong>Escenario Base (Sin recordatorios automáticos):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 2,500</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,500</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">S/ 4,450</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">S/ 6,400</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;"><strong>S/ 8,350</strong></td>
+    </tr>
+  </tbody>
+</table>
+<strong>Costo mensual promedio: S/ 232/mes</strong>
+
+---
+
+<strong>Escenario con Recordatorios (Opcional):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 2,500</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,500</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;">S/ 5,062</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;">S/ 7,624</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,562</td>
+      <td style="text-align:right;"><strong>S/ 10,186</strong></td>
+    </tr>
+  </tbody>
+</table>
+<strong>Costo mensual promedio: S/ 362/mes (con recordatorios)</strong>
+
+</div>
+
+<h3 id="explicacion-de-costos-whatsapp">💡 Explicación de Costos WhatsApp</h3>
+
+<p><strong>¿Cuándo es GRATIS?</strong></p>
+
+<ul>
+<li>✅ <strong>Empleado inicia conversación</strong> escribiendo al bot → <strong>GRATIS</strong></li>
+<li>✅ Todas las respuestas del bot dentro de 24h → <strong>GRATIS</strong></li>
+<li>✅ Flujo completo de marcación (token + selfie + ubicación) → <strong>GRATIS</strong></li>
+</ul>
+
+<p><strong>¿Cuándo se cobra?</strong></p>
+
+<ul>
+<li>❌ Sistema envía recordatorio: "No has marcado entrada" → <strong>S/ 0.20</strong></li>
+<li>❌ Alertas proactivas: "Tu turno empieza en 30 min" → <strong>S/ 0.20</strong></li>
+<li>❌ Notificaciones automáticas después de 24h sin respuesta → <strong>S/ 0.20</strong></li>
+</ul>
+
+<p><strong>Recomendación:</strong> Empezar sin recordatorios automáticos (S/ 0 en WhatsApp). Si se necesitan después, agregarlos de forma opcional.</p>
+
+<h3 id="escalabilidad-de-costos-sin-recordatorios">💡 Escalabilidad de Costos (Sin recordatorios)</h3>
+
+<p><strong>Para diferentes tamaños de empresa:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:center;">Empleados</th>
+  <th style="text-align:center;">Conversaciones/mes</th>
+  <th style="text-align:center;">WhatsApp</th>
+  <th style="text-align:center;">AWS</th>
+  <th style="text-align:center;">Servidor</th>
+  <th style="text-align:center;">Total Mensual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center;"><strong>10</strong></td>
+  <td style="text-align:center;">440</td>
+  <td style="text-align:center;"><strong>S/ 0</strong></td>
+  <td style="text-align:center;">S/ 19</td>
+  <td style="text-align:center;">S/ 50</td>
+  <td style="text-align:center;"><strong>S/ 106.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>20</strong></td>
+  <td style="text-align:center;">880</td>
+  <td style="text-align:center;"><strong>S/ 0</strong></td>
+  <td style="text-align:center;">S/ 75</td>
+  <td style="text-align:center;">S/ 50</td>
+  <td style="text-align:center;"><strong>S/ 162.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>50</strong></td>
+  <td style="text-align:center;">2,200</td>
+  <td style="text-align:center;"><strong>S/ 0</strong></td>
+  <td style="text-align:center;">S/ 95</td>
+  <td style="text-align:center;">S/ 50</td>
+  <td style="text-align:center;"><strong>S/ 182.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>100</strong></td>
+  <td style="text-align:center;">4,400</td>
+  <td style="text-align:center;"><strong>S/ 0</strong></td>
+  <td style="text-align:center;">S/ 190</td>
+  <td style="text-align:center;">S/ 50</td>
+  <td style="text-align:center;"><strong>S/ 277.50</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Con recordatorios automáticos (1 por día):</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:center;">Empleados</th>
+  <th style="text-align:center;">Recordatorios/mes</th>
+  <th style="text-align:center;">Costo WhatsApp</th>
+  <th style="text-align:center;">Total Mensual (con todo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center;"><strong>10</strong></td>
+  <td style="text-align:center;">220</td>
+  <td style="text-align:center;">S/ 44</td>
+  <td style="text-align:center;"><strong>S/ 150.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>20</strong></td>
+  <td style="text-align:center;">440</td>
+  <td style="text-align:center;">S/ 88</td>
+  <td style="text-align:center;"><strong>S/ 213.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>50</strong></td>
+  <td style="text-align:center;">1,100</td>
+  <td style="text-align:center;">S/ 220</td>
+  <td style="text-align:center;"><strong>S/ 402.50</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center;"><strong>100</strong></td>
+  <td style="text-align:center;">2,200</td>
+  <td style="text-align:center;">S/ 440</td>
+  <td style="text-align:center;"><strong>S/ 717.50</strong></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="ventajas-competitivas">✅ VENTAJAS COMPETITIVAS</h2>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>✨ Fortalezas</h3>
+
+<ol>
+  <li><strong>💰 Inversión mínima</strong> (solo servidor S/ 2,500, sin hardware biométrico)</li>
+  <li><strong>⚡ Implementación más rápida</strong> (3-4 semanas)</li>
+  <li><strong>📈 Escalabilidad infinita</strong> (sin límite de "terminales")</li>
+  <li><strong>🌍 100% remoto-friendly</strong> (funciona desde cualquier lugar)</li>
+  <li><strong>📱 Familiar para usuarios</strong> (todos usan WhatsApp)</li>
+  <li><strong>🔧 Mantenimiento mínimo</strong> (solo software)</li>
+  <li><strong>🔒 Seguridad alta</strong> (8 validaciones vs 1 huella)</li>
+  <li><strong>💪 Sin obsolescencia</strong> de hardware</li>
+  <li><strong>🚀 Rápido pivot</strong> si no funciona (bajo costo de abandono)</li>
+  <li><strong>✅ Cumplimiento SUNAFIL</strong> garantizado</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h3>⚠️ Consideraciones</h3>
+
+<ol>
+  <li><strong>📱 Todos los empleados deben tener smartphone</strong> con WhatsApp</li>
+  <li><strong>📡 Dependencia de conectividad</strong> móvil/WiFi</li>
+  <li><strong>🔋 Consumo de batería</strong> del empleado (moderado)</li>
+  <li><strong>🎯 Curva de aprendizaje</strong> inicial (primera vez)</li>
+  <li><strong>🔐 Menor "peso" psicológico</strong> vs lector físico (puede reducir percepción de control)</li>
+  <li><strong>📸 Preocupaciones de privacidad</strong> (foto + ubicación) - requiere consentimiento claro</li>
+</ol>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="casos-de-uso">🎬 CASOS DE USO</h2>
+
+<h3 id="escenario-1-startup-en-crecimiento">Escenario 1: Startup en Crecimiento</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>Startup tech con 15 empleados</li>
+  <li>5 on-site, 10 remotos</li>
+  <li>Presupuesto ajustado</li>
+  <li>Crecimiento proyectado a 50 empleados en 12 meses</li>
+  <li>Sin oficina permanente (coworking)</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>Sistema 100% WhatsApp para todos</li>
+  <li>Configuración de zonas geográficas (coworking + casas)</li>
+  <li>Dashboard para founders con visibilidad total</li>
+  <li>Escalamiento automático conforme crece el equipo</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>💰 Ahorro de S/ 7,500+ en hardware</li>
+<li>⚡ Implementación en 3 semanas</li>
+<li>📈 Sistema que crece con la empresa sin fricción</li>
+<li>✅ Cumplimiento normativo desde día 1</li>
+</ul>
+
+<hr />
+
+<h3 id="escenario-2-empresa-con-equipos-de-campo">Escenario 2: Empresa con Equipos de Campo</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>Empresa de servicios técnicos</li>
+  <li>40 técnicos en campo (clientes)</li>
+  <li>10 administrativos en oficina</li>
+  <li>Horarios rotativos complejos</li>
+  <li>Necesidad de validar que técnicos están en cliente</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>Marcación vía WhatsApp desde ubicación del cliente</li>
+  <li>Validación automática de geolocalización</li>
+  <li>Alertas si técnico marca fuera de zona asignada</li>
+  <li>Reportes de asistencia por cliente/proyecto</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>📍 Validación automática de presencia en cliente</li>
+<li>📊 Reportes de horas por proyecto para facturación</li>
+<li>🔒 Reducción de fraude en marcación</li>
+<li>⚡ Sin fricción para técnicos (ya usan smartphone)</li>
+</ul>
+
+<hr />
+
+<h2 id="flujo-de-usuario-ux">📱 FLUJO DE USUARIO (UX)</h2>
+
+<h3 id="experiencia-paso-a-paso">Experiencia Paso a Paso</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+sequenceDiagram
+    autonumber
+    actor E as 👤 Empleado
+    participant W as 💬 WhatsApp
+    participant S as ⚙️ Sistema
+
+    Note over E,S: 🌅 Inicio del día laboral
+
+    E->>W: Abre chat con Bot Asistencia
+    W->>E: "¡Hola Juan! 👋<br/>¿Qué deseas hacer?"<br/>[Botón: Marcar Entrada]
+
+    E->>W: Click en "Marcar Entrada"
+    W->>S: Iniciar Flow de marcación
+
+    S->>W: "Ingresa tu token personal (6 dígitos)"
+    E->>W: Escribe: 482639
+
+    S->>S: ✅ Token válido
+
+    S->>W: "Perfecto. Ahora toma una selfie 📸"
+    E->>W: Toma foto con cámara
+
+    S->>S: ✅ Liveness OK<br/>✅ Facial match 94%
+
+    S->>W: "Excelente. Comparte tu ubicación 📍"
+    E->>W: Acepta compartir ubicación
+
+    S->>S: ✅ Ubicación válida (123m de oficina)
+
+    S->>W: "✅ ¡Entrada registrada!<br/>⏰ Hora: 09:15 AM<br/>📍 Ubicación: Válida<br/>¡Que tengas un gran día! 🚀"
+
+    E->>E: 😊 Continúa con su jornada
+
+    Note over E,S: Total: ~20 segundos
+
+</div>
+<p>
+
+</div>
+
+<h3 id="diseno-de-mensajes">🎨 Diseño de Mensajes</h3>
+
+<p>Los mensajes son:</p>
+
+<ul>
+<li><strong>Amigables</strong>: Usan emojis y lenguaje natural</li>
+<li><strong>Claros</strong>: Instrucciones paso a paso</li>
+<li><strong>Rápidos</strong>: Feedback inmediato en cada validación</li>
+<li><strong>Motivadores</strong>: Felicitaciones al completar correctamente</li>
+</ul>
+
+<hr />
+
+<h2 id="plan-de-implementacion-poc">📊 PLAN DE IMPLEMENTACIÓN (PoC)</h2>
+
+<h3 id="cronograma-acelerado">Cronograma Acelerado</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+gantt
+    title PoC Propuesta C - Cronograma (4 semanas)
+    dateFormat YYYY-MM-DD
+    section Preparación
+    Configurar WhatsApp Business API :prep1, 2025-11-01, 3d
+    Setup infraestructura (Servidor Local, DB) :prep2, after prep1, 2d
+
+    section Desarrollo
+    Backend (NestJS + validaciones) :dev1, 2025-11-06, 10d
+    Integración Liveness (AWS)      :dev2, 2025-11-11, 5d
+    Frontend (Back Office Angular)  :dev3, 2025-11-06, 10d
+
+    section WhatsApp
+    Diseño de Flows                 :wa1, 2025-11-16, 3d
+    Configuración y testing         :wa2, after wa1, 4d
+
+    section Testing
+    Pruebas con 10 usuarios         :test1, 2025-11-23, 5d
+    Ajustes y optimización UX       :test2, after test1, 3d
+
+    section Cierre
+    Documentación y reporte         :close, 2025-11-30, 2d
+
+</div>
+<p>
+
+</div>
+
+<h3 id="entregables-del-poc">Entregables del PoC</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Entregable</th>
+<th width="50%">Descripción</th>
+<th width="20%">Semana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💬 <strong>WhatsApp Bot Funcional</strong></td>
+<td>Flows interactivos completos con todas las validaciones</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Backend Completo</strong></td>
+<td>API con 8 validaciones + almacenamiento inmutable</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office</strong></td>
+<td>Panel con gestión de usuarios, horarios y reportes</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>👤 <strong>Liveness Integrado</strong></td>
+<td>Validación facial con AWS Rekognition funcionando</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>👥 <strong>Testing Real</strong></td>
+<td>10 usuarios (5 on-site + 5 remotos) probando por 5 días</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td>📈 <strong>Reporte de Resultados</strong></td>
+<td>Métricas, KPIs, feedback y recomendaciones</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="criterios-de-exito-del-poc">Criterios de Éxito del PoC</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>KPI</th>
+      <th>Objetivo</th>
+      <th>Medición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⏱️ <strong>Tiempo de marcación</strong></td>
+      <td>&lt; 30 seg</td>
+      <td>Promedio de 50 registros</td>
+    </tr>
+    <tr>
+      <td>🎯 <strong>Tasa de completación del Flow</strong></td>
+      <td>&gt; 95%</td>
+      <td>Flows completados / iniciados</td>
+    </tr>
+    <tr>
+      <td>👤 <strong>Tasa de aprobación liveness</strong></td>
+      <td>&gt; 90%</td>
+      <td>Selfies válidas / enviadas</td>
+    </tr>
+    <tr>
+      <td>📍 <strong>Tasa de ubicación válida</strong></td>
+      <td>&gt; 85%</td>
+      <td>Ubicaciones dentro de zona</td>
+    </tr>
+    <tr>
+      <td>🔒 <strong>Intentos de fraude detectados</strong></td>
+      <td>100%</td>
+      <td>Intentos simulados bloqueados</td>
+    </tr>
+    <tr>
+      <td>👥 <strong>Satisfacción de usuarios</strong></td>
+      <td>&gt; 4/5 ⭐</td>
+      <td>Encuesta post-PoC (NPS)</td>
+    </tr>
+    <tr>
+      <td>✅ <strong>Disponibilidad del sistema</strong></td>
+      <td>&gt; 99%</td>
+      <td>Uptime durante PoC</td>
+    </tr>
+    <tr>
+      <td>🐛 <strong>Errores críticos</strong></td>
+      <td>0</td>
+      <td>Fallos que impidan marcación</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr />
+
+<h2 id="roadmap-post-poc">🚀 ROADMAP POST-POC</h2>
+
+<h3 id="estrategia-de-validacion-progresiva">Estrategia de Validación Progresiva</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart LR
+    A[✅ PoC Exitoso<br/>4 semanas] --> B{📊 Evaluación}
+
+    B -->|🟢 Fraude < 1%<br/>UX buena| C[🚀 PRODUCCIÓN<br/>Continuar con C<br/>2 semanas]
+
+    B -->|🟡 Fraude 1-5%<br/>Quejas moderadas| D[🔵 UPGRADE A<br/>+ Lectores biométricos<br/>6 semanas]
+
+    B -->|🔴 Fraude > 5%<br/>Problemas graves| E[🟠 PIVOT a B<br/>Equipos certificados<br/>4 semanas]
+
+    C --> F[📈 Optimización<br/>Continua]
+    D --> F
+    E --> F
+
+    style A fill:#00C851
+    style B fill:#FFB800
+    style C fill:#25D366
+    style D fill:#4A90E2
+    style E fill:#FF8800
+    style F fill:#9B59B6
+
+</div>
+<p>
+
+</div>
+
+<h3 id="decision-basada-en-datos">Decisión Basada en Datos</h3>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Métrica</th>
+<th width="25%">Continuar con C</th>
+<th width="25%">Upgrade a A</th>
+<th width="25%">Pivot a B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tasa de fraude</strong></td>
+<td>< 1%</td>
+<td>1-5%</td>
+<td>> 5%</td>
+</tr>
+<tr>
+<td><strong>NPS Usuarios</strong></td>
+<td>> 40</td>
+<td>20-40</td>
+<td>< 20</td>
+</tr>
+<tr>
+<td><strong>Completación Flow</strong></td>
+<td>> 95%</td>
+<td>85-95%</td>
+<td>< 85%</td>
+</tr>
+<tr>
+<td><strong>Liveness exitoso</strong></td>
+<td>> 90%</td>
+<td>75-90%</td>
+<td>< 75%</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="soporte-y-mantenimiento">📞 SOPORTE Y MANTENIMIENTO</h2>
+
+<h3 id="modelo-de-soporte-simplificado">Modelo de Soporte Simplificado</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>💻 Soporte Técnico</h4>
+
+✅ Monitoreo 24/7 de disponibilidad
+✅ Actualizaciones de seguridad automáticas
+✅ Backup diario cifrado
+✅ Soporte por email (respuesta < 24h)
+✅ Documentación en línea
+
+<strong>Costo:</strong> Incluido en desarrollo interno
+
+</td>
+<td width="50%" valign="top">
+<h4>📚 Capacitación Usuarios</h4>
+
+✅ Video tutorial (5 minutos)
+✅ Manual en PDF ilustrado
+✅ FAQs en el mismo chat de WhatsApp
+✅ Soporte peer-to-peer (usuarios ayudan a usuarios)
+
+<strong>Costo:</strong> Incluido
+
+</td>
+</tr>
+</table>
+
+<h3 id="mantenimiento-preventivo">🔧 Mantenimiento Preventivo</h3>
+
+<ul>
+<li><strong>Semanal</strong>: Revisión de logs de errores</li>
+<li><strong>Mensual</strong>: Análisis de patrones de fraude</li>
+<li><strong>Trimestral</strong>: Rotación de tokens personales</li>
+<li><strong>Anual</strong>: Auditoría de seguridad completa</li>
+</ul>
+
+<hr />
+
+<h2 id="caso-de-negocio">💼 CASO DE NEGOCIO</h2>
+
+<h3 id="roi-estimado">ROI Estimado</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>💰 Ahorros Anuales</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concepto</th>
+      <th style="text-align:right;">Ahorro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reducción tiempo reportes</td>
+      <td style="text-align:right;">S/ 12,600</td>
+    </tr>
+    <tr>
+      <td>Evitar multas SUNAFIL (riesgo)</td>
+      <td style="text-align:right;">S/ 1,875</td>
+    </tr>
+    <tr>
+      <td>Reducción errores administrativos</td>
+      <td style="text-align:right;">S/ 3,750</td>
+    </tr>
+    <tr>
+      <td>Optimización tiempos de marcación</td>
+      <td style="text-align:right;">S/ 2,250</td>
+    </tr>
+    <tr>
+      <td><strong>Ahorro en hardware</strong&gt; (vs Propuesta A)</td>
+      <td style="text-align:right;">S/ 3,375</td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL ANUAL</strong></td>
+      <td style="text-align:right;"><strong>S/ 23,850</strong></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+<td width="50%" valign="top">
+<h4>📊 Retorno de Inversión</h4>
+<pre><code>Inversión Año 1 (sin recordatorios):
+    Inicial: S/ 2,500
+    Operativo: S/ 1,950
+    Total: S/ 4,450
+
+Ahorro Año 1: S/ 23,850
+
+ROI = (23,850 - 4,450) / 4,450
+ROI = 436%
+
+Payback: 3.4 meses
+
+🏆🏆🏆 ROI superior vs alternativas
+</code></pre>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="ideal-para">🎯 IDEAL PARA</h2>
+
+<div align="center">
+<h3>✅ Esta propuesta es perfecta si tu organización:</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<ul>
+<li>✅ <strong>Presupuesto inicial limitado</strong> (< S/ 4,000)</li>
+<li>✅ Necesita <strong>validación rápida</strong> del concepto (< 4 semanas)</li>
+<li>✅ Tiene empleados <strong>100% remotos</strong> o híbridos</li>
+<li>✅ <strong>Startup</strong> o empresa en crecimiento rápido</li>
+<li>✅ Busca <strong>máxima flexibilidad</strong> sin hardware</li>
+<li>✅ Todos los empleados tienen <strong>smartphone</strong></li>
+<li>✅ Cultura de <strong>confianza</strong> y tecnología</li>
+<li>✅ Necesita <strong>escalar rápidamente</strong> sin fricción</li>
+<li>✅ Valora la <strong>simplicidad</strong> operativa</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h3>❌ NO es ideal si:</h3>
+
+<ul>
+<li>❌ Industria altamente regulada requiere biometría física certificada</li>
+<li>❌ Empleados no tienen acceso a smartphones</li>
+<li>❌ Ubicaciones sin cobertura móvil</li>
+<li>❌ Resistencia cultural a validación digital</li>
+<li>❌ Gerencia desconfía de soluciones "solo software"</li>
+<li>❌ Se requiere "presencia física" del equipo biométrico por política</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="testimonios-simulados">🌟 TESTIMONIOS (SIMULADOS)</h2>
+
+<blockquote>
+  <p>"Al principio pensé que sin lector de huella sería fácil hacer trampa, pero con 8 validaciones es más seguro que cualquier equipo físico. Y super rápido desde mi celular."</p>
+  
+  <p>— María L., Desarrolladora Backend</p>
+</blockquote>
+
+<blockquote>
+  <p>"Como gerente, me encanta el dashboard en tiempo real. Puedo ver quién está trabajando en qué proyecto desde mi teléfono. Los reportes SUNAFIL se generan en segundos."</p>
+  
+  <p>— Carlos R., Gerente de Operaciones</p>
+</blockquote>
+
+<blockquote>
+  <p>"Somos una startup sin oficina fija. Este sistema nos permitió cumplir con SUNAFIL sin gastar en hardware. Cuando crecimos de 10 a 50 empleados, el sistema escaló sin problema."</p>
+  
+  <p>— Ana T., CEO de Startup Tech</p>
+</blockquote>
+
+<hr />
+
+<h2 id="vision-futura">🔮 VISIÓN FUTURA</h2>
+
+<h3 id="mejoras-planeadas-roadmap-12-meses">Mejoras Planeadas (Roadmap 12 meses)</h3>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<h4>🤖 IA Avanzada</h4>
+
+<ul>
+<li>Detección de anomalías con machine learning</li>
+<li>Predicción de ausencias</li>
+<li>Alertas proactivas de patrones sospechosos</li>
+</ul>
+
+</td>
+<td width="33%" valign="top">
+<h4>📊 Analytics</h4>
+
+<ul>
+<li>Dashboard predictivo</li>
+<li>Heatmaps de asistencia</li>
+<li>Reportes ejecutivos automáticos</li>
+</ul>
+
+</td>
+<td width="33%" valign="top">
+<h4>🔗 Integraciones</h4>
+
+<ul>
+<li>Slack, Telegram (canales adicionales)</li>
+<li>Integración con sistemas de planilla</li>
+<li>API pública para terceros</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<div align="center">
+
+<strong>Propuesta C: 100% WhatsApp</strong> | ⭐ RECOMENDADA | Versión 1.0 | Octubre 2025
+
+</div>
+
+  </article>
+  
+  <!-- Botón volver al índice -->
+  <a href="index.html" class="back-to-index" title="Volver al índice">
+    📋 Índice
+  </a>
+  
+  <!-- Botón volver al inicio -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver al inicio">
+    ↑
+  </button>
+  
+  <script>
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

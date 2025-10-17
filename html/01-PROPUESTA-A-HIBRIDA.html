@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Propuesta A: Solución Híbrida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <style>
+    body { background: #fff; margin: 0; padding: 0; }
+    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: auto; padding: 2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f6f8fa; font-weight: bold; }
+    .mermaid { background: #f9f9f9; margin: 2em 0; padding: 1em; border-radius: 8px; }
+    img[alt] { max-width: 100%; height: auto; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+    
+    /* Botón volver al inicio */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #0066CC;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background: #0052a3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    
+    /* Botón volver al índice */
+    .back-to-index {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #667eea;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-index:hover {
+      background: #5568d3;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+  <script>
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+  </script>
+</head>
+<body>
+  <article class="markdown-body">
+<h1 id="propuesta-a-solucion-hibrida">🔵 PROPUESTA A: SOLUCIÓN HÍBRIDA</h1>
+
+<h2 id="biometrico-on-site-whatsapp-remoto">Biométrico On-site + WhatsApp Remoto</h2>
+
+<hr />
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Propuesta-A-0066CC?style=for-the-badge" alt="Propuesta" title="Propuesta">
+<img src="https://img.shields.io/badge/Inversi%C3%B3n_Inicial-S/_3%2C980-00C851?style=for-the-badge" alt="Inversión" title="Inversión">
+<img src="https://img.shields.io/badge/Costo_Mensual-S/_162-FFB800?style=for-the-badge" alt="Mensual" title="Mensual">
+<img src="https://img.shields.io/badge/Implementaci%C3%B3n-6--8_semanas-9B59B6?style=for-the-badge" alt="Implementación" title="Implementación">
+
+</div>
+
+<hr />
+
+<h2 id="concepto-de-la-solucion">🎯 CONCEPTO DE LA SOLUCIÓN</h2>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>💼 Para Empleados On-site</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado llega] --> B[👆 Coloca dedo<br/>en lector]
+    B --> C[⚡ Validación<br/>instantánea]
+    C --> D[📺 Pantalla LCD muestra:<br/>Nombre + Hora + Tipo<br/>LED verde + beep]
+    D --> E[📊 Registro en<br/>sistema central]
+
+    style A fill:#4A90E2
+    style B fill:#FFB800
+    style C fill:#25D366
+    style D fill:#00C851
+    style E fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: &lt; 3 segundos</strong>
+<h4>📺 Feedback Visual en Pantalla LCD:</h4>
+<ul>
+  <li>👤 <strong>Nombre del empleado</strong> reconocido</li>
+  <li>⏰ <strong>Hora exacta</strong> del registro (08:15 AM)</li>
+  <li>🚪 <strong>Tipo de marcación</strong> (ENTRADA / SALIDA)</li>
+  <li>✅ LED verde + sonido confirmación exitosa</li>
+  <li>❌ LED rojo + mensaje si huella no reconocida</li>
+</ul>
+
+<ul>
+  <li>✅ Sin necesidad de smartphone</li>
+  <li>✅ Verificación biométrica real</li>
+  <li>✅ Imposible suplantación de identidad</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h3>🌎 Para Empleados Remotos</h3>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TD
+    A[👤 Empleado remoto] --> B[💬 Abre WhatsApp]
+    B --> C[🔑 Ingresa token]
+    C --> D[📸 Toma selfie]
+    D --> E[📍 Comparte ubicación]
+    E --> F[✅ Registro confirmado]
+
+    style A fill:#4A90E2
+    style B fill:#25D366
+    style C fill:#FFB800
+    style D fill:#E94B3C
+    style E fill:#00C851
+    style F fill:#336791
+
+</div>
+<p>
+
+</div>
+
+<strong>Tiempo total: ~20 segundos</strong>
+
+✅ Desde cualquier lugar
+✅ Validación facial + ubicación
+✅ Sin apps adicionales (usa WhatsApp)
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="propuesta-de-valor">💡 PROPUESTA DE VALOR</h2>
+
+<div align="center">
+<h3>¿Por qué es la mejor opción balanceada?</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<h3>🎯</h3>
+<strong>VERSATILIDAD</strong>
+
+Un solo sistema para dos realidades:
+<ul>
+  <li>Oficina física</li>
+  <li>Trabajo remoto</li>
+  <li>Horarios rotativos</li>
+  </ul>
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>💰</h3>
+<strong>COSTO-BENEFICIO</strong>
+
+Inversión moderada con máximo impacto:
+<ul>
+  <li>Hardware accesible</li>
+  <li>Sin dependencia de proveedores</li>
+  <li>Escalable según crecimiento</li>
+  </ul>
+
+</td>
+<td width="33%" align="center" valign="top">
+<h3>🔒</h3>
+<strong>SEGURIDAD</strong>
+
+Doble capa de protección:
+<ul>
+  <li>Biometría física en oficina</li>
+  <li>5 validaciones para remotos</li>
+  <li>Cumplimiento SUNAFIL total</li>
+  </ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="arquitectura-de-la-solucion">🏗️ ARQUITECTURA DE LA SOLUCIÓN</h2>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    subgraph Punto["📍 PUNTO DE MARCACIÓN - Entrada Principal"]
+        L1[👆 Lector USB<br/>ZKTeco ZK4500<br/>S/ 300]
+        RPI[🖥️ Raspberry Pi 4<br/>+ Display 7 pulgadas<br/>S/ 500]
+        L1 -.->|USB| RPI
+    end
+
+    subgraph Servidor["🏢 SERVIDOR LOCAL - OFICINA"]
+        API[⚙️ Backend NestJS<br/>+ PostgreSQL<br/>Intel i5, 16GB RAM<br/>S/ 2,500]
+    end
+
+    subgraph Remotos["🌎 EMPLEADOS REMOTOS"]
+        W1[📱 WhatsApp<br/>Empleado 1]
+        W2[📱 WhatsApp<br/>Empleado 2]
+        W3[📱 WhatsApp<br/>Empleado N]
+    end
+
+    subgraph Cloud["☁️ SERVICIOS EXTERNOS"]
+        WA[💬 WhatsApp<br/>Business API]
+        AWS[🔍 AWS Rekognition<br/>Liveness Detection]
+    end
+
+    subgraph Panel["💼 ADMINISTRACIÓN"]
+        BO[📊 Back Office Angular<br/>RRHH usa laptop para<br/>enrollar huellas iniciales]
+    end
+
+    RPI -->|WiFi/Ethernet<br/>Envía huella| API
+    API -->|Respuesta: ✅/❌<br/>Nombre + Hora| RPI
+
+    W1 -->|Internet| WA
+    W2 -->|Internet| WA
+    W3 -->|Internet| WA
+
+    WA -->|Webhook| API
+    API -.->|Validación facial| AWS
+    API -->|Intranet| BO
+
+    style Punto fill:#E3F2FD
+    style Servidor fill:#FFF3E0
+    style Remotos fill:#E8F5E9
+    style Cloud fill:#F3E5F5
+    style Panel fill:#FFE5CC
+
+</div>
+<p>
+
+</div>
+
+<h3 id="flujo-de-validacion-on-site">🔄 Flujo de Validación On-site</h3>
+
+<p><strong>Cuando un empleado marca:</strong></p>
+
+<ol>
+<li>👆 <strong>Empleado coloca dedo</strong> en lector USB (ZKTeco ZK4500)</li>
+<li>🖥️ <strong>Raspberry Pi captura</strong> la imagen de la huella vía USB</li>
+<li>📡 <strong>Raspberry envía</strong> huella al servidor central por WiFi/Ethernet</li>
+<li>⚙️ <strong>Servidor valida</strong> contra PostgreSQL (busca coincidencia)</li>
+<li>✅ <strong>Servidor responde</strong> al Raspberry: "✅ Juan Pérez - ENTRADA - 08:15 AM"</li>
+<li>📺 <strong>Pantalla muestra</strong> mensaje de confirmación al empleado</li>
+<li>🔔 <strong>Beep sonoro</strong> de confirmación</li>
+</ol>
+
+<p><strong>Tiempo total:</strong> &lt; 3 segundos</p>
+
+<hr />
+
+<h3 id="proceso-de-registro-enrollment-de-empleados">🆕 PROCESO DE REGISTRO (ENROLLMENT) DE EMPLEADOS</h3>
+
+<h4 id="como-se-inscriben-las-huellas-de-los-empleados-en-el-sistema">¿Cómo se inscriben las huellas de los empleados en el sistema?</h4>
+
+<p><strong>✅ La forma más económica - SIN EQUIPO ADICIONAL:</strong></p>
+
+<p>Usamos el <strong>mismo lector ZKTeco ZK4500</strong> que ya compramos para el punto de marcación. El proceso es simple:</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart LR
+    subgraph RRHH["💼 OFICINA DE RRHH"]
+        L[👆 Lector ZKTeco ZK4500<br/>conectado por USB]
+        LAPTOP[💻 Laptop de RRHH<br/>con navegador web]
+        L -->|USB| LAPTOP
+    end
+
+    subgraph SERVER["🖥️ SERVIDOR"]
+        API[⚙️ Back Office Angular<br/>Módulo de Enrollment]
+    end
+
+    LAPTOP -->|WiFi/LAN| API
+
+    style RRHH fill:#E8F5E9
+    style SERVER fill:#FFF3E0
+
+</div>
+<p>
+
+</div>
+
+<h4 id="pasos-para-inscribir-un-nuevo-empleado">📋 Pasos para Inscribir un Nuevo Empleado</h4>
+
+<table>
+<thead>
+<tr>
+<th width="10%">Paso</th>
+<th width="50%">Acción</th>
+<th width="40%">Detalles</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td align="center">1️⃣</td>
+<td><strong>RRHH conecta lector a su laptop</strong></td>
+<td>
+• Desconecta temporalmente el lector del Raspberry Pi<br/>
+• Lo conecta por USB a su laptop<br/>
+• <em>O mejor: compra un 2º lector solo para enrollment (S/ 300 extra, opcional)</em>
+</td>
+</tr>
+
+<tr>
+<td align="center">2️⃣</td>
+<td><strong>Abre el Back Office web</strong></td>
+<td>
+• Ingresa desde navegador a: <code>http://servidor-local/admin</code><br/>
+• Login con credenciales de RRHH<br/>
+• Va a sección: <strong>"Empleados → Registrar Nuevo"</strong>
+</td>
+</tr>
+
+<tr>
+<td align="center">3️⃣</td>
+<td><strong>Llena datos del empleado</strong></td>
+<td>
+• Nombre completo<br/>
+• DNI<br/>
+• Área/departamento<br/>
+• Horario asignado<br/>
+• Foto de perfil (para reconocimiento facial remoto)
+</td>
+</tr>
+
+<tr>
+<td align="center">4️⃣</td>
+<td><strong>Captura huellas dactilares</strong></td>
+<td>
+• Click en botón <strong>"Registrar Huella"</strong><br/>
+• Sistema activa el lector USB<br/>
+• Empleado coloca dedo índice derecho (3 veces)<br/>
+• Luego dedo índice izquierdo (3 veces - backup)<br/>
+• Sistema genera template biométrico y lo guarda en PostgreSQL
+</td>
+</tr>
+
+<tr>
+<td align="center">5️⃣</td>
+<td><strong>Confirma y guarda</strong></td>
+<td>
+• Sistema valida que las 3 capturas coincidan<br/>
+• Guarda empleado + template de huella en base de datos<br/>
+• Asigna token de WhatsApp (para modalidad remota)<br/>
+• ✅ <strong>Empleado listo para marcar asistencia</strong>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h4 id="tiempo-de-enrollment-por-empleado">⏱️ Tiempo de Enrollment por Empleado</h4>
+
+<ul>
+<li><strong>Llenar datos:</strong> ~2 minutos</li>
+<li><strong>Capturar huellas (6 capturas):</strong> ~1 minuto</li>
+<li><strong>Validación y guardado:</strong> ~30 segundos</li>
+</ul>
+
+<p><strong>Total:</strong> ~3.5 minutos por empleado</p>
+
+<p>Para 50 empleados: <strong>~3 horas</strong> (puede hacerse en 1 tarde)</p>
+
+<h4 id="recomendaciones">💡 Recomendaciones</h4>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>✅ Opción Económica (S/ 0 extra)</h3>
+
+<strong>Usar el mismo lector del punto de marcación:</strong>
+<ul>
+  <li>Temporalmente desconectas el lector del Raspberry Pi</li>
+  <li>Lo conectas a laptop de RRHH durante enrollment</li>
+  <li>Cuando terminas, lo vuelves a conectar al Raspberry Pi</li>
+  
+  <li><strong>Ventajas:</strong>
+    <ul>
+      <li>✅ Costo cero, ya tienes el lector</li>
+      <li>✅ Mismo sensor para enrollment y marcación (consistencia)</li>
+    </ul>
+  </li>
+  
+  <li><strong>Desventajas:</strong>
+    <ul>
+      <li>❌ Punto de marcación queda inactivo durante enrollment</li>
+      <li>❌ Tienes que desconectar/reconectar cables</li>
+    </ul>
+  </li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h3>⭐ Opción Recomendada (S/ 300 extra)</h3>
+
+<strong>Comprar un 2º lector dedicado para RRHH:</strong>
+<ul>
+  <li>Compras otro ZKTeco ZK4500 (S/ 300)</li>
+  <li>Queda permanentemente en laptop de RRHH</li>
+  <li>Punto de marcación nunca se interrumpe</li>
+  
+  <li><strong>Ventajas:</strong>
+    <ul>
+      <li>✅ Enrollment sin interrumpir operación</li>
+      <li>✅ RRHH puede re-enrollar empleados cuando necesite</li>
+      <li>✅ No hay que mover cables</li>
+      <li>✅ Más cómodo para actualizaciones masivas</li>
+    </ul>
+  </li>
+  
+  <li><strong>Recomendación:</strong> Si tienes más de 30 empleados, vale la pena la inversión</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<h4 id="seguridad-del-proceso">🔐 Seguridad del Proceso</h4>
+
+<p><strong>¿Cómo evitamos que alguien manipule el enrollment?</strong></p>
+
+<ol>
+<li><strong>🔒 Autenticación:</strong> Solo usuarios con rol "RRHH" pueden acceder al módulo de enrollment</li>
+<li><strong>📝 Auditoría:</strong> Cada enrollment queda registrado con timestamp + usuario que lo realizó</li>
+<li><strong>🖼️ Foto obligatoria:</strong> Se exige foto del empleado (para validación facial en remoto)</li>
+<li><strong>🔢 DNI único:</strong> No se puede registrar dos veces el mismo DNI</li>
+<li><strong>👆 Múltiples capturas:</strong> Se requieren 3 capturas del mismo dedo para validar consistencia</li>
+<li><strong>📊 Logs inmutables:</strong> PostgreSQL registra quién, cuándo y desde dónde se hizo el enrollment</li>
+</ol>
+
+<hr />
+
+<h3 id="componentes-del-sistema">📦 Componentes del Sistema</h3>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Componente</th>
+<th width="50%">Descripción</th>
+<th width="25%">Beneficio Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>👆 <strong>Lector de Huella USB</strong></td>
+<td>Sensor biométrico simple (ZKTeco ZK4500) sin base de datos interna. Solo captura la huella y la envía vía USB al Raspberry Pi</td>
+<td><strong>Económico</strong> (S/ 300) y reemplazable</td>
+</tr>
+<tr>
+<td>🖥️ <strong>Raspberry Pi 4 + Display</strong></td>
+<td>Mini computadora con pantalla táctil 7". Ejecuta app web en modo kiosk que: (1) recibe huella del lector USB, (2) envía al servidor, (3) muestra resultado en pantalla</td>
+<td><strong>Personalizable</strong> y actualizable remotamente</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Servidor Local Central</strong></td>
+<td>Servidor físico en oficina (Intel i5, 16GB RAM, 512GB SSD) con NestJS + PostgreSQL. Toda la lógica de validación y DB de empleados está aquí</td>
+<td><strong>Control total</strong>, datos en Perú</td>
+</tr>
+<tr>
+<td>💬 <strong>WhatsApp Business</strong></td>
+<td>Canal oficial de Meta para empleados remotos con flujos interactivos</td>
+<td><strong>Familiar</strong> para usuarios</td>
+</tr>
+<tr>
+<td>🔍 <strong>AWS Rekognition</strong></td>
+<td>Servicio cloud para validación facial (liveness detection) de empleados remotos</td>
+<td>Evita fraude con <strong>fotos</strong></td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office Angular</strong></td>
+<td>Panel web administrativo accesible desde intranet</td>
+<td>Visibilidad <strong>tiempo real</strong></td>
+</tr>
+<tr>
+<td>🗄️ <strong>PostgreSQL</strong></td>
+<td>Base de datos local con registros inmutables y firma digital SHA-256</td>
+<td><strong>Garantía legal</strong> SUNAFIL</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ventajas-de-esta-arquitectura">⚡ Ventajas de esta Arquitectura</h3>
+
+<p><strong>vs Propuesta B (Terminales inteligentes):</strong></p>
+
+<ul>
+<li>✅ <strong>S/ 3,820 más económico</strong> (S/ 3,980 vs S/ 7,800)</li>
+<li>✅ <strong>Pantalla personalizable</strong> - Puedes cambiar colores, textos, logos sin depender del fabricante</li>
+<li>✅ <strong>Actualizaciones remotas</strong> - Software se actualiza sin tocar hardware</li>
+<li>✅ <strong>Componentes reemplazables</strong> - Si falla algo, cambias solo esa parte</li>
+<li>✅ <strong>Sin vendor lock-in</strong> - No dependes de un fabricante específico</li>
+</ul>
+
+<p><strong>Desventajas vs Propuesta B:</strong></p>
+
+<ul>
+<li>❌ <strong>Requiere conexión red</strong> - No funciona offline</li>
+<li>❌ <strong>Instalación más compleja</strong> - Varios componentes por punto</li>
+<li>❌ <strong>Sin certificación ISO</strong> - No tiene sello del fabricante (pero cumple SUNAFIL igual)</li>
+</ul>
+
+<hr />
+
+<h2 id="validaciones-de-seguridad">🔐 VALIDACIONES DE SEGURIDAD</h2>
+
+<h3 id="para-empleados-on-site-biometrico">Para Empleados On-site (Biométrico)</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">#</th>
+      <th>Validación</th>
+      <th>Objetivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;">1️⃣</td>
+      <td><strong>Huella dactilar</strong></td>
+      <td>Identificación biométrica real</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">2️⃣</td>
+      <td><strong>Usuario registrado</strong></td>
+      <td>Verificar que esté en base de datos</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">3️⃣</td>
+      <td><strong>Horario permitido</strong></td>
+      <td>Validar que esté dentro de su turno</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">4️⃣</td>
+      <td><strong>No duplicado</strong></td>
+      <td>Evitar múltiples marcaciones en &lt; 15 min</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">5️⃣</td>
+      <td><strong>Firma digital</strong></td>
+      <td>Registro con hash SHA-256 inmutable</td>
+    </tr>
+  </tbody>
+  </table>
+
+</div>
+
+<h3 id="para-empleados-remotos-whatsapp">Para Empleados Remotos (WhatsApp)</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">#</th>
+      <th>Validación</th>
+      <th>Objetivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;">1️⃣</td>
+      <td><strong>Token personal</strong></td>
+      <td>Código de 6 dígitos rotatorio (cambia cada 3 meses)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">2️⃣</td>
+      <td><strong>Liveness detection</strong></td>
+      <td>Verificar que es una persona viva (no foto estática)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">3️⃣</td>
+      <td><strong>Facial matching</strong></td>
+      <td>Comparar selfie con foto de perfil (&gt; 90% similitud)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">4️⃣</td>
+      <td><strong>Device fingerprint</strong></td>
+      <td>Validar que es el mismo dispositivo autorizado</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">5️⃣</td>
+      <td><strong>Geolocalización</strong></td>
+      <td>Verificar que está en zona permitida (radio 500m)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">6️⃣</td>
+      <td><strong>Horario permitido</strong></td>
+      <td>Validar turno asignado</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">7️⃣</td>
+      <td><strong>No duplicado</strong></td>
+      <td>Evitar doble marcación</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">8️⃣</td>
+      <td><strong>Firma digital</strong></td>
+      <td>Registro inmutable</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<hr />
+
+<h2 id="inversion-y-costos">💰 INVERSIÓN Y COSTOS</h2>
+
+<h3 id="desglose-financiero">Desglose Financiero</h3>
+
+<table>
+<thead>
+<tr>
+<th width="40%">Concepto</th>
+<th width="15%" align="center">Cantidad</th>
+<th width="20%" align="right">Precio Unit.</th>
+<th width="25%" align="right">Subtotal</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background-color: #E3F2FD;">
+<td colspan="4"><strong>💰 INVERSIÓN INICIAL (Una sola vez)</strong></td>
+</tr>
+
+<tr>
+<td>👆 <strong>Lector de Huella Simple</strong> (ZKTeco ZK4500 USB)<br/><sub>Sin DB interna, solo sensor - También usado para enrollment</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 300</td>
+<td align="right"><strong>S/ 300</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ <strong>Raspberry Pi 4 + Display 7"</strong><br/><sub>Mini computadora + pantalla táctil para punto de marcación</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 500</td>
+<td align="right"><strong>S/ 500</strong></td>
+</tr>
+
+<tr>
+<td>📦 <strong>Carcasa y soporte de pared</strong></td>
+<td align="center">1</td>
+<td align="right">S/ 80</td>
+<td align="right"><strong>S/ 80</strong></td>
+</tr>
+
+<tr>
+<td>🔌 <strong>Cables y accesorios</strong><br/><sub>USB, HDMI, power supplies</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 50</td>
+<td align="right"><strong>S/ 50</strong></td>
+</tr>
+
+<tr>
+<td>🔌 Switch de red (8 puertos)</td>
+<td align="center">1</td>
+<td align="right">S/ 150</td>
+<td align="right"><strong>S/ 150</strong></td>
+</tr>
+
+<tr>
+<td>🖥️ <strong>Servidor Local Físico</strong><br/><sub>Mini PC / Torre: Intel i5, 16GB RAM, 512GB SSD</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 2,500</td>
+<td align="right"><strong>S/ 2,500</strong></td>
+</tr>
+
+<tr>
+<td>🔧 Instalación y configuración</td>
+<td align="center">-</td>
+<td align="right">-</td>
+<td align="right"><strong>S/ 400</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL INVERSIÓN INICIAL</strong></td>
+<td align="right"><strong>S/ 3,980</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #FFF3E0;">
+<td colspan="4"><strong>📅 COSTOS OPERATIVOS MENSUALES</strong></td>
+</tr>
+
+<tr>
+<td>⚡ Electricidad servidor local<br/><sub>Consumo aprox. 100W 24/7</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 50/mes</td>
+<td align="right"><strong>S/ 50</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp Business API<br/><sub>Conversaciones iniciadas por usuario = GRATIS<br/>Solo se cobra si envías recordatorios automáticos</sub></td>
+<td align="center">1</td>
+<td align="right">S/ 0/mes</td>
+<td align="right"><strong>S/ 0</strong></td>
+</tr>
+
+<tr>
+<td>🔍 Liveness detection (AWS Rekognition)<br/><sub>~1,000 validaciones/mes</sub></td>
+<td align="center">-</td>
+<td align="right">S/ 0.0037/validación</td>
+<td align="right"><strong>S/ 75</strong></td>
+</tr>
+
+<tr>
+<td>💾 Backups (disco duro externo)</td>
+<td align="center">1</td>
+<td align="right">S/ 37.50/mes</td>
+<td align="right"><strong>S/ 37.50</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL MENSUAL (sin recordatorios)</strong></td>
+<td align="right"><strong>S/ 162.50/mes</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL ANUAL</strong></td>
+<td align="right"><strong>S/ 1,950/año</strong></td>
+</tr>
+
+<tr><td colspan="4">&nbsp;</td></tr>
+
+<tr style="background-color: #E8F5E9;">
+<td colspan="4"><strong>💡 OPCIÓN CON RECORDATORIOS AUTOMÁTICOS (Opcional)</strong></td>
+</tr>
+
+<tr>
+<td>💬 WhatsApp - Recordatorios proactivos<br/><sub>Solo empleados remotos, ~220 mensajes/mes</sub></td>
+<td align="center">Opcional</td>
+<td align="right">S/ 44/mes</td>
+<td align="right"><strong>+ S/ 44</strong></td>
+</tr>
+
+<tr style="background-color: #f9f9f9; font-weight: bold;">
+<td colspan="3"><strong>TOTAL MENSUAL (con recordatorios)</strong></td>
+<td align="right"><strong>S/ 206.50/mes</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="proyeccion-a-3-anos">📊 Proyección a 3 Años</h3>
+
+<div align="center">
+
+<strong>Escenario Base (Sin recordatorios automáticos):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 3,980</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 3,980</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">S/ 5,930</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;">S/ 7,880</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 1,950</td>
+      <td style="text-align:right;"><strong>S/ 9,830</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<strong>Costo mensual promedio: S/ 162.50/mes</strong>
+
+---
+
+<strong>Escenario con Recordatorios (Opcional):</strong>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Año</th>
+      <th style="text-align:right;">Inversión</th>
+      <th style="text-align:right;">Operativo</th>
+      <th style="text-align:right;">Acumulado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><strong>0</strong></td>
+      <td style="text-align:right;">S/ 3,980</td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 3,980</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>1</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,478</td>
+      <td style="text-align:right;">S/ 6,458</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>2</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,478</td>
+      <td style="text-align:right;">S/ 8,936</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>3</strong></td>
+      <td style="text-align:right;">-</td>
+      <td style="text-align:right;">S/ 2,478</td>
+      <td style="text-align:right;"><strong>S/ 11,414</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<strong>Costo mensual promedio: S/ 206.50/mes</strong>
+
+</div>
+
+<hr />
+
+<h2 id="ventajas-competitivas">✅ VENTAJAS COMPETITIVAS</h2>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>✨ Fortalezas</h3>
+
+<ol>
+  <li><strong>🎯 Balance óptimo</strong> entre costo y seguridad</li>
+  <li><strong>🔐 Biometría física</strong> en oficina (máxima seguridad)</li>
+  <li><strong>📱 Flexibilidad remota</strong> con WhatsApp (comodidad)</li>
+  <li><strong>💰 Inversión económica</strong> (S/ 3,980 inicial - solo 1 punto)</li>
+  <li><strong>🖥️ Servidor local</strong> (control total, datos en Perú)</li>
+  <li><strong>🔧 Sin dependencia</strong> de proveedores cloud</li>
+  <li><strong>📈 Escalable</strong> (agregar puntos por solo S/ 930 c/u)</li>
+  <li><strong>✅ Cumplimiento SUNAFIL</strong> garantizado</li>
+  <li><strong>⚡ Implementación flexible</strong> (5-8 semanas según necesidades)</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h3>⚠️ Consideraciones</h3>
+
+<ol>
+  <li><strong>🔌 Requiere instalación</strong> de hardware en oficina</li>
+  <li><strong>🔧 Mantenimiento moderado</strong> de lectores biométricos</li>
+  <li><strong>📡 Dependencia de conectividad</strong> WiFi/Ethernet</li>
+  <li><strong>👥 Capacitación necesaria</strong> para administradores</li>
+  <li><strong>⏳ Tiempo de implementación</strong> mayor que Propuesta C</li>
+  <li><strong>🔄 Actualizaciones</strong> de firmware de lectores</li>
+</ol>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h2 id="casos-de-uso">🎬 CASOS DE USO</h2>
+
+<h3 id="escenario-1-empresa-con-oficina-central-y-remotos">Escenario 1: Empresa con Oficina Central y Remotos</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>30 empleados en oficina</li>
+  <li>15 empleados remotos</li>
+  <li>Horarios rotativos (mañana/tarde)</li>
+  <li>Necesidad de cumplimiento SUNAFIL</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>1 lector biométrico en entrada principal</li>
+  <li>Todos los empleados con acceso WhatsApp</li>
+  <li>Dashboard para RRHH con visibilidad total</li>
+  <li>Reportes automáticos mensuales</li>
+  <li><em>Opcionalmente: 1 lector extra para RRHH (enrollment)</em></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>⏱️ Tiempo de marcación on-site: &lt; 3 seg</li>
+<li>⏱️ Tiempo de marcación remota: &lt; 25 seg</li>
+<li>✅ 100% cumplimiento normativo</li>
+<li>📊 Reportes en 5 minutos vs 15 horas antes</li>
+</ul>
+
+<hr />
+
+<h3 id="escenario-2-empresa-con-multiples-turnos">Escenario 2: Empresa con Múltiples Turnos</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>📍 Contexto</h4>
+
+<ul>
+  <li>50 empleados en 3 turnos (mañana, tarde, noche)</li>
+  <li>Personal de seguridad 24/7</li>
+  <li>Alta rotación de personal</li>
+  <li>Auditorías frecuentes de SUNAFIL</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>✅ Solución</h4>
+
+<ul>
+  <li>1 lector biométrico en entrada principal (escalable a más puntos)</li>
+  <li>Configuración de horarios rotativos en sistema</li>
+  <li>Alertas automáticas de ausencias</li>
+  <li>Modalidad WhatsApp para personal en campo</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<p><strong>Resultado esperado:</strong></p>
+
+<ul>
+<li>🔒 Cero suplantaciones de identidad</li>
+<li>📋 Trazabilidad completa para auditorías</li>
+<li>⏰ Gestión automatizada de turnos rotativos</li>
+<li>💾 Continuidad operativa con buffer offline</li>
+</ul>
+
+<hr />
+
+<h2 id="plan-de-implementacion-poc">📊 PLAN DE IMPLEMENTACIÓN (PoC)</h2>
+
+<h3 id="estrategia-implementacion-por-fases">Estrategia: Implementación por Fases</h3>
+
+<p><strong>🎯 Primero:</strong> Sistema biométrico (core del negocio)<br />
+<strong>🎯 Después:</strong> Integración WhatsApp (funcionalidad adicional)</p>
+
+<hr />
+
+<h3 id="fase-1-poc-sistema-biometrico-5-semanas">📍 FASE 1: PoC SISTEMA BIOMÉTRICO (5 semanas)</h3>
+
+<p><strong>Objetivo:</strong> Validar que el sistema físico funciona perfectamente antes de agregar complejidad</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+gantt
+    title Fase 1 - PoC Sistema Biométrico (5 semanas)
+    dateFormat YYYY-MM-DD
+    section Preparación
+    Adquisición de hardware          :prep1, 2025-11-01, 5d
+    Configuración servidor           :prep2, after prep1, 2d
+
+    section Desarrollo
+    Backend biométrico (NestJS + PostgreSQL)    :dev1, 2025-11-08, 10d
+    Frontend Back Office (Angular)              :dev2, 2025-11-08, 10d
+    Integración lector ZKTeco                   :dev3, 2025-11-15, 5d
+
+    section Testing
+    Pruebas internas                 :test1, 2025-11-22, 5d
+    Pruebas con 10 usuarios reales   :test2, 2025-11-27, 5d
+
+    section Validación
+    Ajustes y correcciones           :fix1, 2025-12-02, 3d
+    Aprobación PoC Fase 1            :close, 2025-12-05, 1d
+
+</div>
+<p>
+
+</div>
+
+<h4 id="entregables-fase-1-solo-biometrico">Entregables Fase 1 (Solo Biométrico)</h4>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Entregable</th>
+<th width="50%">Descripción</th>
+<th width="20%">Semana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔐 <strong>Punto de Marcación Instalado</strong></td>
+<td>Lector ZKTeco + Raspberry Pi + Display funcionando</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td>🖥️ <strong>Servidor Configurado</strong></td>
+<td>NestJS + PostgreSQL en servidor local</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>⚙️ <strong>Backend Biométrico</strong></td>
+<td>API REST para validación de huellas + registro de marcaciones</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>📊 <strong>Back Office Web</strong></td>
+<td>Panel Angular con: enrollment, gestión empleados, reportes, dashboard tiempo real</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>👥 <strong>Testing con Usuarios</strong></td>
+<td>10 empleados on-site probando el sistema durante 1 semana</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td>📈 <strong>Reporte de Resultados</strong></td>
+<td>KPIs, métricas de rendimiento y recomendaciones</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="criterios-de-exito-fase-1">Criterios de Éxito Fase 1</h4>
+
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>KPI</th>
+      <th>Objetivo</th>
+      <th>Medición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⏱️ <strong>Tiempo de marcación</strong></td>
+      <td>&lt; 3 seg</td>
+      <td>Promedio de 100 registros</td>
+    </tr>
+    <tr>
+      <td>🎯 <strong>Tasa de éxito biométrico</strong></td>
+      <td>&gt; 99%</td>
+      <td>Lecturas exitosas / total intentos</td>
+    </tr>
+    <tr>
+      <td>🔒 <strong>Cero suplantaciones</strong></td>
+      <td>100%</td>
+      <td>Intentos de fraude bloqueados</td>
+    </tr>
+    <tr>
+      <td>👥 <strong>Satisfacción de usuarios</strong></td>
+      <td>&gt; 4/5 ⭐</td>
+      <td>Encuesta post-testing</td>
+    </tr>
+    <tr>
+      <td>✅ <strong>Disponibilidad del sistema</strong></td>
+      <td>&gt; 99.5%</td>
+      <td>Uptime durante semana de pruebas</td>
+    </tr>
+    <tr>
+      <td>📊 <strong>Generación de reportes</strong></td>
+      <td>&lt; 5 min</td>
+      <td>Reporte SUNAFIL mensual completo</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<hr />
+
+<h3 id="fase-2-integracion-whatsapp-3-semanas">📱 FASE 2: INTEGRACIÓN WHATSAPP (3 semanas)</h3>
+
+<p><strong>Requisito previo:</strong> ✅ Fase 1 aprobada y funcionando</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+gantt
+    title Fase 2 - Integración WhatsApp (3 semanas)
+    dateFormat YYYY-MM-DD
+    section Desarrollo
+    Configuración WhatsApp Business API  :dev1, 2025-12-08, 5d
+    Integración AWS Rekognition          :dev2, 2025-12-08, 5d
+    Desarrollo flujos conversacionales   :dev3, 2025-12-13, 5d
+
+    section Testing
+    Pruebas internas WhatsApp            :test1, 2025-12-18, 3d
+    Pruebas con 5 usuarios remotos       :test2, 2025-12-21, 5d
+
+    section Validación
+    Ajustes finales                      :fix1, 2025-12-26, 2d
+    Aprobación PoC completo              :close, 2025-12-28, 1d
+
+</div>
+<p>
+
+</div>
+
+<h4 id="entregables-fase-2-whatsapp">Entregables Fase 2 (WhatsApp)</h4>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Entregable</th>
+<th width="50%">Descripción</th>
+<th width="20%">Semana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💬 <strong>WhatsApp Business Activo</strong></td>
+<td>Cuenta oficial Meta verificada y configurada</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td>🔍 <strong>AWS Rekognition Integrado</strong></td>
+<td>Liveness detection + facial matching funcionando</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td>🤖 <strong>Flujos Conversacionales</strong></td>
+<td>Chatbot para marcación entrada/salida con validaciones</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>👥 <strong>Testing Remoto</strong></td>
+<td>5 empleados remotos probando marcación por WhatsApp</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>📈 <strong>Reporte Final PoC</strong></td>
+<td>Sistema completo (biométrico + WhatsApp) validado</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="criterios-de-exito-fase-2">Criterios de Éxito Fase 2</h4>
+
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>KPI</th>
+      <th>Objetivo</th>
+      <th>Medición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⏱️ <strong>Tiempo de marcación WhatsApp</strong></td>
+      <td>&lt; 30 seg</td>
+      <td>Promedio de 50 registros</td>
+    </tr>
+    <tr>
+      <td>🎯 <strong>Tasa de completación flujo</strong></td>
+      <td>&gt; 95%</td>
+      <td>Flujos completados / iniciados</td>
+    </tr>
+    <tr>
+      <td>🔒 <strong>Detección de fotos estáticas</strong></td>
+      <td>100%</td>
+      <td>Liveness detection rechazando fotos</td>
+    </tr>
+    <tr>
+      <td>📍 <strong>Validación de ubicación</strong></td>
+      <td>&gt; 98%</td>
+      <td>Empleados dentro de zona permitida</td>
+    </tr>
+    <tr>
+      <td>👥 <strong>Satisfacción usuarios remotos</strong></td>
+      <td>&gt; 4/5 ⭐</td>
+      <td>Encuesta post-testing</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<hr />
+
+<h3 id="ventajas-de-implementar-por-fases">✅ Ventajas de Implementar por Fases</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>🎯 Por qué Primero el Biométrico</h4>
+
+<ol>
+  <li><strong>Es el core del negocio</strong> - La mayoría de empleados están on-site</li>
+  <li><strong>Validación más simple</strong> - Solo 1 componente de hardware</li>
+  <li><strong>Menos dependencias</strong> - No requiere servicios externos (WhatsApp, AWS)</li>
+  <li><strong>Cumplimiento SUNAFIL inmediato</strong> - Con solo el biométrico ya cumples</li>
+  <li><strong>Menor costo inicial</strong> - Puedes arrancar sin pagar WhatsApp Business API</li>
+  <li><strong>Base sólida</strong> - Backend y DB ya probados antes de agregar WhatsApp</li>
+</ol>
+
+</td>
+<td width="50%" valign="top">
+<h4>📱 Por qué WhatsApp Después</h4>
+
+<ol>
+  <li><strong>Funcionalidad adicional</strong> - No todos tienen empleados remotos</li>
+  <li><strong>Mayor complejidad técnica</strong> - Webhooks, AWS, validaciones múltiples</li>
+  <li><strong>Dependencia de terceros</strong> - Meta, AWS (pueden fallar)</li>
+  <li><strong>Costos recurrentes</strong> - S/ 262.50/mes (puedes diferir el gasto)</li>
+  <li><strong>Requiere más testing</strong> - Liveness detection, geolocalización, etc.</li>
+  <li><strong>Opcional para algunas empresas</strong> - Si no hay remotos, se puede omitir</li>
+</ol>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h3 id="timeline-completo">📊 Timeline Completo</h3>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:center;">Semana</th>
+  <th>Fase</th>
+  <th>Actividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center;">1-2</td>
+  <td><strong>Fase 1</strong></td>
+  <td>Instalación hardware + desarrollo backend/frontend</td>
+</tr>
+<tr>
+  <td style="text-align:center;">3</td>
+  <td><strong>Fase 1</strong></td>
+  <td>Integración lector + testing interno</td>
+</tr>
+<tr>
+  <td style="text-align:center;">4</td>
+  <td><strong>Fase 1</strong></td>
+  <td>Pruebas con 10 usuarios reales</td>
+</tr>
+<tr>
+  <td style="text-align:center;">5</td>
+  <td><strong>Fase 1</strong></td>
+  <td>Ajustes + aprobación PoC biométrico</td>
+</tr>
+<tr>
+  <td style="text-align:center;">6-7</td>
+  <td><strong>Fase 2</strong></td>
+  <td>Desarrollo e integración WhatsApp + AWS</td>
+</tr>
+<tr>
+  <td style="text-align:center;">8</td>
+  <td><strong>Fase 2</strong></td>
+  <td>Testing con usuarios remotos + aprobación final</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Duración total PoC completo:</strong> 8 semanas<br />
+<strong>Duración PoC solo biométrico:</strong> 5 semanas (si no necesitas WhatsApp)</p>
+
+<hr />
+
+<h2 id="puesta-en-produccion">🚀 PUESTA EN PRODUCCIÓN</h2>
+
+<h3 id="dos-rutas-posibles">Dos Rutas Posibles</h3>
+
+<p>Después del PoC por fases, tienes <strong>2 opciones</strong> según tus necesidades:</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart TB
+    POC[✅ PoC Fase 1 Exitoso<br/>Semana 5: Biométrico funcionando]
+
+    POC --> DECISION{¿Necesitas<br/>WhatsApp?}
+
+    DECISION -->|NO| RUTA_A[🟢 RUTA A<br/>Solo Biométrico]
+    DECISION -->|SÍ| POC2[📱 PoC Fase 2<br/>WhatsApp<br/>Semanas 6-8]
+
+    POC2 --> RUTA_B[🔵 RUTA B<br/>Híbrido Completo]
+
+    style POC fill:#00C851
+    style DECISION fill:#FFB800
+    style RUTA_A fill:#4A90E2
+    style RUTA_B fill:#9B59B6
+
+</div>
+<p>
+
+</div>
+
+<hr />
+
+<h3 id="ruta-a-produccion-solo-biometrico">🟢 RUTA A: PRODUCCIÓN SOLO BIOMÉTRICO</h3>
+
+<p><strong>Ideal si:</strong> Solo tienes empleados on-site o no necesitas validación remota todavía</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart LR
+    A[✅ PoC Fase 1 OK<br/>Semana 5] --> B[📋 Enrollment Masivo<br/>Todos los empleados<br/>Semana 6]
+    B --> C[🚀 Go Live<br/>Lunes semana 7]
+    C --> D[🔧 Soporte Intensivo<br/>Semanas 7-8]
+    D --> E[✅ Operación Normal<br/>Desde semana 9]
+
+    style A fill:#00C851
+    style B fill:#4A90E2
+    style C fill:#FFB800
+    style D fill:#9B59B6
+    style E fill:#25D366
+
+</div>
+<p>
+
+</div>
+
+<h4 id="semana-6-enrollment-masivo-solo-huellas">Semana 6: Enrollment Masivo (Solo Huellas)</h4>
+
+<ul>
+<li><strong>RRHH enrolla a TODOS los empleados on-site</strong></li>
+<li>Registro de huellas con el lector ZKTeco</li>
+<li>Carga de datos básicos (nombre, DNI, horario)</li>
+<li><strong>NO se configura WhatsApp todavía</strong></li>
+<li><strong>Tiempo estimado:</strong> 3 min/empleado × 50 empleados = <strong>~2.5 horas</strong></li>
+</ul>
+
+<h4 id="semana-7-go-live-biometrico-lunes">Semana 7: Go Live Biométrico (Lunes)</h4>
+
+<ul>
+<li><strong>Sistema entra en producción</strong> desde el lunes</li>
+<li>Capacitación express (15 min) a empleados on-site:
+<ul>
+<li>Cómo colocar el dedo en el lector</li>
+<li>Qué hacer si la huella no se reconoce</li>
+<li>Cómo ver sus propios registros</li>
+</ul></li>
+<li>RRHH monitorea en tiempo real desde Back Office</li>
+<li>Soporte técnico on-site todo el día</li>
+</ul>
+
+<h4 id="semanas-7-8-soporte-intensivo">Semanas 7-8: Soporte Intensivo</h4>
+
+<ul>
+<li>Soporte on-site las primeras 2 semanas</li>
+<li>Resolución inmediata de problemas</li>
+<li>Re-enrollment si hay dedos con problemas</li>
+<li>Ajustes de configuración según feedback</li>
+</ul>
+
+<h4 id="desde-semana-9-operacion-normal">Desde Semana 9: Operación Normal</h4>
+
+<ul>
+<li>Sistema 100% autónomo</li>
+<li>Soporte remoto (email/teléfono)</li>
+<li>Monitoreo mensual de KPIs</li>
+</ul>
+
+<p><strong>💰 Costo mensual Ruta A:</strong> <strong>S/ 87.50</strong> (solo servidor + backups, sin WhatsApp ni AWS)</p>
+
+<hr />
+
+<h3 id="ruta-b-produccion-hibrida-completa">🔵 RUTA B: PRODUCCIÓN HÍBRIDA COMPLETA</h3>
+
+<p><strong>Ideal si:</strong> Tienes empleados remotos o de campo que necesitan marcar por WhatsApp</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart LR
+    A[✅ PoC Fase 2 OK<br/>Semana 8] --> B[📋 Enrollment Completo<br/>Huellas + WhatsApp<br/>Semana 9]
+    B --> C[🚀 Go Live Híbrido<br/>Lunes semana 10]
+    C --> D[🔧 Soporte Intensivo<br/>Semanas 10-11]
+    D --> E[✅ Operación Normal<br/>Desde semana 12]
+
+    style A fill:#00C851
+    style B fill:#4A90E2
+    style C fill:#FFB800
+    style D fill:#9B59B6
+    style E fill:#25D366
+
+</div>
+<p>
+
+</div>
+
+<h4 id="semana-9-enrollment-completo-huellas-whatsapp">Semana 9: Enrollment Completo (Huellas + WhatsApp)</h4>
+
+<ul>
+<li><strong>RRHH enrolla a TODOS los empleados</strong> (on-site + remotos)</li>
+<li>Empleados on-site: Huellas (como en Ruta A)</li>
+<li>Empleados remotos: Huellas + foto de perfil + token WhatsApp + zona GPS permitida</li>
+<li><strong>Tiempo estimado:</strong>
+<ul>
+<li>On-site: 3 min/empleado</li>
+<li>Remotos: 5 min/empleado (foto + configuración WhatsApp)</li>
+<li>Ejemplo: 40 on-site + 10 remotos = <strong>~3 horas</strong></li>
+</ul></li>
+</ul>
+
+<h4 id="semana-10-go-live-hibrido-lunes">Semana 10: Go Live Híbrido (Lunes)</h4>
+
+<ul>
+<li><strong>Sistema completo entra en producción</strong></li>
+<li>Capacitación diferenciada:
+<ul>
+<li><strong>Empleados on-site (15 min):</strong> Uso del lector biométrico</li>
+<li><strong>Empleados remotos (30 min):</strong> Flujo completo WhatsApp (token + selfie + ubicación)</li>
+</ul></li>
+<li>RRHH monitorea ambos canales en tiempo real</li>
+<li>Soporte on-site para biométrico + soporte remoto para WhatsApp</li>
+</ul>
+
+<h4 id="semanas-10-11-soporte-intensivo">Semanas 10-11: Soporte Intensivo</h4>
+
+<ul>
+<li>Soporte on-site para lector biométrico</li>
+<li>Soporte por WhatsApp para empleados remotos</li>
+<li>Resolución de problemas de liveness detection</li>
+<li>Ajuste de zonas GPS permitidas</li>
+<li>Re-enrollment si es necesario</li>
+</ul>
+
+<h4 id="desde-semana-12-operacion-normal">Desde Semana 12: Operación Normal</h4>
+
+<ul>
+<li>Sistema híbrido 100% autónomo</li>
+<li>Monitoreo de KPIs de ambos canales</li>
+<li>Soporte remoto continuo</li>
+</ul>
+
+<p><strong>💰 Costo mensual Ruta B:</strong> <strong>S/ 350</strong> (servidor + WhatsApp Business + AWS Rekognition + backups)</p>
+
+<hr />
+
+<h3 id="comparacion-de-rutas">📊 Comparación de Rutas</h3>
+
+<table>
+<thead>
+<tr>
+<th width="30%">Aspecto</th>
+<th width="35%">🟢 Ruta A (Solo Biométrico)</th>
+<th width="35%">🔵 Ruta B (Híbrido)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Duración PoC</strong></td>
+<td>5 semanas</td>
+<td>8 semanas</td>
+</tr>
+<tr>
+<td><strong>Go Live</strong></td>
+<td>Semana 7</td>
+<td>Semana 10</td>
+</tr>
+<tr>
+<td><strong>Inversión Inicial</strong></td>
+<td>S/ 3,980</td>
+<td>S/ 3,980 (mismo hardware)</td>
+</tr>
+<tr>
+<td><strong>Costo Mensual</strong></td>
+<td>S/ 87.50</td>
+<td>S/ 350</td>
+</tr>
+<tr>
+<td><strong>Costo Año 1</strong></td>
+<td>S/ 5,030</td>
+<td>S/ 8,180</td>
+</tr>
+<tr>
+<td><strong>Para quién</strong></td>
+<td>100% empleados on-site</td>
+<td>Empleados on-site + remotos</td>
+</tr>
+<tr>
+<td><strong>Complejidad</strong></td>
+<td>Baja</td>
+<td>Media</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Ninguna (todo local)</td>
+<td>WhatsApp API + AWS</td>
+</tr>
+<tr>
+<td><strong>¿Se puede migrar?</strong></td>
+<td>✅ Sí, de A → B en cualquier momento</td>
+<td>✅ Sí, de B → A (desactivar WhatsApp)</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="recomendacion">💡 Recomendación</h3>
+
+<p><strong>¿Cuál ruta elegir?</strong></p>
+
+<ol>
+<li><p><strong>Si NO tienes empleados remotos hoy:</strong></p>
+
+<ul>
+<li>✅ Empieza con <strong>Ruta A</strong> (solo biométrico)</li>
+<li>✅ Ahorra S/ 262.50/mes en costos operativos</li>
+<li>✅ Puedes migrar a Ruta B después cuando necesites WhatsApp</li>
+<li>✅ Go Live más rápido (semana 7 vs semana 10)</li>
+</ul></li>
+<li><p><strong>Si YA tienes empleados remotos:</strong></p>
+
+<ul>
+<li>✅ Implementa <strong>Ruta B</strong> completa desde el inicio</li>
+<li>✅ Solución integral para toda la empresa</li>
+<li>✅ Un solo sistema para todos</li>
+</ul></li>
+<li><p><strong>Si NO estás seguro:</strong></p>
+
+<ul>
+<li>✅ Empieza con <strong>Ruta A</strong></li>
+<li>✅ Valida el biométrico primero (core del negocio)</li>
+<li>✅ Agrega WhatsApp después si realmente lo necesitas</li>
+</ul></li>
+</ol>
+
+<hr />
+
+<h3 id="migracion-de-ruta-a-ruta-b">🔄 Migración de Ruta A → Ruta B</h3>
+
+<p>Si empiezas con solo biométrico y luego necesitas WhatsApp:</p>
+
+<div align="center">
+
+</p>
+<div class="mermaid">
+flowchart LR
+    A[Sistema Biométrico<br/>Funcionando] --> B[Desarrollo<br/>WhatsApp<br/>3 semanas]
+    B --> C[Re-enrollment<br/>Solo empleados remotos<br/>1 día]
+    C --> D[Go Live WhatsApp<br/>Sistema Híbrido]
+
+    style A fill:#4A90E2
+    style B fill:#FFB800
+    style C fill:#9B59B6
+    style D fill:#25D366
+
+</div>
+<p>
+
+</div>
+
+<p><strong>Ventaja:</strong> Los empleados on-site NO se ven afectados, siguen usando el biométrico normalmente</p>
+
+<h2 id="equipos-recomendados-y-proveedores">🛒 EQUIPOS RECOMENDADOS Y PROVEEDORES</h2>
+
+<h3 id="arquitectura-de-hardware-propuesta-a">Arquitectura de Hardware - Propuesta A</h3>
+
+<p>Esta propuesta usa <strong>lectores de huella SIMPLES</strong> (sin base de datos interna) + <strong>servidor central</strong> + <strong>pantallas de feedback</strong>.</p>
+
+<pre><code>[Lector Simple] --TCP/IP--&gt; [Servidor Central] ---&gt; [Pantalla Feedback]
+                              con PostgreSQL
+</code></pre>
+
+<p><strong>Diferencia clave con Propuesta B:</strong></p>
+
+<ul>
+<li>✅ Propuesta A: Lector "tonto" sin DB, servidor valida todo, más económico</li>
+<li>✅ Propuesta B: Terminal "inteligente" con DB interna, funciona offline, más caro</li>
+</ul>
+
+<hr />
+
+<h3 id="1-lectores-de-huella-sin-db-interna">1️⃣ Lectores de Huella (Sin DB Interna)</h3>
+
+<table>
+<thead>
+<tr>
+<th width="20%">Marca/Modelo</th>
+<th width="35%">Características</th>
+<th width="20%">Precio Referencial</th>
+<th width="25%">Dónde Comprar</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>🥇 ZKTeco ZK4500</strong><br/>(Recomendado)</td>
+<td>
+<ul>
+<li><strong>Solo sensor de huella</strong> (sin pantalla ni DB)<br/></li>
+<li>Sensor óptico FBI-certified<br/></li>
+<li>Conexión: USB 2.0<br/></li>
+<li>SDK gratuito para integración<br/></li>
+<li>Resolución: 500 DPI<br/></li>
+<li>Ideal para conectar a servidor</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 250 - S/ 350</strong></td>
+<td>
+<ul>
+<li><strong>Mercado Libre Perú</strong><br/></li>
+<li><strong>Amazon (importación)</strong><br/></li>
+<li><strong>Av. Wilson</strong> - Centro Lima<br/></li>
+<li>Distribuidores biométricos</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥈 Digital Persona U.are.U 4500</strong></td>
+<td>
+<ul>
+<li>Sensor de huella USB<br/></li>
+<li>Sin DB interna (solo lector)<br/></li>
+<li>SDK profesional incluido<br/></li>
+<li>Resolución: 512 DPI<br/></li>
+<li>Ampliamente usado en embajadas</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 400 - S/ 550</strong></td>
+<td>
+<ul>
+<li><strong>Distribuidores corporativos</strong><br/></li>
+<li><strong>Mercado Libre</strong><br/></li>
+<li>Importadores San Isidro<br/></li>
+<li>Online: eBay + courier</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥉 Suprema BioMini Plus 2</strong></td>
+<td>
+<ul>
+<li>Sensor compacto USB<br/></li>
+<li>Sin pantalla ni memoria<br/></li>
+<li>SDK gratuito<br/></li>
+<li>Certificado FBI PIV<br/></li>
+<li>Alta precisión</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 300 - S/ 450</strong></td>
+<td>
+<ul>
+<li><strong>Importadores especializados</strong><br/></li>
+<li>Tiendas de seguridad<br/></li>
+<li>Mercado Libre (verificar)</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>ZKTeco SLK20R</strong><br/>(Ethernet)</td>
+<td>
+<ul>
+<li>Lector con <strong>conexión Ethernet</strong><br/></li>
+<li>Sin DB ni pantalla integrada<br/></li>
+<li>Se conecta directo a red local<br/></li>
+<li>SDK incluido<br/></li>
+<li>Ideal para instalación remota</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 450 - S/ 600</strong></td>
+<td>
+<ul>
+<li><strong>Distribuidores ZKTeco</strong><br/></li>
+<li>Mercado Libre Perú<br/></li>
+<li>Av. Wilson - Lima Centro</li>
+</ul>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="2-pantallas-de-feedback-display-externo">2️⃣ Pantallas de Feedback (Display Externo)</h3>
+
+<table>
+<thead>
+<tr>
+<th width="25%">Opción</th>
+<th width="40%">Descripción</th>
+<th width="15%">Precio</th>
+<th width="20%">Ventajas</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>🥇 Raspberry Pi 4 + Display 7"</strong><br/>(Recomendado)</td>
+<td>
+<ul>
+<li>Raspberry Pi 4 (4GB RAM)<br/></li>
+<li>Pantalla táctil oficial 7"<br/></li>
+<li>Carcasa con soporte de pared<br/></li>
+<li>Ejecuta app web (navegador kiosk)<br/></li>
+<li>Se conecta al servidor vía WiFi/Ethernet<br/></li>
+<li>Modo bloqueado (no manipulable)</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 450 - S/ 600</strong></td>
+<td>
+<ul>
+<li>✅ Personalizable<br/></li>
+<li>✅ Bajo consumo<br/></li>
+<li>✅ Fácil actualización<br/></li>
+<li>✅ Anti-manipulación</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥈 Monitor LED 15.6" + Mini PC</strong></td>
+<td>
+<ul>
+<li>Monitor compacto 15.6"<br/></li>
+<li>Mini PC (Celeron, 4GB RAM)<br/></li>
+<li>Navegador en modo kiosk<br/></li>
+<li>Montaje VESA en pared<br/></li>
+<li>Teclado/mouse deshabilitados</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 700 - S/ 900</strong></td>
+<td>
+<ul>
+<li>✅ Pantalla grande<br/></li>
+<li>✅ Más visible<br/></li>
+<li>✅ Windows/Linux</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td><strong>🥉 Tablet Android 10" en modo kiosk</strong></td>
+<td>
+<ul>
+<li>Tablet Android económica<br/></li>
+<li>App kiosk (bloqueada)<br/></li>
+<li>Soporte de pared<br/></li>
+<li>WiFi para conectar al servidor<br/></li>
+<li>Cargador permanente</li>
+</ul>
+
+</td>
+<td align="center"><strong>S/ 300 - S/ 450</strong></td>
+<td>
+<ul>
+<li>✅ Más económico<br/></li>
+<li>✅ Táctil<br/></li>
+<li>✅ Fácil instalación</li>
+</ul>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="arquitectura-tecnica-detallada">🔧 Arquitectura Técnica Detallada</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────┐
+│         🏢 PUNTO DE MARCACIÓN (Por entrada)         │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│  [👆 Lector Huella]  &lt;--USB/Ethernet--&gt;  [Raspberry Pi 4]
+│   ZKTeco ZK4500                          + Display 7"
+│   S/ 300                                 S/ 500
+│                                                     │
+│   El Raspberry Pi:                                 │
+│   1. Recibe huella del lector                      │
+│   2. La envía al servidor central vía WiFi/LAN     │
+│   3. Servidor valida contra PostgreSQL             │
+│   4. Servidor responde: ✅/❌                       │
+│   5. Raspberry muestra en pantalla:                │
+│      "✅ Bienvenido Juan Pérez"                    │
+│      "ENTRADA - 08:15 AM"                          │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+         ↓ WiFi/Ethernet (Red Local)
+┌─────────────────────────────────────────────────────┐
+│      🖥️ SERVIDOR LOCAL (En oficina principal)      │
+│   • NestJS + PostgreSQL                            │
+│   • Valida huella vs DB de empleados              │
+│   • Registra marcación con timestamp              │
+│   • Responde a Raspberry Pi con resultado         │
+└─────────────────────────────────────────────────────┘
+</code></pre>
+
+<h3 id="recomendacion-final-propuesta-a">💡 Recomendación Final - Propuesta A</h3>
+
+<p><strong>Kit completo por punto de marcación:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Componente</th>
+  <th>Modelo</th>
+  <th>Precio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>👆 Lector de huella</td>
+  <td>ZKTeco ZK4500 (USB)</td>
+  <td>S/ 300</td>
+</tr>
+<tr>
+  <td>🖥️ Mini computadora</td>
+  <td>Raspberry Pi 4 (4GB)</td>
+  <td>S/ 350</td>
+</tr>
+<tr>
+  <td>📺 Pantalla</td>
+  <td>Display oficial 7" táctil</td>
+  <td>S/ 150</td>
+</tr>
+<tr>
+  <td>📦 Carcasa + montaje</td>
+  <td>Con soporte pared</td>
+  <td>S/ 80</td>
+</tr>
+<tr>
+  <td>🔌 Cables y accesorios</td>
+  <td>USB, HDMI, power</td>
+  <td>S/ 50</td>
+</tr>
+<tr>
+  <td><strong>TOTAL POR PUNTO</strong></td>
+  <td></td>
+  <td><strong>S/ 930</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Para 1 punto de marcación:</strong> S/ 930</p>
+
+<p><em>(Si necesitas más puntos, cada uno adicional cuesta S/ 930)</em></p>
+
+<p><strong>Ventajas de esta arquitectura:</strong></p>
+
+<ul>
+<li>✅ <strong>Muy económico</strong> - Solo S/ 930 por punto de marcación (vs S/ 2,000+ de terminales comerciales)</li>
+<li>✅ <strong>No manipulable</strong> - Raspberry en modo kiosk, sin acceso físico</li>
+<li>✅ <strong>Centralizado</strong> - Toda la DB en servidor, no distribuida en cada terminal</li>
+<li>✅ <strong>Flexible</strong> - Pantalla personalizable vía HTML/CSS (colores, logos, mensajes)</li>
+<li>✅ <strong>Actualizable</strong> - Software se actualiza remotamente sin tocar hardware</li>
+<li>✅ <strong>Escalable</strong> - Fácil agregar más puntos (solo S/ 930 c/u)</li>
+<li>✅ <strong>Reparable</strong> - Si falla un componente, lo cambias individualmente</li>
+</ul>
+
+<p><strong>Desventajas vs Propuesta B:</strong></p>
+
+<ul>
+<li>❌ <strong>No funciona offline</strong> - Requiere conexión permanente al servidor</li>
+<li>❌ <strong>Instalación más compleja</strong> - Varios componentes por punto (lector + Raspberry + display)</li>
+<li>❌ <strong>Sin certificación ISO</strong> - No tiene sello del fabricante (pero cumple SUNAFIL igual)</li>
+<li>❌ <strong>Más componentes</strong> - Mayor probabilidad de fallo de alguna pieza</li>
+</ul>
+
+<h3 id="donde-comprar-en-peru">🏪 Dónde Comprar en Perú</h3>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h4>👆 Lectores de Huella</h4>
+
+<strong>Mercado Libre Perú</strong>
+<ul>
+<li>Buscar: "ZKTeco ZK4500 lector USB"</li>
+<li>Buscar: "Digital Persona U.are.U"</li>
+<li>Verificar vendedor con buena reputación</li>
+<li>Precio: S/ 250 - S/ 550</li>
+</ul>
+
+<strong>Av. Wilson - Centro Lima</strong>
+<ul>
+<li>Galerías de electrónica</li>
+<li>Importadores de equipos biométricos</li>
+<li>Negociable en efectivo</li>
+</ul>
+
+<strong>Importación Directa</strong>
+<ul>
+<li>Amazon.com + courier (4-7 días)</li>
+<li>AliExpress (15-30 días, más económico)</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h4>🖥️ Raspberry Pi + Display</h4>
+
+<strong>Electronilab</strong> (electronilab.pe)
+<ul>
+<li>Distribuidor oficial Raspberry Pi Perú</li>
+<li>Raspberry Pi 4 (4GB): ~S/ 350</li>
+<li>Display 7" oficial: ~S/ 150</li>
+<li>Envíos a todo Perú</li>
+</ul>
+
+<strong>Naylamp Mechatronics</strong>
+<ul>
+<li>Tienda física en Lima</li>
+<li>Stock completo de componentes</li>
+<li>Soporte técnico</li>
+</ul>
+
+<strong>Mercado Libre / Amazon</strong>
+<ul>
+<li>Múltiples opciones</li>
+<li>Comparar precios</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<h3 id="checklist-de-compra">📋 Checklist de Compra</h3>
+
+<p>Antes de comprar, verificar:</p>
+
+<ul>
+<li>☑️ Lector tiene SDK/API para integración</li>
+<li>☑️ Compatible con Linux (para Raspberry Pi)</li>
+<li>☑️ Raspberry Pi 4 (mínimo 2GB RAM, recomendado 4GB)</li>
+<li>☑️ Display con carcasa protectora</li>
+<li>☑️ Cables USB de calidad (para evitar desconexiones)</li>
+<li>☑️ Fuente de alimentación estable</li>
+<li>☑️ Garantía del vendedor</li>
+</ul>
+
+<hr />
+
+<h2 id="ideal-para">🎯 IDEAL PARA</h2>
+
+<div align="center">
+<h3>✅ Esta propuesta es perfecta si tu organización:</h3>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<ul>
+<li>✅ Tiene <strong>oficina física</strong> con empleados on-site</li>
+<li>✅ También tiene <strong>trabajadores remotos</strong> o de campo</li>
+<li>✅ Busca <strong>balance entre costo y seguridad</strong></li>
+<li>✅ Requiere <strong>cumplimiento SUNAFIL</strong> garantizado</li>
+<li>✅ Valora la <strong>flexibilidad</strong> en registro de asistencia</li>
+<li>✅ Puede invertir <strong>S/ 3,980 iniciales</strong></li>
+<li>✅ Prefiere <strong>servidor local</strong> (datos en Perú)</li>
+<li>✅ Cuenta con <strong>infraestructura de red</strong> básica</li>
+<li>✅ Prefiere solución <strong>personalizable</strong> y escalable</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+<h3>❌ NO es ideal si:</h3>
+
+<ul>
+<li>❌ No tienes oficina física (100% remoto)</li>
+<li>❌ Presupuesto inicial muy limitado (< S/ 3,000)</li>
+<li>❌ Necesitas implementación <strong>urgente</strong> (< 4 semanas)</li>
+<li>❌ No cuentas con soporte TI interno</li>
+<li>❌ Edificio sin infraestructura de red</li>
+<li>❌ No tienes espacio para servidor local</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<hr />
+
+<div align="center">
+
+📚 DOCUMENTACIÓN RELACIONADA <br>
+
+<img src="https://img.shields.io/badge/📋_Resumen-Ejecutivo-4A90E2?style=for-the-badge" alt="Resumen Ejecutivo" title="Resumen Ejecutivo">
+<img src="https://img.shields.io/badge/📙_Propuesta_B-Comercial-FF8800?style=for-the-badge" alt="Propuesta B" title="Propuesta B">
+<img src="https://img.shields.io/badge/📗_Propuesta_C-WhatsApp-25D366?style=for-the-badge" alt="Propuesta C" title="Propuesta C">
+<img src="https://img.shields.io/badge/📊_Comparativa-Detallada-9B59B6?style=for-the-badge" alt="Comparativa" title="Comparativa">
+
+<strong>Propuesta A: Solución Híbrida</strong> | Versión 1.0 | Octubre 2025
+
+</div>
+
+  </article>
+  
+  <!-- Botón volver al índice -->
+  <a href="index.html" class="back-to-index" title="Volver al índice">
+    📋 Índice
+  </a>
+  
+  <!-- Botón volver al inicio -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver al inicio">
+    ↑
+  </button>
+  
+  <script>
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>
